@@ -8,6 +8,15 @@ html{
     background-color: rgb(234,244,246);
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 /*uvodni logo + text EduPlus*/
 .logo {
     display: flex;
@@ -38,10 +47,13 @@ html{
 
 .menu{
     display: flex;
-    width: 40%;
+    width: 120%;
 }
 
-.menu__item{flex: 1;}
+.menu__item{
+    flex: 0;
+    flex-grow: 0;
+}
 
 .menu a{
     display: block;
@@ -51,6 +63,7 @@ html{
 .submenu{
     display: none;
     background-color: white;
+    margin-top: 25px;
 }
 
 .menu__item:hover .submenu{
@@ -58,9 +71,15 @@ html{
     z-index: 100;
 }
 
-.menu__item a:hover, .submenu__item a:hover{
-    background-color: rgb(255, 102, 0);
+.menu__item a:hover{
+    color: rgb(255, 102, 0);
 }
+
+.submenu__item a:hover{
+    background-color: rgb(255, 102, 0);
+    color: white;
+}
+
 
 
 
@@ -210,15 +229,24 @@ html{
 }
 
 /*začátek main - course categories sekce*/
+.course-categories-box{
+    width: 100%;
+    height: 1200px; 
+    background-color: white;
+    position: relative;
+}
+
 .course-categories-flex{
     display: flex;
     flex-flow: wrap;
     align-content: space-between;
     justify-content: space-between;
     width: 75%;
-    height: 850px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 70%;
+    left: 50%;
+    margin-left: -37.5%;
+    top: 20%;
+    position: absolute;
 }
 
 .course-categories-flex__item--heading{
@@ -227,8 +255,10 @@ html{
 }
 
 .course-categories-flex__item{
-    width: 270px;
-    height: 347px;
+    width: 25%;
+    height: 40%;
+    /* width: 270px; */
+    /* height: 347px; */
     border: 1px solid gray;
     padding: 0;
     margin: 0;
