@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Petr Kozak">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c687dc85d9.js" crossorigin="anonymous"></script>
+        <title>EduPlus</title>
+    </head>
+
+    <body>
+        <!-- hlavička celé stránky -->
+        <header>
+            <div class="logo">
+                <img class="logo__image" src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo">
+                <h1 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h1>
+            </div>
+            <!-- hlavní navigační prvky -->
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu__item"><a href="Home.html">Home</a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="About-us.html">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="Our-Courses.html">Courses</a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="Our-Courses.html">Courses</a></li>
+                            <li class="submenu__item"><a href="#">Courses List</a></li>
+                            <li class="submenu__item"><a href="Courses-Details.html">Courses Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="Events-Details.html">Events</a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="#">Events</a></li>
+                            <li class="submenu__item"><a href="#">Events list</a></li>
+                            <li class="submenu__item"><a href="Events-Details.html">Events details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="#">Pages</a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="#">Pages</a></li>
+                            <li class="submenu__item"><a href="#">Pages list</a></li>
+                            <li class="submenu__item"><a href="#">Pages details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="Blog-standard.html">Blog</a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="#">Blog</a></li>
+                            <li class="submenu__item"><a href="Blog-standard.html">Blog list</a></li>
+                            <li class="submenu__item"><a href="Blog-details.html">Blog details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="Contact-us.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="side-bar">
+                <div class="side-bar__item1">
+                    <i class="fab fa-facebook-f fb-icon1"></i>
+                </div>
+                <div class="side-bar__item2">
+                    <i class="fab fa-youtube yt-icon1"></i>
+                </div>  
+                <div class="side-bar__item3">
+                    <div class="sign-in">
+                        <i class="far fa-user-circle user-icon1"></i>
+                        SIGN IN
+                    </div>
+                </div>
+                <div class="side-bar__item4">
+                    <i class="fas fa-th fa-3x menu-icon1"></i>
+                </div>
+            </div>
+            
+        </header>
+
+        <!-- hlavní obsah -->
+        <main>
+            <article class="welcome">
+                <div class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Welcome To EduPlus</div>
+            
+                <h2><strong>More than 1200 Online Courses</strong></h2>
+
+                <div class="search-bar">
+                    <form method="POST">
+                        <input type="text" placeholder="Search Courses" name="search-courses" class="search-bar__input">
+                        <button type="submit" class="search-bar__button"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                
+                <div class="online-support">
+                    <p class="online-support__text1">
+                        Sed ut perspiciatis unde omnis <br> natur error sit voluptatem
+                    </p>
+
+                    <div class="online-support__line"></div>
+                    
+                    <div class="online-support__icon">
+                        <i class="fas fa-headset fa-2x"></i>
+                    </div>
+                
+                    <p class="online-support__text2">
+                        <span>ONLINE SUPPORT</span> <br> 
+                        <span>+012 (345) 6789</span>
+                    </p>
+                </div>
+                
+            </article>
+            
+
+            <!-- Statistics sekce -->
+            <section class="stats">
+                <!-- doplnit ikonky -->
+                <div class="stats__item">
+                    <p>
+                        <span class="statistics-numbers">3045+</span> <br> 
+                        <span class="statistics-text">Satisfied</span>
+                    </p>
+                </div>
+                <div class="stats__item">
+                    <p>
+                        <span class="statistics-numbers">7852+</span> <br> 
+                        <span class="statistics-text">Available Courses</span>
+                    </p>
+                </div>
+                <div class="stats__item">
+                    <p>
+                        <span class="statistics-numbers">9862+</span> <br> 
+                        <span class="statistics-text">Graduate Students</span>
+                    </p>
+                </div>
+                <div class="stats__item">
+                    <p>
+                        <span class="statistics-numbers">8963+</span> <br> 
+                        <span class="statistics-text">Active Courses</span>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Course Categories sekce -->
+            <section class="course-categories-flex">
+                <header class="course-categories-flex__item--heading">
+                    <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>
+                        Popular Categories<i class="fas fa-ellipsis-h margin-left"></i></span>
+                    <h2>Course Categories</h2>
+                </header>
+                
+                <article class="course-categories-flex__item">
+                    <img src="Images/Courses/home-graphics-design.png" alt="Graphics Design">
+                    <h3>Graphics Design (UI)</h3>
+                    <p>Web Design Course</p>
+                    <ul>
+                        <li><i class="fas fa-users"></i> 250</li>
+                        <li><i class="fas fa-book"></i> 800+ Courses</li>
+                    </ul>
+                </article>
+                <article class="course-categories-flex__item">
+                    <img src="Images/Courses/home-business-studies.png" alt="Business Studies">
+                    <h3>Business Studies</h3>
+                    <p>Finance Business</p>
+                    <ul>
+                        <li><i class="fas fa-users"></i> 320</li>
+                        <li><i class="fas fa-book"></i> 750+ Courses</li>
+                    </ul>  
+                </article>
+                <article class="course-categories-flex__item">
+                    <img src="Images/Courses/home-web-development.png" alt="Web Development">
+                    <h3>Web Development</h3>
+                    <p>Web Design Course</p>
+                    <ul>
+                        <li><i class="fas fa-users"></i> 320</li>
+                        <li><i class="fas fa-book"></i> 750+ Courses</li>
+                    </ul> 
+                </article>
+                <article class="course-categories-flex__item">
+                    <img src="Images/Courses/home-product-engineering.png" alt="Producit Engineering">
+                    <h3>Product Engineering</h3>
+                    <p>Web Design Course</p>
+                    <ul>
+                        <li><i class="fas fa-users"></i> 320</li>
+                        <li><i class="fas fa-book"></i> 750+ Courses</li>
+                    </ul> 
+                </article>
+                <article class="course-categories-flex__item">
+                    <img src="Images/Courses/home-basic-photography.png" alt="Basic Photography">
+                    <h3>Basic Photography</h3>
+                    <p>Film Movies & Photography</p>
+                    <ul>
+                        <li><i class="fas fa-users"></i> 320</li>
+                        <li><i class="fas fa-book"></i> 750+ Courses</li>
+                    </ul> 
+                </article>
+                <article class="course-categories-flex__item">
+                    <img src="Images/Courses/home-medical-health.png" alt="Medical & Health">
+                    <h3>Medical & Health</h3>
+                    <p>Doctors & Nursing</p>
+                    <ul>
+                        <li><i class="fas fa-users"></i> 320</li>
+                        <li><i class="fas fa-book"></i> 750+ Courses</li>
+                    </ul> 
+                </article>
+                <article class="course-categories-flex__item">
+                    <img src="Images/Courses/home-marketing-strategy.png" alt="Marketing Strategy">
+                    <h3>Marketing Strategy</h3>
+                    <p>Social Media Marketing</p>
+                    <ul>
+                        <li><i class="fas fa-users"></i> 250</li>
+                        <li><i class="fas fa-book"></i> 50+ Courses</li>
+                    </ul> 
+                </article>
+                <article class="course-categories-flex__item">
+                    <img src="Images/Courses/home-mobile-design.png" alt="Mobile UI Design">
+                    <h3>Mobile UI Design</h3>
+                     <p>Web Design Course</p>
+                     <ul>
+                         <li><i class="fas fa-users"></i> 320</li>
+                         <li><i class="fas fa-book"></i> 750+ Courses</li>
+                     </ul> 
+                </article>
+            </section>
+
+            <!-- Available Courses sekce -->
+            <section>
+                <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Popular Courses<i class="fas fa-ellipsis-h margin-left"></i></span>
+                
+                <h2>Available Courses</h2>
+                <article>
+
+                    <img src="Images/Courses/english-learning-course.jpg" alt="English Learning Course" width="370" height="250">
+                    <span class="instructor-profile-preview">
+                        <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35"> Warner
+                    </span>
+                    $59.95
+                    ENGLISH 
+                    <h3>Best Courses For Learning
+                        English Courses</h3>
+                    <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
+                    <span class="underline-courses-stats">
+                        25 36hr 2.5k
+                    </span>
+
+                </article>
+
+                <article>
+
+                    <img src="Images/Courses/business-solutions-course.jpg" alt="Business Course" width="370" height="250">
+                    <span class="instructor-profile-preview">
+                        <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35"> Warner
+                    </span>
+                    $59.95
+                    BUSINESS
+                    <h3>Learning About It Consulting<br>
+                        Business Solutions</h3>
+                    <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
+                    <span class="underline-courses-stats">
+                        25 36hr 2.5k
+                    </span>
+
+                </article>
+
+                <article>
+
+                    <img src="Images/Courses/web-design-course.jpg" alt="Web Design Course" width="370" height="250">
+                    <span class="instructor-profile-preview">
+                        <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35"> Warner
+                    </span>
+                    $59.95
+                    DESIGN
+                    <h3>Introduced About Basic Web<br>
+                        Design For Beginners</h3>
+                    <img src="Images/Line-gray-horizontal.png" alt="Horizontal line">
+                    <span class="underline-courses-stats">
+                        25 36hr 2.5k
+                    </span>
+
+                </article>
+
+                <button>VIEW ALL COURSES</button>
+            </section>
+
+            <!-- Campus Gallery sekce -->
+            <section>
+                <span><i class="fas fa-ellipsis-h margin-right"></i>Photo & Album<i class="fas fa-ellipsis-h margin-left"></i></span>
+                
+                <h2>Campus Gallery</h2>
+
+                <button class="campus-gallery-tabs">Show All</button>
+                <button class="campus-gallery-tabs">University</button>
+                <button class="campus-gallery-tabs">Group Study</button>
+                <button class="campus-gallery-tabs">Awards</button>
+                <button class="campus-gallery-tabs">Students</button>
+                <button class="campus-gallery-tabs">Teachers</button>
+                <button class="campus-gallery-tabs">Campus</button>
+                <img src="Images/Line-gray-horizontal-long.png" alt="Long horizontal line">
+                <a href="#"><img src="Images/Campus/campus-gallery-students1.jpg" alt="Gallery picture" width="370" height="370"></a>
+                <a href="#"><img src="Images/Campus/campus-gallery-students2.jpg" alt="Gallery picture" width="370" height="370"></a>
+                <a href="#"><img src="Images/Campus/campus-gallery-students3.jpg" alt="Gallery picture" width="370" height="370"></a>
+                <a href="#"><img src="Images/Campus/campus-gallery-students4.jpg" alt="Gallery picture" width="370" height="370"></a>
+                <a href="#"><img src="Images/Campus/campus-gallery-students5.jpg" alt="Gallery picture" width="370" height="370"></a>
+                <a href="#"><img src="Images/Campus/campus-gallery-students6.jpg" alt="Gallery picture" width="370" height="370"></a>
+            </section>
+
+            <!-- Expert Instructors sekce -->
+            <section>
+                <span><i class="fas fa-ellipsis-h margin-right"></i>Team Members<i class="fas fa-ellipsis-h margin-left"></i></span>
+                
+                <h2>Expert Instructors</h2>
+
+                <article>
+                    <img src="Images/Instructors/instructor-profile1.jpg" alt="Instructor profile picture"
+                    width="270" height="250">
+                    <h3>Somalia D Silva</h3>
+                    Math Teacher
+                    <img src="Images/Line-gray-horizontal-short.png" alt="Short horizontal line">
+                    750+ Courses
+                </article>
+
+                <article>
+                    <img src="Images/Instructors/instructor-profile2.jpg" alt="Instructor profile picture"
+                    width="270" height="250">
+                    <h3>David D Warner</h3>
+                    English Teacher
+                    <img src="Images/Line-gray-horizontal-short.png" alt="Short horizontal line">
+                    3850+ Courses
+                </article>
+
+                <article>
+                    <img src="Images/Instructors/instructor-profile3.jpg" alt="Instructor profile picture"
+                    width="270" height="250">
+                    <h3>Xavi Toni Crusse</h3>
+                    Computer Teacher
+                    <img src="Images/Line-gray-horizontal-short.png" alt="Short horizontal line">
+                    632+ Courses
+                </article>
+
+                <article>
+                    <img src="Images/Instructors/instructor-profile4.jpg" alt="Instructor profile picture"
+                    width="270" height="250">
+                    <h3>Shaine Watson</h3>
+                    Web Designer
+                    <img src="Images/Line-gray-horizontal-short.png" alt="Short horizontal line">
+                    985+ Courses
+                </article>
+
+            </section>
+
+            <!-- Upcoming Events sekce -->
+            <section>
+                <span><i class="fas fa-ellipsis-h margin-right"></i>Latest Events<i class="fas fa-ellipsis-h margin-left"></i></span>
+                <h2>Upcoming Events</h2>
+
+                <article>
+                    <img src="Images/Events/event-preview1.jpg" alt="Upcoming event picture" width="670" height="450">
+                    <span class="event-price">$20</span>
+                    <span class="info-about-event">
+                        <time datetime="2020-11-25">25 Nov 2020</time>
+                        <time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time>
+                        PARIS, FRANCE
+                    </span>
+                    <h3>Web Design & Development Conference 2020</h3>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natur error sit voluptatem accusantium doloremque <br> 
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    </p>
+                    <a href="#"><img src="Images/small-orange-rectangle.png" alt="Join Event"></a>
+                </article>
+
+                <article>
+                    <img src="Images/Events/event-preview2.jpg" alt="Upcoming event picture" width="370" height="250">
+                    <span class="event-price">$20</span>
+                    <span class="info-about-event">
+                        <time datetime="2020-11-25">25 Nov 2020</time>
+                        <time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time>
+                    </span>
+                    <h3>Annual Conference 2020</h3>
+                    <h4>Join Event</h4>
+                    <img src="Images/right-arrow.png" alt="Right arrow">
+                </article>
+
+                <article>
+                    <img src="Images/Events/event-preview3.jpg" alt="Upcoming event picture" width="370" height="250">
+                    <span class="event-price">$20</span>
+                    <span class="info-about-event">
+                        <time datetime="2020-11-25">25 Nov 2020</time>
+                        <time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time>
+                    </span>
+                    <h3>Annual Conference 2020</h3>
+                    <h4>Join Event</h4>
+                    <img src="Images/right-arrow.png" alt="Right arrow">
+                </article>
+
+                <span class="view-all-events">
+                    View All Events
+                </span>
+
+            </section>
+
+            <!-- What Our Students Say sekce -->
+            <section>
+                <span><i class="fas fa-ellipsis-h margin-right"></i>Students Feedback<i class="fas fa-ellipsis-h margin-left"></i></span>
+                <h2>What Our Students Say</h2>
+
+                <img src="Images/Feedback/profile-picture1.jpg" alt="Profile picture">
+                <img src="Images/Feedback/profile-picture2.jpg" alt="Profile picture">
+                <img src="Images/Feedback/profile-picture3.jpg" alt="Profile picture">
+                <img src="Images/Feedback/profile-picture4.jpg" alt="Profile picture">
+                <img src="Images/Feedback/profile-picture5.jpg" alt="Profile picture">
+                <img src="Images/Feedback/profile-picture6.jpg" alt="Profile picture">
+                <img src="Images/Feedback/profile-picture7.jpg" alt="Profile picture">
+                <img src="Images/Feedback/profile-picture8.jpg" alt="Profile picture">
+                <img src="Images/Feedback/medium-orange-block.png" alt="Medium orange block">
+                <img src="Images/Feedback/medium-white-block.png" alt="Medium white block"> 
+
+                <img src="Images/Feedback/large-white-block.png" alt="Large white block">
+                <img src="Images/Feedback/large-grayish-block.png" alt="Large grayish block">
+                <p class="students-feedback-text1">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Integer lacinia. 
+                    Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Integer tempor.
+                </p>
+                <p class="students-feedback-text1">
+                    Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus.
+                </p>
+                <span class="students-feedback-name">
+                    Sousa Fernandes
+                </span>
+                <span class="students-feedback-role">
+                    CEO & Founder
+                </span>
+                <img src="Images/Feedback/quotes.png" alt="Big quotes">
+
+            </section>
+
+            <!-- Become an Instructor sekce -->
+            <section>
+                <span><i class="fas fa-ellipsis-h margin-right"></i>Build A Career</span>
+                <h2>Become an Instructor</h2>
+                <p class="become-instructor-text">
+                    Proin in tellus sit amet nibh dignissim sagittis. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                </p>
+                
+                <section>
+                    <h3>Digitalization</h3>
+                    <p>
+                        Sed ut perspia unde omnis 
+                        aste natus error sit volu
+                    </p>
+                </section> 
+
+                <section>
+                    <h3>Book Friendly</h3>
+                    <p>
+                        Sed ut perspia unde omnis 
+                        aste natus error sit volu
+                    </p>
+                </section>
+
+                <img src="Images/small-orange-rectangle.png" alt="Join us">
+                <img src="Images/right-arrow.png" alt="Right arrow">
+                <img src="Images/Career/small-white-rectangle.png" alt="Become a partner">
+
+                <img src="Images/Career/become-instructor-picture1.jpg" alt="Become instructor picture" width="500" height="350">
+                <img src="Images/Career/become-instructor-picture2.jpg" alt="Become instructor picture" width="500" height="350">
+
+            </section>
+
+            <!-- Latest News & Blog sekce -->
+            <section>
+                <span><i class="fas fa-ellipsis-h margin-right"></i>Articles & Tips<i class="fas fa-ellipsis-h margin-left"></i></span>
+                <h2>Latest News & Blog</h2>
+
+                <article>
+                    <img src="Images/News/news-article-picture1.jpg" alt="News article preview">
+                    <span>
+                        <time datetime="2020-11-25">25 Nov 2020</time>
+                        COM(30)
+                    </span>
+                    <h3>Learning Resources In 
+                        Challenec Times Online Workshops
+                    </h3>
+                    <span>
+                        David Simala
+                    </span>
+                    <img src="Images/News/small-black-block.png" alt="Small black block">
+                </article>
+
+                <article>
+                    <img src="Images/News/news-article-picture2.jpg" alt="News article preview">
+                    <span>
+                        <time datetime="2020-11-25">25 Nov 2020</time>
+                        COM(30)
+                    </span>
+                    <h3>
+                        Djang Highlights Models Admin And Harness Rela Tional Database
+                    </h3>
+                    <span>
+                        David Simala
+                    </span>
+                    <img src="Images/News/small-orange-block.png" alt="Small orange block">
+                </article>
+
+                <article>
+                    <img src="Images/News/news-article-picture3.jpg" alt="News article preview">
+                    <span>
+                        <time datetime="2020-11-25">25 Nov 2020</time>
+                        COM(30)
+                    </span>
+                    <h3>
+                        Smash Podcast Episode With Laura Kalbag What Is Online Privacy
+                    </h3>
+                    <span>
+                        David Simala
+                    </span>
+                    <img src="Images/News/small-black-block.png" alt="Small black block">
+                </article>
+
+            </section>
+
+            <div class="bottom-logos">
+                <div class="bottom-logos__item">
+                    <img src="Images/Logo/01.png" alt="Company Logo">
+                </div>
+                <div class="bottom-logos__item">
+                    <img src="Images/Logo/02.png" alt="Company Logo">
+                </div>
+                <div class="bottom-logos__item">
+                    <img src="Images/Logo/03.png" alt="Company Logo">
+                </div>
+                <div class="bottom-logos__item">
+                    <img src="Images/Logo/04.png" alt="Company Logo">
+                </div>
+                <div class="bottom-logos__item">
+                    <img src="Images/Logo/05.png" alt="Company Logo">
+                </div>
+            </div>
+
+        </main>
+        
+        <!-- patička celé webové stránky -->
+        <footer>
+            <img src="Images/Logo/EduPlusIcon.png" alt="Logo">
+            <h3>EduPlus</h3>
+            <!-- doplnit ikonky -->
+            Facebook Twitter YouTube Instagram
+            <img src="Images/Line.png" alt="Horizontal line">
+            <h4>Our Courses</h4>
+            <ul>
+                <li>Web Development</li>
+                <li>Business Studies</li>
+                <li>Computer Engineering</li>
+                <li>English Learning</li>
+                <li>Graphics Design</li>
+                <li>Color Combinations</li>
+                <li>Software Development</li>
+                <li>Photography</li>
+                <li>Advance WordPress</li>
+                <li>Basic PSD To HTML</li>
+            </ul>
+            <h4>Company</h4>
+            <ul>
+                <li>About Eduket</li>
+                <li>Meet Advisor</li>
+                <li>Join A Career</li>
+                <li>Latest Courses</li>
+                <li>Newsletters</li>
+            </ul>
+            <h4>Newsletters</h4>
+            <p>
+                Sed ut perspiciatis unde omnis natur error sit voluptatem accu <br> 
+                santium doloremque laudantium totam rem aperiam
+            </p>
+            <form method="POST">
+                <input type="text" placeholder="Enter Your Email" name="Newsletter email" id="newsletter-email">
+                <button type="submit"></button>
+            </form>
+            <p>
+                <small>Copyright &copy; 2020 EduPlus  All Rights Reserved.</small>
+            </p>
+        </footer>
+
+    </body>
+
+</html>

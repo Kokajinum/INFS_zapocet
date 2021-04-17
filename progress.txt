@@ -1,0 +1,3 @@
+"hotove" html: Home, About-us, Events-Details, Our-Courses, 
+               Courses-Details, Instructor-Details, faq, 
+               Blog-standard, Blog-details, Contact-us
