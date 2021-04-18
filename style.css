@@ -228,15 +228,16 @@ a {
     width: 50px;
 }
 
+/*stará verze určená k smazání*/
 /*začátek main - course categories sekce*/
-.course-categories-box{
+/* .course-categories-box{
     width: 100%;
-    height: 1200px; 
+    height: 75em;
     background-color: white;
-    position: relative;
 }
 
 .course-categories-flex{
+    box-sizing: border-box;
     display: flex;
     flex-flow: wrap;
     align-content: space-between;
@@ -246,7 +247,7 @@ a {
     left: 50%;
     margin-left: -37.5%;
     top: 20%;
-    position: absolute;
+    position: relative;
 }
 
 .course-categories-flex__item--heading{
@@ -255,13 +256,13 @@ a {
 }
 
 .course-categories-flex__item{
-    width: 25%;
-    height: 40%;
-    /* width: 270px; */
-    /* height: 347px; */
+    box-sizing: border-box;
+    width: 270px;
+    height: 347px;
     border: 1px solid gray;
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
 .course-categories-flex__item li {
@@ -270,10 +271,62 @@ a {
 
 .course-categories-flex__item img{
     width: 100%;
+} */
+
+/*začátek main - course categories sekce*/
+.course-categories-box{
+    width: 100%;
+    height: 70em;
+    background-color: white;
+    position: relative;
+}
+
+.course-categories-flex{
+    display: flex;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    width: 75%;
+    height: 70%;
+    left: 50%;
+    margin-left: -37.5%;
+    top: 13%;
+    position: relative;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 76%;
+    height: 75%;
+}
+
+.course-categories-flex__item--heading{
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.course-categories-flex__item{
+    width: auto;
+}
+
+.course-categories-flex__item--image{
+    width: 100%;
+    display: block;
+}
+
+.course-categories-flex__item--text{
+    width: 100%;
+    height: 140px;
+    box-sizing: border-box;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 20px;
+}
+
+.course-categories-flex__item li {
+    display: inline;
 }
 
 
-/*spodní řada log těsně před patičkou*/
+/*spodní řada log před patičkou*/
 .bottom-logos {
     width:100%;
     height: auto;
