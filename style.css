@@ -51,7 +51,7 @@ a {
 }
 
 .menu__item{
-    flex: 0;
+    /* flex: 0; */
     flex-grow: 0;
 }
 
@@ -228,6 +228,41 @@ a {
     width: 50px;
 }
 
+/*statistics sekce*/
+.stats{
+    /* position: absolute; */
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    /* left: 50%; */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.stats__item{
+    flex-basis: 18%;
+    padding: 3%;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.stats__icon{
+    color: rgb(255, 102, 0);
+    margin-top: 5px;
+}
+
+.stats__text{
+    margin-left: 10%;
+}
+
+.stats__text--big{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(255, 102, 0);
+}
+
 /*stará verze určená k smazání*/
 /*začátek main - course categories sekce*/
 /* .course-categories-box{
@@ -297,7 +332,7 @@ a {
     height: 75%;
 }
 
-.course-categories-flex__item--heading{
+.course-categories-flex__heading{
     text-align: center;
     flex-basis: 100%;
 }
@@ -306,12 +341,12 @@ a {
     width: auto;
 }
 
-.course-categories-flex__item--image{
+.course-categories-flex__image{
     width: 100%;
     display: block;
 }
 
-.course-categories-flex__item--text{
+.course-categories-flex__text{
     width: 100%;
     height: 140px;
     box-sizing: border-box;
