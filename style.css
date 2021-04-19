@@ -241,11 +241,14 @@ a {
 }
 
 .stats__item{
+    position: relative;
     flex-basis: 18%;
     padding: 3%;
     display: flex;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    top: 50px;
+    z-index: 100;
 }
 
 .stats__icon{
