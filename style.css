@@ -11,6 +11,8 @@ html{
 body{
     margin: 0;
     padding: 0;
+    
+    font-family: 'Roboto', 'Hind', sans-serif;
 }
 
 a {
@@ -86,6 +88,7 @@ a {
 /*oranzovy text na zacatku kazde sekce*/
 .section-label {
     color: #e95721;
+    font-weight: bold;
 }
 
 /*odsazení tří teček (ikona) od textu*/
@@ -174,6 +177,7 @@ a {
     position: relative;
     left: 19%;
     margin-top: 10%;
+    padding-bottom: 5%;
 }
 
 .welcome h2{
@@ -210,6 +214,10 @@ a {
     margin-right: 40px;
 }
 
+.online-support__icon{
+    color: rgb(255, 102, 0);
+}
+
 .online-support__text2{
     margin-left: 5px;
 }
@@ -226,6 +234,7 @@ a {
     border: none;
     height: 50px;
     width: 50px;
+    color: white;
 }
 
 /*statistics sekce*/
@@ -237,7 +246,6 @@ a {
     /* left: 50%; */
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .stats__item{
@@ -247,7 +255,7 @@ a {
     display: flex;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    top: 50px;
+    top: 2.5em;
     z-index: 100;
 }
 
@@ -266,50 +274,9 @@ a {
     color: rgb(255, 102, 0);
 }
 
-/*stará verze určená k smazání*/
-/*začátek main - course categories sekce*/
-/* .course-categories-box{
-    width: 100%;
-    height: 75em;
-    background-color: white;
+.stats__text--small{
+    font-size: 0.8em;
 }
-
-.course-categories-flex{
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: wrap;
-    align-content: space-between;
-    justify-content: space-between;
-    width: 75%;
-    height: 70%;
-    left: 50%;
-    margin-left: -37.5%;
-    top: 20%;
-    position: relative;
-}
-
-.course-categories-flex__item--heading{
-    text-align: center;
-    flex-basis: 100%;
-}
-
-.course-categories-flex__item{
-    box-sizing: border-box;
-    width: 270px;
-    height: 347px;
-    border: 1px solid gray;
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
-
-.course-categories-flex__item li {
-    display: inline;
-}
-
-.course-categories-flex__item img{
-    width: 100%;
-} */
 
 /*začátek main - course categories sekce*/
 .course-categories-box{
