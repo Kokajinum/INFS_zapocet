@@ -83,8 +83,6 @@ a {
 }
 
 
-
-
 /*oranzovy text na zacatku kazde sekce*/
 .section-label {
     color: #e95721;
@@ -235,6 +233,11 @@ a {
     height: 50px;
     width: 50px;
     color: white;
+}
+
+/*nadpis u sekcí*/
+.section-heading{
+    
 }
 
 /*statistics sekce*/
