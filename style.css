@@ -51,9 +51,8 @@ a { text-decoration: none; }
 }
 
 .menu__item {
-    /* flex: 0; */
-    /* flex-grow: 0; */
     position: relative;
+    padding-bottom: 5%;
 }
 
 .menu a {
@@ -388,7 +387,7 @@ a { text-decoration: none; }
 
 .available-courses-grid__heading {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 3%;
 }
 
@@ -531,7 +530,7 @@ a { text-decoration: none; }
     }
 
     .menu__item {
-        height: 2.5em;
+        height: 1em;
     }
 }
 
