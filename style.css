@@ -165,9 +165,9 @@ a { text-decoration: none; }
 /*welcome to eduplus cast*/
 .welcome-box {
     width: 30%;
+    /*height: 400px;*/
     height: auto;
     /* background-color: rgb(234,244,246); */
-    background-color: yellow;
     position: relative;
     left: 19%;
     margin-top: 10%;
@@ -190,6 +190,7 @@ a { text-decoration: none; }
     /* width: 450px; */
     width: 100%;
     height: 65px;
+    /* height: 15%; */
     background-color: white;
     display: flex;
     align-items: center;
@@ -328,53 +329,7 @@ a { text-decoration: none; }
 }
 
 
-/*
-.course-categories-box {
-    width: 100%;
-    background-color: white;
-    position: relative;
-}
 
-.course-categories-grid {
-    display: flex;
-    flex-flow: wrap;
-    box-sizing: border-box;
-    left: 50%;
-    margin-left: -37.5%;
-    padding-top: 9%;
-    position: relative;
-    justify-content: space-between;
-    align-content: space-between;
-    width: 76%;
-    height: auto;
-}
-
-.course-categories-grid__heading {
-    text-align: center;
-    flex-basis: 100%;
-}
-
-.course-categories-grid__item {
-}
-
-.course-categories-grid__image {
-    max-width: 100%;
-    display: block;
-}
-
-.course-categories-grid__text {
-    width: 100%;
-    height: 140px;
-    box-sizing: border-box;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
-    padding: 20px;
-}
-
-.course-categories-grid__item li {
-    display: inline;
-}*/
 
 
 
@@ -403,6 +358,15 @@ a { text-decoration: none; }
 
 .available-courses-grid__item {
     position: relative;
+    background-color: white ;
+}
+
+.available-courses-grid__item > h3 > span {
+    display: block;
+}
+
+.available-courses-grid__image {
+    display: block;
 }
 
 .available-courses-grid__flex1 {
@@ -413,67 +377,23 @@ a { text-decoration: none; }
     display: flex;
 }
 
+.available-courses-grid__info li {
+    display: inline;
+}
+
 .available-courses-grid__button {
     color:skyblue;
     text-transform: uppercase;
     font-size: 0.7em;
     border: 3px solid #123642;
     width: 200px;
-    /* padding-left: 20px; */
     padding: 10px;
     position: relative;
     margin: auto;
-    
+    top: 4vh;
 }
 
 
-/*
-.available-courses-box {
-    min-width: 100%;
-    height: 1030px;
-    background-color: #062a36;
-    position: relative;
-}
-
-.available-courses-grid {
-    position: absolute;
-    display: grid;
-    grid-template-rows: 15vh 70vh 30vh;
-    grid-template-columns: 30vw 30vw 30vw;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    width: 85%;
-    left: 50%;
-    margin-left: -42.5%;
-    top: 8%;
-}
-
-.available-courses-grid__heading {
-    grid-row: 1;
-    grid-column: 2;
-}
-
-.available-courses-grid__item1 {
-    grid-row: 2;
-    grid-column: 1;
-}
-
-.available-courses-grid__item2 {
-    grid-row: 2;
-    grid-column: 2;
-}
-
-.available-courses-grid__item3 {
-    grid-row: 2;
-    grid-column: 3;
-}
-
-.available-courses-grid__button {
-    grid-row: 3;
-    grid-column: 2;
-} 
-*/
 
 
 
@@ -495,6 +415,10 @@ a { text-decoration: none; }
     .side-bar__item4 {
         display: none;
     }
+
+    .welcome-box h2 {
+        font-size: 300%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -514,10 +438,14 @@ a { text-decoration: none; }
         width: 30%;
         height: 300px;
     }
+
+
 }
 
 @media (max-width: 768px) {
-    
+    .welcome-box h2 {
+        font-size: 200%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -532,6 +460,7 @@ a { text-decoration: none; }
     .menu__item {
         height: 1em;
     }
+
 }
 
 @media (min-width: 376px) {

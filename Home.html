@@ -180,13 +180,7 @@
                         Popular Categories<i class="fas fa-ellipsis-h margin-left"></i></span>
                     <h2 class="section-heading">Course Categories</h2>
                 </div>
-                <div class="course-categories-grid">
-                    <!-- <header class="course-categories-grid__heading">
-                        <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>
-                            Popular Categories<i class="fas fa-ellipsis-h margin-left"></i></span>
-                        <h2 class="section-heading">Course Categories</h2>
-                    </header>  -->
-                    
+                <div class="course-categories-grid">               
                     <article class="course-categories-grid__item">
                         <img src="Images/Courses/home-graphics-design.png" alt="Graphics Design" class="course-categories-grid__image">
                         <div class="course-categories-grid__text">
@@ -282,55 +276,49 @@
             </section>
             
             <!-- Available Courses sekce -->
-            <div class="available-courses-box">
+            <section class="available-courses-box">
                 <div class="available-courses-grid__heading">
                     <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>
                         Popular Courses<i class="fas fa-ellipsis-h margin-left"></i></span>
                     <h2 class="section-heading section-heading--white">Available Courses</h2>
                 </div>
-                <section class="available-courses-grid">
-                    <!-- <header class="available-courses-grid__heading">
-                        <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>
-                            Popular Courses<i class="fas fa-ellipsis-h margin-left"></i></span>
-                        <h2 class="section-heading section-heading--white">Available Courses</h2>
-                    </header> -->
-    
+                <div class="available-courses-grid">  
                     <article class="available-courses-grid__item">
                         <div class="available-courses-grid__image">
                             <img src="Images/Courses/english-learning-course.jpg" alt="English Learning Course" width="370" height="250">
                         </div>
-                        <div class="available-courses-grid__flex1">
-                            <div class="available-courses-grid__instructor">
-                                <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35">
+                            <div class="available-courses-grid__flex1">
+                                <div class="available-courses-grid__instructor">
+                                    <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35">
+                                </div>
+                                <div class="available-courses-grid__name">
+                                    Warner
+                                </div>
+                                <div class="available-courses-grid__price">
+                                    $59.95
+                                </div>
                             </div>
-                            <div class="available-courses-grid__name">
-                                Warner
+                            <div class="available-courses-grid__flex2">
+                                <div class="available-courses-grid__subject">
+                                    ENGLISH 
+                                </div>
+                                <div class="available-courses-grid__star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
                             </div>
-                            <div class="available-courses-grid__price">
-                                $59.95
+                            <h3><span>Best Courses For Learning</span>English Courses</h3>
+                            <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
+                            <div class="available-courses-grid__info">
+                                <ul>
+                                    <li><i class="fas fa-users"></i>25</li>
+                                    <li><i class="far fa-clock"></i>36hr</li>
+                                    <li><i class="far fa-comments"></i>2.5k</li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="available-courses-grid__flex2">
-                            <div class="available-courses-grid__subject">
-                                ENGLISH 
-                            </div>
-                            <div class="available-courses-grid__star-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                        <h3>Best Courses For Learning English Courses</h3>
-                        <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
-                        <div class="available-courses-grid__info">
-                            <ul>
-                                <li><i class="fas fa-users"></i>25</li>
-                                <li><i class="far fa-clock"></i>36hr</li>
-                                <li><i class="far fa-comments"></i>2.5k</li>
-                            </ul>
-                        </div>
                     </article>
     
                     <article class="available-courses-grid__item">
@@ -357,7 +345,7 @@
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
                         </div>
-                        <h3>Learning About It Consulting Business Solutions</h3>
+                        <h3><span>Learning About It Consulting</span>Business Solutions</h3>
                         <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
                         <div class="available-courses-grid__info">
                             <ul>
@@ -392,7 +380,7 @@
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
                         </div>
-                        <h3>Introduced About Basic Web Design For Beginners</h3>
+                        <h3><span>Introduced About Basic Web</span>Design For Beginners</h3>
                         <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
                         <div class="available-courses-grid__info">
                             <ul>
@@ -403,29 +391,38 @@
                         </div>
                     </article>
     
-                </section>
+                </div>
                 <div class="available-courses-grid__button">
                     <p>
                         View all courses
                     </p>
                 </div>
-            </div>
+            </section>
             
 
             <!-- Campus Gallery sekce -->
-            <section>
-                <span><i class="fas fa-ellipsis-h margin-right"></i>Photo & Album<i class="fas fa-ellipsis-h margin-left"></i></span>
-                
-                <h2>Campus Gallery</h2>
+            <section class="gallery-box">
 
-                <button class="campus-gallery-tabs">Show All</button>
-                <button class="campus-gallery-tabs">University</button>
-                <button class="campus-gallery-tabs">Group Study</button>
-                <button class="campus-gallery-tabs">Awards</button>
-                <button class="campus-gallery-tabs">Students</button>
-                <button class="campus-gallery-tabs">Teachers</button>
-                <button class="campus-gallery-tabs">Campus</button>
+                <div class="gallery__heading">
+                    <span><i class="fas fa-ellipsis-h margin-right"></i>Photo & Album<i class="fas fa-ellipsis-h margin-left"></i></span> 
+                    <h2>Campus Gallery</h2>
+                </div>
+                
+                <div class="gallery__tabs">
+                    <button class="campus-gallery-tabs">Show All</button>
+                    <button class="campus-gallery-tabs">University</button>
+                    <button class="campus-gallery-tabs">Group Study</button>
+                    <button class="campus-gallery-tabs">Awards</button>
+                    <button class="campus-gallery-tabs">Students</button>
+                    <button class="campus-gallery-tabs">Teachers</button>
+                    <button class="campus-gallery-tabs">Campus</button>
+                </div>
+
                 <img src="Images/Line-gray-horizontal-long.png" alt="Long horizontal line">
+
+                <div >
+
+                </div>
                 <a href="#"><img src="Images/Campus/campus-gallery-students1.jpg" alt="Gallery picture" width="370" height="370"></a>
                 <a href="#"><img src="Images/Campus/campus-gallery-students2.jpg" alt="Gallery picture" width="370" height="370"></a>
                 <a href="#"><img src="Images/Campus/campus-gallery-students3.jpg" alt="Gallery picture" width="370" height="370"></a>
