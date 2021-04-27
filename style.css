@@ -394,6 +394,38 @@ a { text-decoration: none; }
 }
 
 
+/*campus gallery sekce*/
+
+.gallery-box {
+
+}
+
+.gallery__heading {
+    text-align: center;
+}
+
+.gallery__tabs {
+    text-align: center;
+}
+
+.gallery__item {
+    background: none;
+    border: none;
+}   
+
+.gallery-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    grid-row-gap: 2em;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+}
+
 
 
 
