@@ -405,13 +405,15 @@ a { text-decoration: none; }
 }
 
 .gallery__tabs {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.gallery__item {
-    background: none;
-    border: none;
-}   
+.gallery__tabs li {
+    display: inline;
+    background: yellow;
+    flex: 0 1 100px;
+}
 
 .gallery-images-grid {
     display: grid;
