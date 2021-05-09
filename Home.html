@@ -509,69 +509,82 @@
                 <h2 class="section-heading">Upcoming Events</h2>
                 </header>
                 
-                <div class="up-events__grid">
-                    <article class="up-events__item">
-                        <img class="up-events__image" src="Images/Events/event-preview1.jpg" alt="Upcoming event picture" width="670" height="450">
-                        <div class="up-events__price">
+                <div class="up-events-flex">
+                    <article class="up-events-flex__item up-events-flex__item1">
+                        <img class="up-events-flex__image" src="Images/Events/event-preview1.jpg" alt="Upcoming event picture" width="670" height="400">
+                        <div class="up-events-flex__price">
                             $20
                         </div>
-                        <div class="up-events__info">
+                        <div class="up-events-flex__info">
                             <ul>
                                 <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
                                 <li><i class="far fa-clock"></i><time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time></li>
                                 <li>Paris, France</li>
                             </ul>
                         </div>
-                        <div class="up-events__text">
+                        <div class="up-events-flex__text">
                             <h3>Web Design & Development Conference 2020</h3>
                             <p>
                                 Sed ut perspiciatis unde omnis iste natur error sit voluptatem accusantium doloremque <br> 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
                             </p>
                         </div>
-                        <div class="up-events__button">
+                        <div class="up-events-flex__button">
                             Join Event <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </article>
     
-                    <div class="up-events__item up-events__item--grid">
-                        <article class="up-events__subitem up-events__subitem1">
+                    <div class="up-events-flex__item up-events-flex__item2 up-events-flex__flex">
+                        <article class="up-events-flex__subitem up-events-flex__subitem1">
                             <span class="event-price">$20</span>
-                            <div class="up-events__info">
-                                <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
-                                <li><i class="far fa-clock"></i><time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time></li>
+                            <div class="up-events-flex__info">
+                                <ul>
+                                    <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
+                                    <li><i class="far fa-clock"></i><time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time></li>
+                                </ul>
                             </div>
                             <h3>Annual Conference 2020</h3>
-                            <div class="up-events__button up-events__button--no-bg">
+                            <div class="up-events-flex__button up-events-flex__button--no-bg">
                                 Join Event <i class="fas fa-long-arrow-alt-right"></i>
                             </div>
                         </article>
         
-                        <article class="up-events__subitem up-events__subitem2">
+                        <article class="up-events-flex__subitem up-events-flex__subitem2">
                             <span class="event-price">$20</span>
                             
-                            <div class="up-events__info">
-                                <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
-                                <li><i class="far fa-clock"></i><time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time></li>
+                            <div class="up-events-flex__info">
+                                <ul>
+                                    <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
+                                    <li><i class="far fa-clock"></i><time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time></li>
+                                </ul>
                             </div>
                             <h3>Annual Conference 2020</h3>
-                            <div class="up-events__button up-events__button--no-bg">
+                            <div class="up-events-flex__button up-events-flex__button--no-bg">
                                 Join Event <i class="fas fa-long-arrow-alt-right"></i>
                             </div>
                         </article>
                     </div>
-                </div>
+                </div>  
 
-                <div class="up-events__button up-events__button--bottom">
+                <div class="up-events-flex__button up-events-flex__button--bottom">
                     View all events <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
 
             </section>
 
             <!-- What Our Students Say sekce -->
-            <section>
-                <span><i class="fas fa-ellipsis-h margin-right"></i>Students Feedback<i class="fas fa-ellipsis-h margin-left"></i></span>
-                <h2>What Our Students Say</h2>
+            <section class="students-feedback">
+                <header class="students-feedback__header">
+                    <span><i class="fas fa-ellipsis-h margin-right"></i>Students Feedback<i class="fas fa-ellipsis-h margin-left"></i></span>
+                    <h2>What Our Students Say</h2>
+                </header>
+                
+                <div>
+
+                </div>
+                <article>
+
+                </article>
 
                 <img src="Images/Feedback/profile-picture1.jpg" alt="Profile picture">
                 <img src="Images/Feedback/profile-picture2.jpg" alt="Profile picture">
@@ -581,22 +594,16 @@
                 <img src="Images/Feedback/profile-picture6.jpg" alt="Profile picture">
                 <img src="Images/Feedback/profile-picture7.jpg" alt="Profile picture">
                 <img src="Images/Feedback/profile-picture8.jpg" alt="Profile picture">
-                <img src="Images/Feedback/medium-orange-block.png" alt="Medium orange block">
-                <img src="Images/Feedback/medium-white-block.png" alt="Medium white block"> 
 
-                <img src="Images/Feedback/large-white-block.png" alt="Large white block">
-                <img src="Images/Feedback/large-grayish-block.png" alt="Large grayish block">
-                <p class="students-feedback-text1">
+                <p class="students-feedback__text1">
                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
                     sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Integer lacinia. 
                     Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Integer tempor.
                 </p>
-                <p class="students-feedback-text1">
+                <p class="students-feedback__text2">
                     Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus.
                 </p>
-                <span class="students-feedback-name">
-                    Sousa Fernandes
-                </span>
+                <h3>Sousa Fernandes</h3>
                 <span class="students-feedback-role">
                     CEO & Founder
                 </span>
@@ -605,13 +612,29 @@
             </section>
 
             <!-- Become an Instructor sekce -->
-            <section>
-                <span><i class="fas fa-ellipsis-h margin-right"></i>Build A Career</span>
-                <h2>Become an Instructor</h2>
-                <p class="become-instructor-text">
-                    Proin in tellus sit amet nibh dignissim sagittis. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
-                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                </p>
+            <section class="become-instructor__box">
+                <div class="become-instructor__item1">
+                    <img class="become-instructor__image1" src="Images/Career/become-instructor-picture1.jpg"
+                        alt="Become instructor picture" width="500" height="350">
+                    <img class="become-instructor__image2" src="Images/Career/become-instructor-picture2.jpg"
+                        alt="Become instructor picture" width="500" height="350">
+                </div>
+                <div class="become-instructor__item2">
+                    <span><i class="fas fa-ellipsis-h margin-right"></i>Build A Career</span>
+                    <h2>Become an Instructor</h2>
+                    <p class="become-instructor-text">
+                        Proin in tellus sit amet nibh dignissim sagittis. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                        amet,
+                        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                        aliquam quaerat voluptatem.
+                    </p>
+                    <div>
+            
+                    </div>
+                    <div>
+            
+                    </div>
+                </div>
                 
                 <section>
                     <h3>Digitalization</h3>
@@ -629,12 +652,7 @@
                     </p>
                 </section>
 
-                <img src="Images/small-orange-rectangle.png" alt="Join us">
-                <img src="Images/right-arrow.png" alt="Right arrow">
-                <img src="Images/Career/small-white-rectangle.png" alt="Become a partner">
-
-                <img src="Images/Career/become-instructor-picture1.jpg" alt="Become instructor picture" width="500" height="350">
-                <img src="Images/Career/become-instructor-picture2.jpg" alt="Become instructor picture" width="500" height="350">
+                
 
             </section>
 
