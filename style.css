@@ -484,26 +484,27 @@ a { text-decoration: none; }
 .up-events-flex {
     max-width: 1100px;
     display: flex;
-    gap: 2rem;
+    /* gap: 2rem; */
     margin: auto;
     padding-top: 2%;
     padding-bottom: 8%;
+    justify-content: space-between;
 }
 
 .up-events-flex__item {
-    flex-basis: 35%;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 
 .up-events-flex__item1 {
     background-color: rgb(234,244,246);
     flex-shrink: 1;
-    flex-grow: 2;
+    flex-basis: 65%;
+    /* flex-grow: 2; */
 }
 
 .up-events-flex__item2 {
     flex-shrink: 0;
+    flex-basis: 32%;
 }
 
 .up-events-flex__image {
@@ -514,16 +515,16 @@ a { text-decoration: none; }
 .up-events-flex__flex {
     display: flex;
     flex-flow: column;
+    /* gap: 2rem; */
     justify-content: space-between;
-    gap: 2rem;
 }
 
 .up-events-flex__subitem {
-    background-color: chartreuse;
     background-size: cover;
     width: auto;
     color: white;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    flex-basis: 48%;
 }
 
 .up-events-flex__subitem1 {
@@ -539,6 +540,8 @@ a { text-decoration: none; }
 }
 
 
+
+
 /* What our students say */
 
 .students-feedback {
@@ -551,6 +554,52 @@ a { text-decoration: none; }
     color: white;
 }
 
+
+/* Become an instructor sekce  */
+
+.become-instructor__box {
+    position: relative;
+    background-color: rgb(234,244,246);;
+}
+
+.become-instructor__flex {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.become-instructor__item1 {
+    background-color: blue;
+    flex-basis: 50%;
+}
+
+.become-instructor__image1 {
+    max-width: 75%;
+    height: auto;
+}
+
+.become-instructor__image2 {
+    z-index: 1;
+    margin-top: -20%;
+    margin-left: 40%;
+    max-width: 50%;
+    height: auto;
+}
+
+.become-instructor__item2 {
+    flex-basis: 45%;
+}
+
+.become-instructor__item2-flex {
+    display: flex;
+
+}
+
+.become-instructor__gray-line {
+    flex-basis: 1px;
+    background-color: gray;
+}
 
 /*spodní řada log před patičkou*/
 .bottom-logos {
@@ -633,8 +682,12 @@ a { text-decoration: none; }
 
     .up-events-flex__flex {
         flex-flow: column;
+        height: 330px;
     }
-
+    
+    .up-events-flex__item2 {
+        flex-basis: unset;
+    }
 }
 
 @media (min-width: 376px) {
