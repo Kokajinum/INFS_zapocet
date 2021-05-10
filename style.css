@@ -565,13 +565,13 @@ a { text-decoration: none; }
 .become-instructor__flex {
     max-width: 1100px;
     margin: auto;
+    padding: 7% 0;
     display: flex;
     justify-content: space-between;
 }
 
 .become-instructor__item1 {
-    background-color: blue;
-    flex-basis: 50%;
+    flex-basis: 55%;
 }
 
 .become-instructor__image1 {
@@ -591,15 +591,48 @@ a { text-decoration: none; }
     flex-basis: 45%;
 }
 
-.become-instructor__item2-flex {
+.become-instructor__item2-flex1 {
     display: flex;
-
+    justify-content: space-between;
 }
 
 .become-instructor__gray-line {
     flex-basis: 1px;
     background-color: gray;
 }
+
+.become-instructor__subitem1 {
+    flex-basis: 40%;
+}
+
+.become-instructor__subitem2 {
+    margin-right: 2%;
+}
+
+.become-instructor__subitem3 {
+    flex-basis: 40%;
+}
+
+.become-instructor__item2-flex2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+    padding-top: 5%;
+}
+
+.become-instructor__subitem4 {
+    color: white;
+    background-color: rgb(255, 102, 0);
+    padding: 5% 7%;
+}
+
+.become-instructor__subitem5 {
+    background-color: white;
+    padding: 5% 7%;
+}
+
+
+
 
 /*spodní řada log před patičkou*/
 .bottom-logos {
@@ -615,6 +648,11 @@ a { text-decoration: none; }
     display: inline-block;
 }
 
+
+
+
+
+
 @media (max-width: 1200px) {
     .side-bar__item4 {
         display: none;
@@ -622,6 +660,10 @@ a { text-decoration: none; }
 
     .welcome-box h2 {
         font-size: 300%;
+    }
+
+    .become-instructor__item2-flex2 {
+        max-width: 100%;
     }
 }
 
@@ -653,6 +695,10 @@ a { text-decoration: none; }
 
     .up-events-flex__subitem {
         height: 200px;
+    }
+
+    .become-instructor__flex {
+        flex-flow: column;
     }
 }
 
