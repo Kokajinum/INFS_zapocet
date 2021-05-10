@@ -456,14 +456,13 @@ a { text-decoration: none; }
 }
 
 .instructors__item {
-    width: 100%;
     background-color: white;
 }
 
 .instructors__image {
     width: 100%;
     height: auto;
-    display: block;
+    /* display: block; */
 }
 
 
@@ -634,6 +633,33 @@ a { text-decoration: none; }
 
 
 
+/* Latest News & Blog sekce */
+.news-blog {
+    background-color: white;
+    padding-top: 7%;
+}
+
+.news-blog__header {
+    text-align: center;
+}
+
+.news-blog__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding-top: 4%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.news-blog__image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
 /*spodní řada log před patičkou*/
 .bottom-logos {
     width:100%;
@@ -647,6 +673,10 @@ a { text-decoration: none; }
     height: 10%;
     display: inline-block;
 }
+
+
+
+
 
 
 
