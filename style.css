@@ -2,6 +2,21 @@
     margin: 0;
 }*/
 
+.color-blue {
+    color: blue;
+}
+
+.color-lightblue {
+    color: lightskyblue;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-violet {
+    color:mediumvioletred;
+}
 
 
 html { background-color: rgb(234,244,246); }
@@ -237,10 +252,7 @@ a { text-decoration: none; }
 
 
 
-/*nadpis u sekcí*/
-.section-heading {
-    
-}
+
 
 /*statistics sekce*/
 .stats {
@@ -635,8 +647,9 @@ a { text-decoration: none; }
 
 /* Latest News & Blog sekce */
 .news-blog {
+    box-sizing: border-box;
     background-color: white;
-    padding-top: 7%;
+    padding: 7% 0;
 }
 
 .news-blog__header {
@@ -645,35 +658,216 @@ a { text-decoration: none; }
 
 .news-blog__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 2rem;
     padding-top: 4%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 17%;
+    padding-right: 17%;
+}
+
+.news-blog__item {
+    position: relative;
 }
 
 .news-blog__image {
+    display: block;
     width: 100%;
     height: auto;
 }
+
+.news-blog__content {
+    height: 170px;
+    padding: 7%;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.news-blog__content li {
+    display: inline;
+}
+
+.news-blog__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5% 6%;
+    color: white;
+    background-color: rgb(6,42,54);
+    cursor: pointer;
+}
+
+.news-blog__button:hover {
+    background-color: rgb(255, 102, 0);
+}
+
+
 
 
 
 
 /*spodní řada log před patičkou*/
 .bottom-logos {
-    width:100%;
+    display: flex;
+    background-color: rgb(255, 102, 0);
+    justify-content: space-between;
+    padding: 3% 15%;
+    /*width:100%;
     height: auto;
     text-align: center;
+    background-color: rgb(255, 102, 0);*/
+}
+
+.bottom-logos__image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/*patička webové stránky*/
+.main-footer {
+    background-color: rgb(6,42,54);
+}
+
+.main-footer h3 {
+    color: white;
+}
+
+.main-footer__content {
+    /* max-width: 1000px; */
+    padding: 5% 17%;
+}
+
+.main-footer__flex1 {
+    display: flex;
+}
+
+.main-footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer__logo h2 {
+    color: white;
+}
+
+.main-footer__subflex1-1 {
+    flex-basis: 40%;
+}
+
+/*.main-footer__subflex1-2 li {
+    display: inline;
+}*/
+
+.main-footer__subflex1-2 {
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 0;
+    /* flex-basis: 60%; */
+    flex-basis: 60%;
+    justify-content: space-between;
+}
+
+.main-footer__subflex1-2 li {
+    color: white;
+    cursor: pointer;
+}
+
+.main-footer__subflex1-2 i {
+    vertical-align: middle; 
+}
+
+
+.main-footer__line {
+    height: 1px;
+    background-color: white;
+    margin-top: 4%;
+}
+
+.main-footer__flex2 {
+    display: flex;
+    margin-top: 5%;
+    height: 400px;
+}
+
+.main-footer__our-courses {
+    flex-basis: 60%;
+}
+
+.main-footer__subflex2-1 {
+    display: flex;
+    flex-flow: column wrap;
+    height: 150px;
+    width: 48%;
+}
+
+.main-footer__subflex2-1, .main-footer__subflex2-2 {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+
+.main-footer__subflex2-1 li:first-child {
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+.main-footer__subflex2-1 li:first-child::marker {
+    color: rgb(255, 102, 0);
+    /* font-size: 1.5em; */
+    
+}
+
+.main-footer__subflex2-1 li {
+    width: 100%;
+    flex-basis: 30px;
+}
+
+.main-footer__company {
+    margin-left: 5%;
+    flex-basis: 25%;
+}
+
+.main-footer__subflex2-2 {
+    display: flex;
+    flex-flow: column;
+}
+
+.main-footer__subflex2-2 li {
+    /* line-height: 150%; */
+    flex-basis: 30px;
+}
+
+.main-footer__form {
+    margin-top: 5%;
+}
+
+.main-footer__form-flex {
+    display: flex;
+}
+
+.main-footer__email {
+    background-color: rgb(13, 52, 65);
+    flex-basis: 80%;
+    height: 40px;
+}
+
+.main-footer__input {
+    background-color: rgb(13, 52, 65);
+    box-shadow: none;
+    border: none;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.main-footer__submit {
     background-color: rgb(255, 102, 0);
+    color: white;
+    border: none;
+    flex-basis: 15%;
 }
-
-.bottom-logos__item {
-    width: 15%;
-    height: 10%;
-    display: inline-block;
-}
-
 
 
 
