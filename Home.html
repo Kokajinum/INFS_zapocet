@@ -1,839 +1,898 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Petr Kozak">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Hind&family=Roboto:wght@300&display=swap" rel="stylesheet">  
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/c687dc85d9.js" crossorigin="anonymous"></script>
-        <title>EduPlus</title>
-    </head>
 
-    <body>
-        <!-- hlavička celé stránky -->
-        <header>
-            <div class="logo">
-                <a href="Home.html"><img class="logo__image" src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo"></a>
-                <a href="Home.html"><h1 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h1></a>
-            </div>
-            <!-- hlavní navigační prvky -->
-            <nav class="navigation">
-                <ul class="menu">
-                    <li class="menu__item"><a href="Home.html">Home</a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="About-us.html">About Us</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item"><a href="Our-Courses.html">Courses</a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="Our-Courses.html">Courses</a></li>
-                            <li class="submenu__item"><a href="#">Courses List</a></li>
-                            <li class="submenu__item"><a href="Courses-Details.html">Courses Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item"><a href="Events-Details.html">Events</a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="#">Events</a></li>
-                            <li class="submenu__item"><a href="#">Events list</a></li>
-                            <li class="submenu__item"><a href="Events-Details.html">Events details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item"><a href="#">Pages</a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="#">Pages</a></li>
-                            <li class="submenu__item"><a href="#">Pages list</a></li>
-                            <li class="submenu__item"><a href="#">Pages details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item"><a href="Blog-standard.html">Blog</a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="#">Blog</a></li>
-                            <li class="submenu__item"><a href="Blog-standard.html">Blog list</a></li>
-                            <li class="submenu__item"><a href="Blog-details.html">Blog details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item"><a href="Contact-us.html">Contact</a></li>
-                </ul>
-            </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Petr Kozak">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c687dc85d9.js" crossorigin="anonymous"></script>
+    <title>EduPlus</title>
+</head>
 
-            <div class="side-bar header__side-bar">
-                <div class="side-bar__item1">
-                    <i class="fab fa-facebook-f  fb-icon1"></i>
-                </div>
-                <div class="side-bar__item2">
-                    <i class="fab fa-youtube yt-icon1"></i>
-                </div>  
-                <div class="side-bar__item3">
-                    <div class="sign-in">
-                        <i class="far fa-user-circle user-icon1"></i>
-                        Sign in
-                    </div>
-                </div>
-                <div class="side-bar__item4">
-                    <i class="fas fa-th fa-3x menu-icon1"></i>
-                </div>
-            </div>
-            
-        </header>
-
-        <!-- hlavní obsah -->
-        <main>
-            <article class="welcome-box">
-                <div class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Welcome To EduPlus</div>
-            
-                <h2><strong>More than 1200 Online Courses</strong></h2>
-
-                <div class="search-bar">
-                    <form method="POST">
-                        <input type="text" placeholder="Search Courses" name="search-courses" class="search-bar__input">
-                        <button type="submit" class="search-bar__button"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-                
-                <div class="online-support">
-                    <p class="online-support__text1">
-                        Sed ut perspiciatis unde omnis <br> natur error sit voluptatem
-                    </p>
-
-                    <div class="online-support__line"></div>
-                    
-                    <div class="online-support__icon">
-                        <i class="fas fa-headset fa-2x"></i>
-                    </div>
-                
-                    <p class="online-support__text2">
-                        <span>ONLINE SUPPORT</span> <br> 
-                        <span>+012 (345) 6789</span>
-                    </p>
-                </div>
-                
-            </article>
-            
-
-            <!-- Statistics sekce -->
-            <section class="stats">
-                <div class="stats__item">
-                    <div class="stats__icon">
-                        <i class="far fa-user fa-2x"></i>
-                    </div>
-                    <div class="stats__text">
-                        <div class="stats__text--big">
-                            3045+
-                        </div>
-                        <div class="stats__text--small">
-                            Safisfied Students
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stats__item">
-                    <div class="stats__icon">
-                        <i class="fas fa-book fa-2x"></i>
-                    </div>
-                    <div class="stats__text">
-                        <div class="stats__text--big">
-                            7852+
-                        </div>
-                        <div class="stats__text--small">
-                            Available Courses
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <div class="stats__item">
-                    <div class="stats__icon">
-                        <i class="fas fa-graduation-cap fa-2x"></i>
-                    </div>
-                    <div class="stats__text">
-                        <div class="stats__text--big">
-                            9862+
-                        </div>
-                        <div class="stats__text--small">
-                            Graduate Students
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <div class="stats__item">
-                    <div class="stats__icon">
-                        <i class="fas fa-laptop-code fa-2x"></i>
-                    </div>
-                    <div class="stats__text">
-                        <div class="stats__text--big">
-                            8963+
-                        </div>
-                        <div class="stats__text--small">
-                            Active Courses
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Course categories sekce -->
-            <section class="course-categories-box">
-                <div class="course-categories__heading">
-                    <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>
-                        Popular Categories<i class="fas fa-ellipsis-h margin-left"></i></span>
-                    <h2 class="section-heading">Course Categories</h2>
-                </div>
-                <div class="course-categories-grid">               
-                    <article class="course-categories-grid__item">
-                        <img src="Images/Courses/home-graphics-design.png" alt="Graphics Design" class="course-categories-grid__image">
-                        <div class="course-categories-grid__text">
-                            <h3>Graphics Design (UI)</h3>
-                            <p>Web Design Course</p>
-                            <ul>
-                                <li><i class="fas fa-users"></i> 250</li>
-                                <li><i class="fas fa-book"></i> 800+ Courses</li>
-                            </ul>
-                        </div>   
-                    </article>
-                    <article class="course-categories-grid__item">
-                        <img src="Images/Courses/home-business-studies.png" alt="Business Studies" class="course-categories-grid__image">
-                        <div class="course-categories-grid__text">
-                            <h3>Business Studies</h3>
-                            <p>Finance Business</p>
-                            <ul>
-                                <li><i class="fas fa-users"></i> 320</li>
-                                <li><i class="fas fa-book"></i> 750+ Courses</li>
-                            </ul> 
-                        </div>
-                         
-                    </article>
-                    <article class="course-categories-grid__item">
-                        <img src="Images/Courses/home-web-development.png" alt="Web Development" class="course-categories-grid__image">
-                        <div class="course-categories-grid__text">
-                            <h3>Web Development</h3>
-                            <p>Web Design Course</p>
-                            <ul>
-                                <li><i class="fas fa-users"></i> 320</li>
-                                <li><i class="fas fa-book"></i> 750+ Courses</li>
-                            </ul> 
-                        </div>
-                        
-                    </article>
-                    <article class="course-categories-grid__item">
-                        <img src="Images/Courses/home-product-engineering.png" alt="Producit Engineering" class="course-categories-grid__image">
-                        <div class="course-categories-grid__text">
-                            <h3>Product Engineering</h3>
-                            <p>Web Design Course</p>
-                            <ul>
-                                <li><i class="fas fa-users"></i> 320</li>
-                                <li><i class="fas fa-book"></i> 750+ Courses</li>
-                            </ul> 
-                        </div>
-                    </article>
-                    <article class="course-categories-grid__item">
-                        <img src="Images/Courses/home-basic-photography.png" alt="Basic Photography" class="course-categories-grid__image">
-                        <div class="course-categories-grid__text">
-                            <h3>Basic Photography</h3>
-                            <p>Film Movies & Photography</p>
-                            <ul>
-                                <li><i class="fas fa-users"></i> 320</li>
-                                <li><i class="fas fa-book"></i> 750+ Courses</li>
-                            </ul> 
-                        </div>
-                    </article>
-                    <article class="course-categories-grid__item">
-                        <img src="Images/Courses/home-medical-health.png" alt="Medical & Health" class="course-categories-grid__image">
-                        <div class="course-categories-grid__text">
-                            <h3>Medical & Health</h3>
-                            <p>Doctors & Nursing</p>
-                            <ul>
-                                <li><i class="fas fa-users"></i> 320</li>
-                                <li><i class="fas fa-book"></i> 750+ Courses</li>
-                            </ul> 
-                        </div>
-                        
-                    </article>
-                    <article class="course-categories-grid__item">
-                        <img src="Images/Courses/home-marketing-strategy.png" alt="Marketing Strategy" class="course-categories-grid__image">
-                        <div class="course-categories-grid__text">
-                            <h3>Marketing Strategy</h3>
-                            <p>Social Media Marketing</p>
-                            <ul>
-                                <li><i class="fas fa-users"></i> 250</li>
-                                <li><i class="fas fa-book"></i> 50+ Courses</li>
-                            </ul>
-                        </div> 
-                    </article>
-                    <article class="course-categories-grid__item">
-                        <img src="Images/Courses/home-mobile-design.png" alt="Mobile UI Design" class="course-categories-grid__image">
-                        <div class="course-categories-grid__text">
-                            <h3>Mobile UI Design</h3>
-                            <p>Web Design Course</p>
-                            <ul>
-                                <li><i class="fas fa-users"></i> 320</li>
-                                <li><i class="fas fa-book"></i> 750+ Courses</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-            </section>
-            
-            <!-- Available Courses sekce -->
-            <section class="available-courses-box">
-                <div class="available-courses-grid__heading">
-                    <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>
-                        Popular Courses<i class="fas fa-ellipsis-h margin-left"></i></span>
-                    <h2 class="section-heading section-heading--white">Available Courses</h2>
-                </div>
-                <div class="available-courses-grid">  
-                    <article class="available-courses-grid__item">
-                            <img class="available-courses-grid__image" src="Images/Courses/english-learning-course.jpg"
-                             alt="English Learning Course" width="370" height="250">
-                            <div class="available-courses-grid__flex1">
-                                <div class="available-courses-grid__instructor">
-                                    <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35">
-                                </div>
-                                <div class="available-courses-grid__name">
-                                    Warner
-                                </div>
-                                <div class="available-courses-grid__price">
-                                    $59.95
-                                </div>
-                            </div>
-                            <div class="available-courses-grid__flex2">
-                                <div class="available-courses-grid__subject">
-                                    ENGLISH 
-                                </div>
-                                <div class="available-courses-grid__star-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                            <h3><span>Best Courses For Learning</span>English Courses</h3>
-                            <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
-                            <div class="available-courses-grid__content">
-                                <ul>
-                                    <li><i class="fas fa-users"></i>25</li>
-                                    <li><i class="far fa-clock"></i>36hr</li>
-                                    <li><i class="far fa-comments"></i>2.5k</li>
-                                </ul>
-                            </div>
-                    </article>
-    
-                    <article class="available-courses-grid__item">
-                            <img class="available-courses-grid__image" src="Images/Courses/business-solutions-course.jpg" alt="Business Course" width="370" height="250">
-                        <div class="available-courses-grid__flex1">
-                            <div class="available-courses-grid__instructor">
-                                <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35"> Warner
-                            </div>
-                            <div class="available-courses-grid__price">
-                                $59.95
-                            </div>
-                        </div>
-                        <div class="available-courses-grid__flex2">
-                            <div class="available-courses-grid__subject">
-                                BUSINESS 
-                            </div>
-                            <div class="available-courses-grid__star-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                        <h3><span>Learning About It Consulting</span>Business Solutions</h3>
-                        <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
-                        <div class="available-courses-grid__content">
-                            <ul>
-                                <li><i class="fas fa-users"></i>25</li>
-                                <li><i class="far fa-clock"></i>36hr</li>
-                                <li><i class="far fa-comments"></i>2.5k</li>
-                            </ul>
-                        </div>
-                    </article>
-    
-                    <article class="available-courses-grid__item">
-                        <img class="available-courses-grid__image" src="Images/Courses/web-design-course.jpg" alt="Web Design Course" width="370" height="250">
-                        <div class="available-courses-grid__flex1">
-                            <div class="available-courses-grid__instructor">
-                                <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35"> Warner
-                            </div>
-                            <div class="available-courses-grid__price">
-                                $59.95
-                            </div>
-                        </div>
-                        <div class="available-courses-grid__flex2">
-                            <div class="available-courses-grid__subject">
-                                DESIGN
-                            </div>
-                            <div class="available-courses-grid__star-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                        <h3><span>Introduced About Basic Web</span>Design For Beginners</h3>
-                        <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
-                        <div class="available-courses-grid__content">
-                            <ul>
-                                <li><i class="fas fa-users"></i>25</li>
-                                <li><i class="far fa-clock"></i>36hr</li>
-                                <li><i class="far fa-comments"></i>2.5k</li>
-                            </ul>
-                        </div>
-                    </article>
-    
-                </div>
-                <div class="available-courses-grid__button">
-                    <p>
-                        View all courses
-                    </p>
-                </div>
-            </section>
-            
-
-            <!-- Campus Gallery sekce -->
-            <section class="gallery-box">
-
-                <div class="gallery__heading">
-                    <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Photo & Album<i class="fas fa-ellipsis-h margin-left"></i></span> 
-                    <h2>Campus Gallery</h2>
-                </div>
-                
-                <div class="gallery__tabs">
-                    <ul>
-                        <li><a href="#">Show All</a></li>
-                        <li><a href="#">University</a></li>
-                        <li><a href="#">Group Study</a></li>
-                        <li><a href="#">Awards</a></li>
-                        <li><a href="#">Students</a></li>
-                        <li><a href="#">Teachers</a></li>
-                        <li><a href="#">Campus</a></li>
+<body>
+    <!-- hlavička celé stránky -->
+    <header>
+        <div class="logo">
+            <a href="Home.html"><img class="logo__image" src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo"></a>
+            <a href="Home.html">
+                <h1 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h1>
+            </a>
+        </div>
+        <!-- hlavní navigační prvky -->
+        <nav class="navigation">
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__href" href="Home.html">Home</a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="About-us.html">About Us</a></li>
                     </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Our-Courses.html">Courses</a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="Our-Courses.html">Courses</a></li>
+                        <li class="submenu__item"><a href="#">Courses List</a></li>
+                        <li class="submenu__item"><a href="Courses-Details.html">Courses Details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Events-Details.html">Events</a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="#">Events</a></li>
+                        <li class="submenu__item"><a href="#">Events list</a></li>
+                        <li class="submenu__item"><a href="Events-Details.html">Events details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="#">Pages</a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="#">Pages</a></li>
+                        <li class="submenu__item"><a href="#">Pages list</a></li>
+                        <li class="submenu__item"><a href="#">Pages details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Blog-standard.html">Blog</a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="#">Blog</a></li>
+                        <li class="submenu__item"><a href="Blog-standard.html">Blog list</a></li>
+                        <li class="submenu__item"><a href="Blog-details.html">Blog details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item menu__item--noafter"><a class="menu__href" href="Contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="side-bar header__side-bar">
+            <div class="side-bar__item1">
+                <i class="fab fa-facebook-f  fb-icon1"></i>
+            </div>
+            <div class="side-bar__item2">
+                <i class="fab fa-youtube yt-icon1"></i>
+            </div>
+            <div class="side-bar__item3">
+                <div class="sign-in">
+                    <i class="far fa-user-circle user-icon1"></i>
+                    Sign in
+                </div>
+            </div>
+            <div class="side-bar__item4">
+                <i class="fas fa-th fa-3x menu-icon1"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- hlavní obsah -->
+    <main>
+        <article class="welcome-box">
+            <div class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Welcome To EduPlus</div>
+
+            <h2><strong>More than 1200 Online Courses</strong></h2>
+            
+            <form method="POST">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Courses" name="search-courses" class="search-bar__input">
+                    <button type="submit" class="search-bar__button"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+
+            <div class="online-support">
+                <p class="online-support__text1">
+                    Sed ut perspiciatis unde omnis <br> natur error sit voluptatem
+                </p>
+
+                <div class="online-support__line"></div>
+
+                <div class="online-support__icon">
+                    <i class="fas fa-headset fa-2x"></i>
                 </div>
 
-                
+                <p class="online-support__text2">
+                    <span>ONLINE SUPPORT</span> <br>
+                    <span>+012 (345) 6789</span>
+                </p>
+            </div>
 
-                <div class="gallery__images-grid">
-                    <a href="#"><img class="gallery__image" src="Images/Campus/campus-gallery-students1.jpg" alt="Gallery picture" width="370" height="370"></a>
-                    <a href="#"><img class="gallery__image" src="Images/Campus/campus-gallery-students2.jpg" alt="Gallery picture" width="370" height="370"></a>
-                    <a href="#"><img class="gallery__image" src="Images/Campus/campus-gallery-students3.jpg" alt="Gallery picture" width="370" height="370"></a>
-                    <a href="#"><img class="gallery__image" src="Images/Campus/campus-gallery-students4.jpg" alt="Gallery picture" width="370" height="370"></a>
-                    <a href="#"><img class="gallery__image" src="Images/Campus/campus-gallery-students5.jpg" alt="Gallery picture" width="370" height="370"></a>
-                    <a href="#"><img class="gallery__image" src="Images/Campus/campus-gallery-students6.jpg" alt="Gallery picture" width="370" height="370"></a>
+        </article>
+
+
+        <!-- Statistics sekce -->
+        <section class="stats">
+            <div class="stats__item">
+                <div class="stats__icon">
+                    <i class="far fa-user fa-2x"></i>
                 </div>
-                
-            </section>
-
-            <!-- Expert Instructors sekce -->
-            <section class="instructors-box">
-
-                <header class="instructors__header">
-                    <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Team Members<i class="fas fa-ellipsis-h margin-left"></i></span>
-                    <h2 class="section-heading">Expert Instructors</h2>
-                </header>
-                
-                <div class="instructors__grid">
-                    <article class="instructors__item">
-                        <img class="instructors__image" src="Images/Instructors/instructor-profile1.jpg" alt="Instructor profile picture"
-                        width="270" height="250">
-                        <div class="instructors__text1">
-                            <h3>Somalia D Silva</h3>
-                            Math Teacher
-                        </div>
-                        <div class="instructors__line"></div>
-                        <div class="instructors__text2">
-                            <ul>
-                                <li><i class="fas fa-book"></i>750+ Courses</li>
-                            </ul>
-                        </div>
-                    </article>
-    
-                    <article class="instructors__item">
-                        <img class="instructors__image" src="Images/Instructors/instructor-profile2.jpg" alt="Instructor profile picture"
-                        width="270" height="250">
-                        <div class="instructors__text1">
-                            <h3>David D Warner</h3>
-                            English Teacher
-                        </div>
-                        <div class="instructors__line"></div>
-                        <div class="instructors__text2">
-                            <ul>
-                                <li><i class="fas fa-book"></i>3850+ Courses</li>
-                            </ul>
-                        </div>
-                    </article>
-    
-                    <article class="instructors__item">
-                        <img class="instructors__image" src="Images/Instructors/instructor-profile3.jpg" alt="Instructor profile picture"
-                        width="270" height="250">
-                        <div class="instructors__text1">
-                            <h3>Xavi Toni Crusse</h3>
-                            Computer Teacher
-                        </div>
-                        <div class="instructors__line"></div>
-                        <div class="instructors__text2">
-                            <ul>
-                                <li><i class="fas fa-book"></i>632+ Courses</li>
-                            </ul>
-                        </div>
-                        
-                    </article>
-    
-                    <article class="instructors__item">
-                        <img class="instructors__image" src="Images/Instructors/instructor-profile4.jpg" alt="Instructor profile picture"
-                        width="270" height="250">
-                        <div class="instructors__text1">
-                            <h3>Shaine Watson</h3>
-                            Web Designer
-                        </div>
-                        <div class="instructors__line"></div>
-                        <div class="instructors__text2">
-                            <ul>
-                                <li><i class="fas fa-book"></i>985+ Courses</li>
-                            </ul>
-                        </div>
-                    </article>
+                <div class="stats__text">
+                    <div class="stats__text--big">
+                        3045+
+                    </div>
+                    <div class="stats__text--small">
+                        Safisfied Students
+                    </div>
                 </div>
-                
+            </div>
 
-            </section>
+            <div class="stats__item">
+                <div class="stats__icon">
+                    <i class="fas fa-book fa-2x"></i>
+                </div>
+                <div class="stats__text">
+                    <div class="stats__text--big">
+                        7852+
+                    </div>
+                    <div class="stats__text--small">
+                        Available Courses
+                    </div>
 
-            <!-- Upcoming Events sekce -->
-            <section class="up-events-box">
-                <header class="up-events__header">
-                    <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Latest Events<i class="fas fa-ellipsis-h margin-left"></i></span>
+                </div>
+            </div>
+
+            <div class="stats__item">
+                <div class="stats__icon">
+                    <i class="fas fa-graduation-cap fa-2x"></i>
+                </div>
+                <div class="stats__text">
+                    <div class="stats__text--big">
+                        9862+
+                    </div>
+                    <div class="stats__text--small">
+                        Graduate Students
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="stats__item">
+                <div class="stats__icon">
+                    <i class="fas fa-laptop-code fa-2x"></i>
+                </div>
+                <div class="stats__text">
+                    <div class="stats__text--big">
+                        8963+
+                    </div>
+                    <div class="stats__text--small">
+                        Active Courses
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course categories sekce -->
+        <section class="course-categories-box">
+            <div class="course-categories__heading">
+                <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>
+                    Popular Categories<i class="fas fa-ellipsis-h margin-left"></i></span>
+                <h2 class="section-heading">Course Categories</h2>
+            </div>
+            <div class="course-categories-grid">
+                <article class="course-categories-grid__item">
+                    <img src="Images/Courses/home-graphics-design.png" alt="Graphics Design"
+                        class="course-categories-grid__image">
+                    <div class="course-categories-grid__text">
+                        <h3>Graphics Design (UI)</h3>
+                        <p>Web Design Course</p>
+                        <ul>
+                            <li><i class="fas fa-users"></i> 250</li>
+                            <li><i class="fas fa-book"></i> 800+ Courses</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="course-categories-grid__item">
+                    <img src="Images/Courses/home-business-studies.png" alt="Business Studies"
+                        class="course-categories-grid__image">
+                    <div class="course-categories-grid__text">
+                        <h3>Business Studies</h3>
+                        <p>Finance Business</p>
+                        <ul>
+                            <li><i class="fas fa-users"></i> 320</li>
+                            <li><i class="fas fa-book"></i> 750+ Courses</li>
+                        </ul>
+                    </div>
+
+                </article>
+                <article class="course-categories-grid__item">
+                    <img src="Images/Courses/home-web-development.png" alt="Web Development"
+                        class="course-categories-grid__image">
+                    <div class="course-categories-grid__text">
+                        <h3>Web Development</h3>
+                        <p>Web Design Course</p>
+                        <ul>
+                            <li><i class="fas fa-users"></i> 320</li>
+                            <li><i class="fas fa-book"></i> 750+ Courses</li>
+                        </ul>
+                    </div>
+
+                </article>
+                <article class="course-categories-grid__item">
+                    <img src="Images/Courses/home-product-engineering.png" alt="Producit Engineering"
+                        class="course-categories-grid__image">
+                    <div class="course-categories-grid__text">
+                        <h3>Product Engineering</h3>
+                        <p>Web Design Course</p>
+                        <ul>
+                            <li><i class="fas fa-users"></i> 320</li>
+                            <li><i class="fas fa-book"></i> 750+ Courses</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="course-categories-grid__item">
+                    <img src="Images/Courses/home-basic-photography.png" alt="Basic Photography"
+                        class="course-categories-grid__image">
+                    <div class="course-categories-grid__text">
+                        <h3>Basic Photography</h3>
+                        <p>Film Movies & Photography</p>
+                        <ul>
+                            <li><i class="fas fa-users"></i> 320</li>
+                            <li><i class="fas fa-book"></i> 750+ Courses</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="course-categories-grid__item">
+                    <img src="Images/Courses/home-medical-health.png" alt="Medical & Health"
+                        class="course-categories-grid__image">
+                    <div class="course-categories-grid__text">
+                        <h3>Medical & Health</h3>
+                        <p>Doctors & Nursing</p>
+                        <ul>
+                            <li><i class="fas fa-users"></i> 320</li>
+                            <li><i class="fas fa-book"></i> 750+ Courses</li>
+                        </ul>
+                    </div>
+
+                </article>
+                <article class="course-categories-grid__item">
+                    <img src="Images/Courses/home-marketing-strategy.png" alt="Marketing Strategy"
+                        class="course-categories-grid__image">
+                    <div class="course-categories-grid__text">
+                        <h3>Marketing Strategy</h3>
+                        <p>Social Media Marketing</p>
+                        <ul>
+                            <li><i class="fas fa-users"></i> 250</li>
+                            <li><i class="fas fa-book"></i> 50+ Courses</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="course-categories-grid__item">
+                    <img src="Images/Courses/home-mobile-design.png" alt="Mobile UI Design"
+                        class="course-categories-grid__image">
+                    <div class="course-categories-grid__text">
+                        <h3>Mobile UI Design</h3>
+                        <p>Web Design Course</p>
+                        <ul>
+                            <li><i class="fas fa-users"></i> 320</li>
+                            <li><i class="fas fa-book"></i> 750+ Courses</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Available Courses sekce -->
+        <section class="available-courses-box">
+            <div class="available-courses-grid__heading">
+                <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>
+                    Popular Courses<i class="fas fa-ellipsis-h margin-left"></i></span>
+                <h2 class="section-heading section-heading--white">Available Courses</h2>
+            </div>
+            <div class="available-courses-grid">
+                <article class="available-courses-grid__item">
+                    <img class="available-courses-grid__image" src="Images/Courses/english-learning-course.jpg"
+                        alt="English Learning Course" width="370" height="250">
+                    <div class="available-courses-grid__flex1">
+                        <div class="available-courses-grid__instructor">
+                            <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40"
+                                height="35">
+                        </div>
+                        <div class="available-courses-grid__name">
+                            Warner
+                        </div>
+                        <div class="available-courses-grid__price">
+                            $59.95
+                        </div>
+                    </div>
+                    <div class="available-courses-grid__flex2">
+                        <div class="available-courses-grid__subject">
+                            ENGLISH
+                        </div>
+                        <div class="available-courses-grid__star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <h3><span>Best Courses For Learning</span>English Courses</h3>
+                    <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
+                    <div class="available-courses-grid__content">
+                        <ul>
+                            <li><i class="fas fa-users"></i>25</li>
+                            <li><i class="far fa-clock"></i>36hr</li>
+                            <li><i class="far fa-comments"></i>2.5k</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="available-courses-grid__item">
+                    <img class="available-courses-grid__image" src="Images/Courses/business-solutions-course.jpg"
+                        alt="Business Course" width="370" height="250">
+                    <div class="available-courses-grid__flex1">
+                        <div class="available-courses-grid__instructor">
+                            <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40"
+                                height="35"> Warner
+                        </div>
+                        <div class="available-courses-grid__price">
+                            $59.95
+                        </div>
+                    </div>
+                    <div class="available-courses-grid__flex2">
+                        <div class="available-courses-grid__subject">
+                            BUSINESS
+                        </div>
+                        <div class="available-courses-grid__star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <h3><span>Learning About It Consulting</span>Business Solutions</h3>
+                    <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
+                    <div class="available-courses-grid__content">
+                        <ul>
+                            <li><i class="fas fa-users"></i>25</li>
+                            <li><i class="far fa-clock"></i>36hr</li>
+                            <li><i class="far fa-comments"></i>2.5k</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="available-courses-grid__item">
+                    <img class="available-courses-grid__image" src="Images/Courses/web-design-course.jpg"
+                        alt="Web Design Course" width="370" height="250">
+                    <div class="available-courses-grid__flex1">
+                        <div class="available-courses-grid__instructor">
+                            <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40"
+                                height="35"> Warner
+                        </div>
+                        <div class="available-courses-grid__price">
+                            $59.95
+                        </div>
+                    </div>
+                    <div class="available-courses-grid__flex2">
+                        <div class="available-courses-grid__subject">
+                            DESIGN
+                        </div>
+                        <div class="available-courses-grid__star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <h3><span>Introduced About Basic Web</span>Design For Beginners</h3>
+                    <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
+                    <div class="available-courses-grid__content">
+                        <ul>
+                            <li><i class="fas fa-users"></i>25</li>
+                            <li><i class="far fa-clock"></i>36hr</li>
+                            <li><i class="far fa-comments"></i>2.5k</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+            <div class="available-courses-grid__button">
+                <p>
+                    View all courses
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Campus Gallery sekce -->
+        <section class="gallery-box">
+            <header class="gallery__header">
+                <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Photo & Album<i
+                    class="fas fa-ellipsis-h margin-left"></i></span>
+                <h2>Campus Gallery</h2>
+            </header>
+
+            <div class="gallery__tabs">
+                <ul>
+                    <li><a href="#">Show All</a></li>
+                    <li><a href="#">University</a></li>
+                    <li><a href="#">Group Study</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Students</a></li>
+                    <li><a href="#">Teachers</a></li>
+                    <li><a href="#">Campus</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="gallery__images-grid">
+                <a href="#"><img class="gallery__image" src="Images/Campus/campus-gallery-students1.jpg"
+                        alt="Gallery picture" width="370" height="370"></a>
+                <a href="#"><img class="gallery__image" src="Images/Campus/campus-gallery-students2.jpg"
+                        alt="Gallery picture" width="370" height="370"></a>
+                <a href="#"><img class="gallery__image" src="Images/Campus/campus-gallery-students3.jpg"
+                        alt="Gallery picture" width="370" height="370"></a>
+                <a href="#"><img class="gallery__image" src="Images/Campus/campus-gallery-students4.jpg"
+                        alt="Gallery picture" width="370" height="370"></a>
+                <a href="#"><img class="gallery__image" src="Images/Campus/campus-gallery-students5.jpg"
+                        alt="Gallery picture" width="370" height="370"></a>
+                <a href="#"><img class="gallery__image" src="Images/Campus/campus-gallery-students6.jpg"
+                        alt="Gallery picture" width="370" height="370"></a>
+            </div>
+
+        </section>
+
+        <!-- Expert Instructors sekce -->
+        <section class="instructors-box">
+
+            <header class="instructors__header">
+                <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Team Members<i
+                        class="fas fa-ellipsis-h margin-left"></i></span>
+                <h2 class="section-heading">Expert Instructors</h2>
+            </header>
+
+            <div class="instructors__grid">
+                <article class="instructors__item">
+                    <img class="instructors__image" src="Images/Instructors/instructor-profile1.jpg"
+                        alt="Instructor profile picture" width="270" height="250">
+                    <div class="instructors__text1">
+                        <h3>Somalia D Silva</h3>
+                        Math Teacher
+                    </div>
+                    <div class="instructors__line"></div>
+                    <div class="instructors__text2">
+                        <ul>
+                            <li><i class="fas fa-book"></i>750+ Courses</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="instructors__item">
+                    <img class="instructors__image" src="Images/Instructors/instructor-profile2.jpg"
+                        alt="Instructor profile picture" width="270" height="250">
+                    <div class="instructors__text1">
+                        <h3>David D Warner</h3>
+                        English Teacher
+                    </div>
+                    <div class="instructors__line"></div>
+                    <div class="instructors__text2">
+                        <ul>
+                            <li><i class="fas fa-book"></i>3850+ Courses</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="instructors__item">
+                    <img class="instructors__image" src="Images/Instructors/instructor-profile3.jpg"
+                        alt="Instructor profile picture" width="270" height="250">
+                    <div class="instructors__text1">
+                        <h3>Xavi Toni Crusse</h3>
+                        Computer Teacher
+                    </div>
+                    <div class="instructors__line"></div>
+                    <div class="instructors__text2">
+                        <ul>
+                            <li><i class="fas fa-book"></i>632+ Courses</li>
+                        </ul>
+                    </div>
+
+                </article>
+
+                <article class="instructors__item">
+                    <img class="instructors__image" src="Images/Instructors/instructor-profile4.jpg"
+                        alt="Instructor profile picture" width="270" height="250">
+                    <div class="instructors__text1">
+                        <h3>Shaine Watson</h3>
+                        Web Designer
+                    </div>
+                    <div class="instructors__line"></div>
+                    <div class="instructors__text2">
+                        <ul>
+                            <li><i class="fas fa-book"></i>985+ Courses</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+
+        </section>
+
+        <!-- Upcoming Events sekce -->
+        <section class="up-events-box">
+            <header class="up-events__header">
+                <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Latest Events<i
+                        class="fas fa-ellipsis-h margin-left"></i></span>
                 <h2 class="section-heading">Upcoming Events</h2>
-                </header>
-                
-                <div class="up-events-flex">
-                    <article class="up-events-flex__item up-events-flex__item1">
-                        <img class="up-events-flex__image" src="Images/Events/event-preview1.jpg" alt="Upcoming event picture" width="670" height="400">
-                        <div class="up-events-flex__price">
-                            $20
-                        </div>
+            </header>
+
+            <div class="up-events-flex">
+                <article class="up-events-flex__item up-events-flex__item1">
+                    <img class="up-events-flex__image" src="Images/Events/event-preview1.jpg"
+                        alt="Upcoming event picture" width="670" height="400">
+                    <div class="up-events-flex__price">
+                        $20
+                    </div>
+                    <div class="up-events-flex__content">
+                        <ul>
+                            <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
+                            <li><i class="far fa-clock"></i><time datetime="08:00">08 AM</time> - <time
+                                    datetime="09:00">09 PM</time></li>
+                            <li>Paris, France</li>
+                        </ul>
+                    </div>
+                    <div class="up-events-flex__text">
+                        <h3>Web Design & Development Conference 2020</h3>
+                        <p>
+                            Sed ut perspiciatis unde omnis iste natur error sit voluptatem accusantium doloremque <br>
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                        </p>
+                    </div>
+                    <div class="up-events-flex__button">
+                        Join Event <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                </article>
+
+                <div class="up-events-flex__item up-events-flex__item2 up-events-flex__flex">
+                    <article class="up-events-flex__subitem up-events-flex__subitem1">
+                        <span class="event-price">$20</span>
                         <div class="up-events-flex__content">
                             <ul>
-                                <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
-                                <li><i class="far fa-clock"></i><time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time></li>
-                                <li>Paris, France</li>
+                                <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time>
+                                </li>
+                                <li><i class="far fa-clock"></i><time datetime="08:00">08 AM</time> - <time
+                                        datetime="09:00">09 PM</time></li>
                             </ul>
                         </div>
-                        <div class="up-events-flex__text">
-                            <h3>Web Design & Development Conference 2020</h3>
-                            <p>
-                                Sed ut perspiciatis unde omnis iste natur error sit voluptatem accusantium doloremque <br> 
-                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-                            </p>
-                        </div>
-                        <div class="up-events-flex__button">
+                        <h3>Annual Conference 2020</h3>
+                        <div class="up-events-flex__button up-events-flex__button--no-bg">
                             Join Event <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </article>
-    
-                    <div class="up-events-flex__item up-events-flex__item2 up-events-flex__flex">
-                        <article class="up-events-flex__subitem up-events-flex__subitem1">
-                            <span class="event-price">$20</span>
-                            <div class="up-events-flex__content">
-                                <ul>
-                                    <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
-                                    <li><i class="far fa-clock"></i><time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time></li>
-                                </ul>
-                            </div>
-                            <h3>Annual Conference 2020</h3>
-                            <div class="up-events-flex__button up-events-flex__button--no-bg">
-                                Join Event <i class="fas fa-long-arrow-alt-right"></i>
-                            </div>
-                        </article>
-        
-                        <article class="up-events-flex__subitem up-events-flex__subitem2">
-                            <span class="event-price">$20</span>
-                            
-                            <div class="up-events-flex__content">
-                                <ul>
-                                    <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
-                                    <li><i class="far fa-clock"></i><time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time></li>
-                                </ul>
-                            </div>
-                            <h3>Annual Conference 2020</h3>
-                            <div class="up-events-flex__button up-events-flex__button--no-bg">
-                                Join Event <i class="fas fa-long-arrow-alt-right"></i>
-                            </div>
-                        </article>
-                    </div>
-                </div>  
 
-                <div class="up-events-flex__button up-events-flex__button--bottom">
-                    View all events <i class="fas fa-long-arrow-alt-right"></i>
-                </div>
+                    <article class="up-events-flex__subitem up-events-flex__subitem2">
+                        <span class="event-price">$20</span>
 
-            </section>
-
-            <!-- What Our Students Say sekce -->
-            <section class="students-feedback">
-                <header class="students-feedback__header">
-                    <span><i class="fas fa-ellipsis-h margin-right"></i>Students Feedback<i class="fas fa-ellipsis-h margin-left"></i></span>
-                    <h2>What Our Students Say</h2>
-                </header>
-                
-                <div>
-
-                </div>
-                <!-- <article>
-
-                </article> -->
-
-                <img src="Images/Feedback/profile-picture1.jpg" alt="Profile picture">
-                <img src="Images/Feedback/profile-picture2.jpg" alt="Profile picture">
-                <img src="Images/Feedback/profile-picture3.jpg" alt="Profile picture">
-                <img src="Images/Feedback/profile-picture4.jpg" alt="Profile picture">
-                <img src="Images/Feedback/profile-picture5.jpg" alt="Profile picture">
-                <img src="Images/Feedback/profile-picture6.jpg" alt="Profile picture">
-                <img src="Images/Feedback/profile-picture7.jpg" alt="Profile picture">
-                <img src="Images/Feedback/profile-picture8.jpg" alt="Profile picture">
-
-                <p class="students-feedback__text1">
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Integer lacinia. 
-                    Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Integer tempor.
-                </p>
-                <p class="students-feedback__text2">
-                    Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus.
-                </p>
-                <h3>Sousa Fernandes</h3>
-                <span class="students-feedback-role">
-                    CEO & Founder
-                </span>
-                <img src="Images/Feedback/quotes.png" alt="Big quotes">
-
-            </section>
-
-            <!-- Become an Instructor sekce -->
-            <section class="become-instructor__box">
-                <div class="become-instructor__flex">
-                    <div class="become-instructor__item1">
-                        <img class="become-instructor__image1" src="Images/Career/become-instructor-picture1.jpg"
-                            alt="Become instructor picture" width="500" height="350">
-                        <img class="become-instructor__image2" src="Images/Career/become-instructor-picture2.jpg"
-                            alt="Become instructor picture" width="500" height="350">
-                    </div>
-                    <div class="become-instructor__item2">
-                        <span><i class="fas fa-ellipsis-h margin-right"></i>Build A Career</span>
-                        <h2>Become an Instructor</h2>
-                        <p class="become-instructor-text">
-                            Proin in tellus sit amet nibh dignissim sagittis. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                            sit
-                            amet,
-                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-                            aliquam quaerat voluptatem.
-                        </p>
-                        <div class="become-instructor__item2-flex1">
-                            <div class="become-instructor__subitem1">
-                                <i class="fas fa-laptop-code"></i>
-                                <h3>Digitalization</h3>
-                                <p>
-                                    Sed ut perspia unde omnis
-                                    aste natus error sit volu
-                                </p>
-                            </div>
-                            <div class="become-instructor__gray-line become-instructor__subitem2">
-
-                            </div>
-                            <div class="become-instructor__subitem3">
-                                <i class="fas fa-book"></i>
-                                <h3>Book Friendly</h3>
-                                <p>
-                                    Sed ut perspia unde omnis
-                                    aste natus error sit volu
-                                </p>
-                            </div>
-                        </div>
-                        <div class="become-instructor__item2-flex2">
-                            <div class="become-instructor__subitem4">
-                                Join with us
-                                <i class="fas fa-long-arrow-alt-right"></i>
-                            </div>
-                            <div class="become-instructor__subitem5">
-                                Become a partner
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-            </section>
-
-            <!-- Latest News & Blog sekce -->
-            <section class="news-blog">
-                <header class="news-blog__header">
-                    <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Articles & Tips<i class="fas fa-ellipsis-h margin-left"></i></span>
-                    <h2>Latest News & Blog</h2>
-                </header>
-                
-                <div class="news-blog__grid">
-                    <article class="news-blog__item">
-                        <img class="news-blog__image" src="Images/News/news-article-picture1.jpg" alt="News article preview">
-                        <div class="news-blog__content">
+                        <div class="up-events-flex__content">
                             <ul>
-                                <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
-                                <li><i class="far fa-comments"></i>COM(30)</li>
+                                <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time>
+                                </li>
+                                <li><i class="far fa-clock"></i><time datetime="08:00">08 AM</time> - <time
+                                        datetime="09:00">09 PM</time></li>
                             </ul>
-                            <h3>Learning Resources In
-                                Challenec Times Online Workshops
-                            </h3>
-                            <div>
-                                David Simala
-                            </div>
-                            <div class="news-blog__button">
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
+                        </div>
+                        <h3>Annual Conference 2020</h3>
+                        <div class="up-events-flex__button up-events-flex__button--no-bg">
+                            Join Event <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </article>
-                
-                    <article class="news-blog__item">
-                        <img class="news-blog__image" src="Images/News/news-article-picture2.jpg" alt="News article preview">
-                        <div class="news-blog__content">
-                            <ul>
-                                <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
-                                <li><i class="far fa-comments"></i>COM(30)</li>
-                            </ul>
-                            <h3>
-                                Djang Highlights Models Admin And Harness Rela Tional Database
-                            </h3>
-                            <div>
-                                David Simala
-                            </div>
-                            <div class="news-blog__button">
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </article>
-                
-                    <article class="news-blog__item">
-                        <img class="news-blog__image" src="Images/News/news-article-picture3.jpg" alt="News article preview">
-                        <div class="news-blog__content">
-                            <ul>
-                                <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
-                                <li><i class="far fa-comments"></i>COM(30)</li>
-                            </ul>
-                            <h3>
-                                Smash Podcast Episode With Laura Kalbag What Is Online Privacy
-                            </h3>
-                            <div>
-                                David Simala
-                            </div>
-                            <div class="news-blog__button">
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                
-
-            </section>
-
-            <div class="bottom-logos">
-                <div class="bottom-logos__item">
-                    <img class="bottom-logos__image" src="Images/Logo/01.png" alt="Company Logo">
-                </div>
-                <div class="bottom-logos__item">
-                    <img class="bottom-logos__image" src="Images/Logo/02.png" alt="Company Logo">
-                </div>
-                <div class="bottom-logos__item">
-                    <img class="bottom-logos__image" src="Images/Logo/03.png" alt="Company Logo">
-                </div>
-                <div class="bottom-logos__item">
-                    <img class="bottom-logos__image" src="Images/Logo/04.png" alt="Company Logo">
-                </div>
-                <div class="bottom-logos__item">
-                    <img class="bottom-logos__image" src="Images/Logo/05.png" alt="Company Logo">
                 </div>
             </div>
 
-        </main>
-        
-        <!-- patička celé webové stránky -->
-        <footer class="main-footer">
-            <div class="main-footer__content">
-                <div class="main-footer__flex1">
-                    <div class="main-footer__subflex1-1 main-footer__logo">
-                        <a href="Home.html"><img src="Images/Logo/EduPlusIconWhite.png" alt="Logo"></a>
-                        <a href="Home.html"><h2 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h2></a>
+            <div class="up-events-flex__button up-events-flex__button--bottom">
+                View all events <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+
+        </section>
+
+        <!-- What Our Students Say sekce -->
+        <section class="students-feedback">
+            <header class="students-feedback__header">
+                <span><i class="fas fa-ellipsis-h margin-right"></i>Students Feedback<i
+                        class="fas fa-ellipsis-h margin-left"></i></span>
+                <h2>What Our Students Say</h2>
+            </header>
+
+            <div>
+
+            </div>
+            <article class="students-feedback__card">
+                <div class="students-feedback__content">
+                    <p class="students-feedback__text1">
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                    <p class="students-feedback__text2">
+                        Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel
+                        metus.
+                    </p>
+                    <div class="students-feedback__profile-flex">
+                        <div class="students-feedback__picture">
+                            <i class="fas fa-user-circle fa-2x"></i>
+                        </div>
+                        <div class="students-feedback__info">
+                            <h3>Sousa Fernandes</h3>
+                            <div class="students-feedback__role">
+                                CEO & Founder
+                            </div>
+                        </div>
                     </div>
-                    <ul class="main-footer__subflex1-2">
-                        <!-- <li><i class="fab fa-facebook-square blue fa-2x margin-right white-bg"></i><span>Facebook</span></li>
+                    <div class="students-feedback__buttons">
+                        <div class="students-feedback__btn">
+                            <i class="fas fa-long-arrow-alt-left"></i>
+                        </div>
+                        <div class="students-feedback__btn">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
+                    </div>
+                    <div class="students-feedback__quotes">
+                        <i class="fas fa-quote-left fa-4x"></i>
+                    </div>
+                </div>
+            </article>
+
+            <img class="students-feedback__picture1" src="Images/Feedback/profile-picture1.jpg" alt="Profile picture">
+            <img class="students-feedback__picture2" src="Images/Feedback/profile-picture2.jpg" alt="Profile picture">
+            <img class="students-feedback__picture3" src="Images/Feedback/profile-picture3.jpg" alt="Profile picture">
+            <img class="students-feedback__picture4" src="Images/Feedback/profile-picture4.jpg" alt="Profile picture">
+            <img class="students-feedback__picture5" src="Images/Feedback/profile-picture5.jpg" alt="Profile picture">
+            <img class="students-feedback__picture6" src="Images/Feedback/profile-picture6.jpg" alt="Profile picture">
+            <img class="students-feedback__picture7" src="Images/Feedback/profile-picture7.jpg" alt="Profile picture">
+            <img class="students-feedback__picture8" src="Images/Feedback/profile-picture8.jpg" alt="Profile picture">
+
+            <div class="students-feedback__orange-block"></div>
+            <div class="students-feedback__white-block"></div>
+
+        </section>
+
+        <!-- Become an Instructor sekce -->
+        <section class="become-instructor__box">
+            <div class="become-instructor__flex">
+                <div class="become-instructor__item1">
+                    <img class="become-instructor__image1" src="Images/Career/become-instructor-picture1.jpg"
+                        alt="Become instructor picture" width="500" height="350">
+                    <img class="become-instructor__image2" src="Images/Career/become-instructor-picture2.jpg"
+                        alt="Become instructor picture" width="500" height="350">
+                </div>
+                <div class="become-instructor__item2">
+                    <span><i class="fas fa-ellipsis-h margin-right"></i>Build A Career</span>
+                    <h2>Become an Instructor</h2>
+                    <p class="become-instructor-text">
+                        Proin in tellus sit amet nibh dignissim sagittis. Neque porro quisquam est, qui dolorem ipsum
+                        quia dolor
+                        sit
+                        amet,
+                        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                        magnam
+                        aliquam quaerat voluptatem.
+                    </p>
+                    <div class="become-instructor__item2-flex1">
+                        <div class="become-instructor__subitem1">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Digitalization</h3>
+                            <p>
+                                Sed ut perspia unde omnis
+                                aste natus error sit volu
+                            </p>
+                        </div>
+                        <div class="become-instructor__gray-line become-instructor__subitem2">
+
+                        </div>
+                        <div class="become-instructor__subitem3">
+                            <i class="fas fa-book"></i>
+                            <h3>Book Friendly</h3>
+                            <p>
+                                Sed ut perspia unde omnis
+                                aste natus error sit volu
+                            </p>
+                        </div>
+                    </div>
+                    <div class="become-instructor__item2-flex2">
+                        <div class="become-instructor__subitem4">
+                            Join with us
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
+                        <div class="become-instructor__subitem5">
+                            Become a partner
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <!-- Latest News & Blog sekce -->
+        <section class="news-blog">
+            <header class="news-blog__header">
+                <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Articles & Tips<i
+                        class="fas fa-ellipsis-h margin-left"></i></span>
+                <h2>Latest News & Blog</h2>
+            </header>
+
+            <div class="news-blog__grid">
+                <article class="news-blog__item">
+                    <img class="news-blog__image" src="Images/News/news-article-picture1.jpg"
+                        alt="News article preview">
+                    <div class="news-blog__content">
+                        <ul>
+                            <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
+                            <li><i class="far fa-comments"></i>COM(30)</li>
+                        </ul>
+                        <h3>Learning Resources In
+                            Challenec Times Online Workshops
+                        </h3>
+                        <div>
+                            David Simala
+                        </div>
+                        <div class="news-blog__button">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-blog__item">
+                    <img class="news-blog__image" src="Images/News/news-article-picture2.jpg"
+                        alt="News article preview">
+                    <div class="news-blog__content">
+                        <ul>
+                            <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
+                            <li><i class="far fa-comments"></i>COM(30)</li>
+                        </ul>
+                        <h3>
+                            Djang Highlights Models Admin And Harness Rela Tional Database
+                        </h3>
+                        <div>
+                            David Simala
+                        </div>
+                        <div class="news-blog__button">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-blog__item">
+                    <img class="news-blog__image" src="Images/News/news-article-picture3.jpg"
+                        alt="News article preview">
+                    <div class="news-blog__content">
+                        <ul>
+                            <li><i class="far fa-calendar-alt"></i><time datetime="2020-11-25">25 Nov 2020</time></li>
+                            <li><i class="far fa-comments"></i>COM(30)</li>
+                        </ul>
+                        <h3>
+                            Smash Podcast Episode With Laura Kalbag What Is Online Privacy
+                        </h3>
+                        <div>
+                            David Simala
+                        </div>
+                        <div class="news-blog__button">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+
+        </section>
+
+        <div class="bottom-logos">
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/01.png" alt="Company Logo">
+            </div>
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/02.png" alt="Company Logo">
+            </div>
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/03.png" alt="Company Logo">
+            </div>
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/04.png" alt="Company Logo">
+            </div>
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/05.png" alt="Company Logo">
+            </div>
+        </div>
+
+    </main>
+
+    <!-- patička celé webové stránky -->
+    <footer class="main-footer">
+        <div class="main-footer__content">
+            <div class="main-footer__flex1">
+                <div class="main-footer__subflex1-1 main-footer__logo">
+                    <a href="Home.html"><img src="Images/Logo/EduPlusIconWhite.png" alt="Logo"></a>
+                    <a href="Home.html">
+                        <h2 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h2>
+                    </a>
+                </div>
+                <ul class="main-footer__subflex1-2">
+                    <!-- <li><i class="fab fa-facebook-square blue fa-2x margin-right white-bg"></i><span>Facebook</span></li>
                         <li><i class="fab fa-twitter-square light-blue fa-2x margin-right"></i>Twitter</li>
                         <li><i class="fab fa-youtube-square red fa-2x margin-right"></i>Youtube</li>
                         <li><i class="fab fa-instagram-square violet fa-2x margin-right"></i>Instagram</li> -->
-                        <li>
-                            <span class="fa-stack">
-                                <i class="fas fa-circle fa-stack-2x color-blue"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                            </span>
-                            Facebook
-                        </li>
-                        <li>
-                            <span class="fa-stack">
-                                <i class="fas fa-circle fa-stack-2x color-lightblue"></i>
-                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                            Twitter
-                        </li>
-                        <li>
-                            <span class="fa-stack">
-                                <i class="fas fa-circle fa-stack-2x color-red"></i>
-                                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
-                            </span>
-                            Youtube
-                        </li>
-                        <li>
-                            <span class="fa-stack">
-                                <i class="fas fa-circle fa-stack-2x color-violet"></i>
-                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                            </span>
-                            Instagram
-                        </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-blue"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Facebook
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-lightblue"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Twitter
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-red"></i>
+                            <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Youtube
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-violet"></i>
+                            <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Instagram
+                    </li>
+                </ul>
+            </div>
+            <div class="main-footer__line">
+            </div>
+            <div class="main-footer__flex2">
+                <div class="main-footer__our-courses">
+                    <h3>Our Courses</h3>
+                    <ul class="main-footer__subflex2-1">
+                        <li>Web Development</li>
+                        <li>Business Studies</li>
+                        <li>Computer Engineering</li>
+                        <li>English Learning</li>
+                        <li>Graphics Design</li>
+                        <li>Color Combinations</li>
+                        <li>Software Development</li>
+                        <li>Photography</li>
+                        <li>Advance WordPress</li>
+                        <li>Basic PSD To HTML</li>
                     </ul>
                 </div>
-                <div class="main-footer__line">
+                <div class="main-footer__company">
+                    <h3>Company</h3>
+                    <ul class="main-footer__subflex2-2">
+                        <li>About Eduket</li>
+                        <li>Meet Advisors</li>
+                        <li>Join A Career</li>
+                        <li>Latest Courses</li>
+                        <li>Newsletters</li>
+                    </ul>
                 </div>
-                <div class="main-footer__flex2">
-                    <div class="main-footer__our-courses">
-                        <h3>Our Courses</h3>
-                        <ul class="main-footer__subflex2-1">
-                            <li>Web Development</li>
-                            <li>Business Studies</li>
-                            <li>Computer Engineering</li>
-                            <li>English Learning</li>
-                            <li>Graphics Design</li>
-                            <li>Color Combinations</li>
-                            <li>Software Development</li>
-                            <li>Photography</li>
-                            <li>Advance WordPress</li>
-                            <li>Basic PSD To HTML</li>
-                        </ul>
-                    </div>
-                    <div class="main-footer__company">
-                        <h3>Company</h3>
-                        <ul class="main-footer__subflex2-2">
-                            <li>About Eduket</li>
-                            <li>Meet Advisors</li>
-                            <li>Join A Career</li>
-                            <li>Latest Courses</li>
-                            <li>Newsletters</li>
-                        </ul>
-                    </div>
-                    <div class="main-footer__newsletter">
-                        <h3>Newsletters</h3>
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu
-                            santium doloremque laudantium totam rem aperiam
-                        </p>
-                        <!-- <div class="main-footer__email">
+                <div class="main-footer__newsletter">
+                    <h3>Newsletters</h3>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu
+                        santium doloremque laudantium totam rem aperiam
+                    </p>
+                    <!-- <div class="main-footer__email">
                             <div class="main-footer__input">
                                 <form method="POST" action="" class="main-footer__form">
                                     <fieldset>
@@ -845,61 +904,28 @@
 
                             </div>
                         </div> -->
-                        <form action="" class="main-footer__form">
-                            <div class="main-footer__form-flex">
-                                <div class="main-footer__email">
-                                    <input type="email" placeholder="Enter Your Email" name="email" class="main-footer__input">
-                                </div>
-                                <button type="submit" class="main-footer__submit"><i class="fas fa-long-arrow-alt-right fa-2x"></i></button>
+                    <form action="" class="main-footer__form">
+                        <div class="main-footer__form-flex">
+                            <div class="main-footer__email">
+                                <input type="email" placeholder="Enter Your Email" name="email"
+                                    class="main-footer__input">
                             </div>
-                            <!-- <span class="main-footer__email">
+                            <button type="submit" class="main-footer__submit"><i
+                                    class="fas fa-long-arrow-alt-right fa-2x"></i></button>
+                        </div>
+                        <!-- <span class="main-footer__email">
                                 <input type="email" placeholder="Enter Your Email" name="email" class="main-footer__input">
                             </span>
                             <button type="submit" class="main-footer__submit"><i class="fas fa-long-arrow-alt-right"></i></button> -->
-                        </form>
-                    </div>
-                </div>
-                <div class="main-footer__copyright">
-                    
+                    </form>
                 </div>
             </div>
-            
-            <!-- doplnit ikonky -->
-            <h4>Our Courses</h4>
-            <ul>
-                <li>Web Development</li>
-                <li>Business Studies</li>
-                <li>Computer Engineering</li>
-                <li>English Learning</li>
-                <li>Graphics Design</li>
-                <li>Color Combinations</li>
-                <li>Software Development</li>
-                <li>Photography</li>
-                <li>Advance WordPress</li>
-                <li>Basic PSD To HTML</li>
-            </ul>
-            <h4>Company</h4>
-            <ul>
-                <li>About Eduket</li>
-                <li>Meet Advisor</li>
-                <li>Join A Career</li>
-                <li>Latest Courses</li>
-                <li>Newsletters</li>
-            </ul>
-            <h4>Newsletters</h4>
-            <p>
-                Sed ut perspiciatis unde omnis natur error sit voluptatem accu <br> 
-                santium doloremque laudantium totam rem aperiam
-            </p>
-            <form method="POST">
-                <input type="text" placeholder="Enter Your Email" name="Newsletter email" id="newsletter-email">
-                <button type="submit"></button>
-            </form>
-            <p>
-                <small>Copyright &copy; 2020 EduPlus  All Rights Reserved.</small>
-            </p>
-        </footer>
+            <div class="main-footer__copyright">
 
-    </body>
+            </div>
+        </div>
+    </footer>
+
+</body>
 
 </html>

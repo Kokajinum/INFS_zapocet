@@ -19,6 +19,7 @@
 }
 
 
+
 html { background-color: rgb(234,244,246); }
 
 body {
@@ -68,19 +69,19 @@ a { text-decoration: none; }
 .menu__item {
     position: relative;
     padding-bottom: 5%;
+    display: flex;
 }
 
-.menu a {
-    display: block;
-    padding: 1em;   
+.menu__item::after {
+    content: "\f078";
+    font-family: FontAwesome;
+    font-size: x-small;
+    align-self: center;
+    margin-top: 7%;
 }
 
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    margin-top: 25px;
-    min-width: 150px;
+.menu__item--noafter::after {
+    content: "";
 }
 
 .menu__item:hover .submenu {
@@ -88,9 +89,34 @@ a { text-decoration: none; }
     z-index: 100;
 }
 
-.menu__item a:hover {
+.menu__item:hover .menu__href {
     color: rgb(255, 102, 0);
 }
+
+
+.menu__item:hover:after {
+    color: rgb(255, 102, 0);
+}
+
+.menu__href {
+    margin-right: -10%;
+}
+
+.menu a {
+    display: block;
+    padding: 1em;
+    /*margin-right: -10%;*/
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    margin-top: 70%;
+    min-width: 150px;
+}
+
+
 
 .submenu__item a:hover {
     background-color: rgb(255, 102, 0);
@@ -215,7 +241,8 @@ a { text-decoration: none; }
 
 .search-bar__input {
     height: 35px;
-    width: 355px;
+    /* width: 355px; */
+    flex-basis: 80%;
     margin-left: 25px;
     border: none;
 }
@@ -224,7 +251,8 @@ a { text-decoration: none; }
     background-color: rgb(255, 102, 0);
     border: none;
     height: 50px;
-    width: 50px;
+    /* width: 50px; */
+    flex-basis: 12%;
     color: white;
 }
 
@@ -414,7 +442,7 @@ a { text-decoration: none; }
     background-color: white;
 }
 
-.gallery__heading {
+.gallery__header {
     text-align: center;
     padding-top: 5%;
     padding-bottom: 2%;
@@ -564,6 +592,61 @@ a { text-decoration: none; }
     padding-top: 5%;
     color: white;
 }
+
+.students-feedback__card {
+    background-color: white;
+    max-width: 350px;
+}
+
+.students-feedback__content {
+    position: relative;
+    padding: 7% 10%;
+}
+
+.students-feedback__text1 {
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.students-feedback__text2 {
+    font-size: small;
+    opacity: 80%;
+}
+
+.students-feedback__profile-flex {
+    display: flex;
+}
+
+.students-feedback__info {
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+.students-feedback__info h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.students-feedback__role {
+    color: rgb(255, 102, 0);
+    font-size: small;
+}
+
+.students-feedback__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+}
+
+.students-feedback__btn {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(236, 233, 233);
+}
+
+
+
+
 
 
 /* Become an instructor sekce  */
@@ -790,11 +873,10 @@ a { text-decoration: none; }
 .main-footer__flex2 {
     display: flex;
     margin-top: 5%;
-    height: 400px;
 }
 
 .main-footer__our-courses {
-    flex-basis: 60%;
+    flex-basis: 40%;
 }
 
 .main-footer__subflex2-1 {
@@ -827,7 +909,7 @@ a { text-decoration: none; }
 
 .main-footer__company {
     margin-left: 5%;
-    flex-basis: 25%;
+    flex-basis: 20%;
 }
 
 .main-footer__subflex2-2 {
@@ -838,6 +920,10 @@ a { text-decoration: none; }
 .main-footer__subflex2-2 li {
     /* line-height: 150%; */
     flex-basis: 30px;
+}
+
+.main-footer__newsletter {
+    flex-basis: 40%;
 }
 
 .main-footer__form {
@@ -900,6 +986,8 @@ a { text-decoration: none; }
         position: relative;
         left: 1%;
     }
+
+    
 }
 
 @media (max-width: 890px) {
