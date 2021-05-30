@@ -7,13 +7,12 @@
     <meta name="author" content="Petr Kozak">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c687dc85d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>EduPlus</title>
 </head>
 
 <body>
-    <!-- hlavička celé stránky -->
     <header>
         <div class="logo">
             <a href="Home.html"><img class="logo__image" src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo"></a>
@@ -26,42 +25,49 @@
             <ul class="menu">
                 <li class="menu__item"><a class="menu__href" href="Home.html">Home</a>
                     <ul class="submenu">
-                        <li class="submenu__item"><a href="About-us.html">About Us</a></li>
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="About-us.html">About Us</a></li>
                     </ul>
                 </li>
                 <li class="menu__item"><a class="menu__href" href="Our-Courses.html">Courses</a>
                     <ul class="submenu">
-                        <li class="submenu__item"><a href="Our-Courses.html">Courses</a></li>
-                        <li class="submenu__item"><a href="#">Courses List</a></li>
-                        <li class="submenu__item"><a href="Courses-Details.html">Courses Details</a></li>
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Our-Courses.html">Courses</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Courses List</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Courses-Details.html">Courses Details</a></li>
                     </ul>
                 </li>
                 <li class="menu__item"><a class="menu__href" href="Events-Details.html">Events</a>
                     <ul class="submenu">
-                        <li class="submenu__item"><a href="#">Events</a></li>
-                        <li class="submenu__item"><a href="#">Events list</a></li>
-                        <li class="submenu__item"><a href="Events-Details.html">Events details</a></li>
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Events</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Events list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Events-Details.html">Events details</a></li>
                     </ul>
                 </li>
                 <li class="menu__item"><a class="menu__href" href="#">Pages</a>
                     <ul class="submenu">
-                        <li class="submenu__item"><a href="#">Pages</a></li>
-                        <li class="submenu__item"><a href="#">Pages list</a></li>
-                        <li class="submenu__item"><a href="#">Pages details</a></li>
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages details</a></li>
                     </ul>
                 </li>
                 <li class="menu__item"><a class="menu__href" href="Blog-standard.html">Blog</a>
                     <ul class="submenu">
-                        <li class="submenu__item"><a href="#">Blog</a></li>
-                        <li class="submenu__item"><a href="Blog-standard.html">Blog list</a></li>
-                        <li class="submenu__item"><a href="Blog-details.html">Blog details</a></li>
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Blog</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Blog-standard.html">Blog list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Blog-details.html">Blog details</a></li>
                     </ul>
                 </li>
                 <li class="menu__item menu__item--noafter"><a class="menu__href" href="Contact-us.html">Contact</a></li>
             </ul>
         </nav>
 
+        <!-- side bar -->
         <div class="side-bar header__side-bar">
+        
             <div class="side-bar__item1">
                 <i class="fab fa-facebook-f  fb-icon1"></i>
             </div>
@@ -81,7 +87,6 @@
 
     </header>
 
-    <!-- hlavní obsah -->
     <main>
         <article class="welcome-box">
             <div class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Welcome To EduPlus</div>
@@ -610,56 +615,62 @@
                 <h2>What Our Students Say</h2>
             </header>
 
-            <div>
-
-            </div>
-            <article class="students-feedback__card">
-                <div class="students-feedback__content">
-                    <p class="students-feedback__text1">
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                    </p>
-                    <p class="students-feedback__text2">
-                        Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel
-                        metus.
-                    </p>
-                    <div class="students-feedback__profile-flex">
-                        <div class="students-feedback__picture">
-                            <i class="fas fa-user-circle fa-2x"></i>
-                        </div>
-                        <div class="students-feedback__info">
-                            <h3>Sousa Fernandes</h3>
-                            <div class="students-feedback__role">
-                                CEO & Founder
+            <div class="students-feedback__wrapper">
+                <article class="students-feedback__card">
+                    <div class="students-feedback__content">
+                        <p class="students-feedback__text1">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        </p>
+                        <p class="students-feedback__text2">
+                            Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel
+                            metus.
+                        </p>
+                        <div class="students-feedback__profile-flex">
+                            <div class="students-feedback__picture">
+                                <i class="fas fa-user-circle fa-2x"></i>
+                            </div>
+                            <div class="students-feedback__info">
+                                <h3>Sousa Fernandes</h3>
+                                <div class="students-feedback__role">
+                                    CEO & Founder
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="students-feedback__buttons">
-                        <div class="students-feedback__btn">
-                            <i class="fas fa-long-arrow-alt-left"></i>
+                        <div class="students-feedback__buttons">
+                            <div class="students-feedback__btn">
+                                <i class="fas fa-long-arrow-alt-left"></i>
+                            </div>
+                            <div class="students-feedback__btn">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
                         </div>
-                        <div class="students-feedback__btn">
-                            <i class="fas fa-long-arrow-alt-right"></i>
+                        <div class="students-feedback__quotes">
+                            <i class="fas fa-quote-left fa-4x"></i>
                         </div>
                     </div>
-                    <div class="students-feedback__quotes">
-                        <i class="fas fa-quote-left fa-4x"></i>
-                    </div>
+                </article>
+    
+                <div class="students-feedback__card students-feedback__card--secondary">
                 </div>
-            </article>
 
-            <img class="students-feedback__picture1" src="Images/Feedback/profile-picture1.jpg" alt="Profile picture">
-            <img class="students-feedback__picture2" src="Images/Feedback/profile-picture2.jpg" alt="Profile picture">
-            <img class="students-feedback__picture3" src="Images/Feedback/profile-picture3.jpg" alt="Profile picture">
-            <img class="students-feedback__picture4" src="Images/Feedback/profile-picture4.jpg" alt="Profile picture">
-            <img class="students-feedback__picture5" src="Images/Feedback/profile-picture5.jpg" alt="Profile picture">
-            <img class="students-feedback__picture6" src="Images/Feedback/profile-picture6.jpg" alt="Profile picture">
-            <img class="students-feedback__picture7" src="Images/Feedback/profile-picture7.jpg" alt="Profile picture">
-            <img class="students-feedback__picture8" src="Images/Feedback/profile-picture8.jpg" alt="Profile picture">
-
-            <div class="students-feedback__orange-block"></div>
-            <div class="students-feedback__white-block"></div>
-
+                <div class="students-feedback__pictures">
+                    <img class="students-feedback__picture1" src="Images/Feedback/profile-picture1.jpg" alt="Profile picture">
+                    <img class="students-feedback__picture2" src="Images/Feedback/profile-picture2.jpg" alt="Profile picture">
+                    <img class="students-feedback__picture3" src="Images/Feedback/profile-picture3.jpg" alt="Profile picture">
+                    <img class="students-feedback__picture4" src="Images/Feedback/profile-picture4.jpg" alt="Profile picture">
+                    <img class="students-feedback__picture5" src="Images/Feedback/profile-picture5.jpg" alt="Profile picture">
+                    <img class="students-feedback__picture6" src="Images/Feedback/profile-picture6.jpg" alt="Profile picture">
+                    <img class="students-feedback__picture7" src="Images/Feedback/profile-picture7.jpg" alt="Profile picture">
+                    <img class="students-feedback__picture8" src="Images/Feedback/profile-picture8.jpg" alt="Profile picture">
+                
+                    <div class="students-feedback__orange-block"></div>
+                    <div class="students-feedback__white-block"></div>
+                </div>
+            </div>
+            
+            
+            
         </section>
 
         <!-- Become an Instructor sekce -->
@@ -813,7 +824,6 @@
 
     </main>
 
-    <!-- patička celé webové stránky -->
     <footer class="main-footer">
         <div class="main-footer__content">
             <div class="main-footer__flex1">
@@ -904,7 +914,7 @@
 
                             </div>
                         </div> -->
-                    <form action="" class="main-footer__form">
+                    <form action="post" class="main-footer__form">
                         <div class="main-footer__form-flex">
                             <div class="main-footer__email">
                                 <input type="email" placeholder="Enter Your Email" name="email"

@@ -22,6 +22,7 @@
 
 html { background-color: rgb(234,244,246); }
 
+
 body {
     margin: 0;
     padding: 0;
@@ -29,14 +30,20 @@ body {
     font-family: 'Roboto', 'Hind', sans-serif;
 }
 
-a { text-decoration: none; }
+a { 
+    text-decoration: none;
+    color: inherit;
+ }
+
+/*header*/
+
 
 /*uvodni logo + text EduPlus*/
 .logo {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 2%;
+    margin: 2% 4%;
 }
 
 .logo__heading {
@@ -63,7 +70,6 @@ a { text-decoration: none; }
 
 .menu {
     display: flex;
-    width: 120%;
 }
 
 .menu__item {
@@ -98,25 +104,34 @@ a { text-decoration: none; }
     color: rgb(255, 102, 0);
 }
 
-.menu__href {
-    margin-right: -10%;
-}
+/* .menu a {
+    
+} */
 
-.menu a {
+.menu__href {
+    /* margin-right: -10%; */
     display: block;
     padding: 1em;
-    /*margin-right: -10%;*/
 }
 
 .submenu {
     display: none;
     position: absolute;
     background-color: white;
-    margin-top: 70%;
+    margin-top: 75px;
     min-width: 150px;
 }
 
+.submenu__decoration-line {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 102, 0);
+}
 
+.submenu__href {
+    display: block;
+    padding: 1em;
+}
 
 .submenu__item a:hover {
     background-color: rgb(255, 102, 0);
@@ -139,17 +154,20 @@ a { text-decoration: none; }
     margin-left: 10px;
 }
 
+
+/*side bar*/
 .header__side-bar {
     position: absolute;
-    left: 75%;
+    left: 72%;
     top: 4%;
 }
 
 .side-bar {
     display: flex;
     justify-content: space-between;
-    width: 23%;
-    height: 7%;
+    /* width: 45vh; */
+    width: 21vw;
+    height: 50px;
 }
 
 .side-bar__item1 {
@@ -241,8 +259,7 @@ a { text-decoration: none; }
 
 .search-bar__input {
     height: 35px;
-    /* width: 355px; */
-    flex-basis: 80%;
+    flex-basis: 79%;
     margin-left: 25px;
     border: none;
 }
@@ -250,7 +267,7 @@ a { text-decoration: none; }
 .search-bar__button {
     background-color: rgb(255, 102, 0);
     border: none;
-    height: 50px;
+    height: 75%;
     /* width: 50px; */
     flex-basis: 12%;
     color: white;
@@ -487,7 +504,7 @@ a { text-decoration: none; }
 
 .instructors__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     grid-gap: 2rem;
     padding-left: 15%;
     padding-right: 15%;
@@ -593,9 +610,32 @@ a { text-decoration: none; }
     color: white;
 }
 
+.students-feedback__wrapper {
+    display: flex;
+    position: relative;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
 .students-feedback__card {
     background-color: white;
-    max-width: 350px;
+    /* width: 450px; */
+    width: 80%;
+    z-index: 100;
+}
+
+.students-feedback__card--secondary {
+    background-color: rgb(234,243,247);
+    /*margin-right: 10%;
+    margin-left: -29%;
+    margin-top: -2%;
+    margin-bottom: 2%;*/
+    position: relative;
+    right: 32%;
+    bottom: 15px;
+    z-index: 1;
 }
 
 .students-feedback__content {
@@ -644,7 +684,20 @@ a { text-decoration: none; }
     background-color: rgb(236, 233, 233);
 }
 
+.students-feedback__quotes {
+    /* position: absolute; */
+    position: relative;
+    left: 60%;
 
+}
+
+.students-feedback__pictures {
+    position: relative;
+}
+
+.students-feedback__picture1 {
+    
+}
 
 
 
@@ -883,7 +936,7 @@ a { text-decoration: none; }
     display: flex;
     flex-flow: column wrap;
     height: 150px;
-    width: 48%;
+    width: 45%;
 }
 
 .main-footer__subflex2-1, .main-footer__subflex2-2 {
@@ -959,18 +1012,211 @@ a { text-decoration: none; }
 
 
 
+/*****************/
+/* About-us.html */
+/*****************/
+
+/* hlavní navigace */
+.navigation--centered {
+    left: 30%;
+    /* transform: translateX(-50%) */
+}
+
+/************************/
+
+/* header */
+.header__bottom {
+    /*linear-gradient -> ztmavení obrázku*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(Images/About-us/excited-students.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content {
+    width: fit-content;
+    color: white;
+    text-align: center;
+}
+
+.header__content h2 {
+    font-size: 500%;
+    margin-block: 0.2em;
+}
+
+.header__content h2+a::after {
+    content: "\f054";
+    font-family: FontAwesome;
+    font-size: x-small;
+    margin-left: 3%;
+}
+
+.header__content h2+a+a {
+    margin-left: 2%;
+}
+
+/*********************************/
+
+
+/* welcome to eduplus */
+.introduce-eduplus {
+    background-color: white;
+}
+
+.introduce-eduplus__content {
+    padding: 7% 15% 10% 15%;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.introduce-eduplus__pictures {
+    position: relative;
+    flex-basis: 45%;
+}
+
+.introduce-eduplus__image1 {
+    max-width: 85%;
+    height: auto;
+    z-index: 1;
+}
+
+.introduce-eduplus__image2 {
+    position: relative;
+    max-width: 70%;
+    height: auto;
+    z-index: 2;
+    left: 25%;
+    bottom: 15%;
+}
+
+.introduce-eduplus__circles {
+    position: absolute;
+    top: 25%;
+    left: 23%;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    /*position: relative;
+    left: 25%;
+    bottom: 75%;*/
+}
+
+.introduce-eduplus__circle {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.introduce-eduplus__circle1 {
+    /*left: 20%;
+    bottom: 53%;*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 4;
+}
+
+.introduce-eduplus__circle--orange {
+    background-color: rgb(255, 102, 0);
+}
+
+.introduce-eduplus__experience-years {
+    font-size: 200%;
+}
+
+.introduce-eduplus__experience-text {
+
+}
+
+.introduce-eduplus__circle2 {
+    /*left: 22%;
+    bottom: 69%;*/
+    left: 10px;
+    top: 13px;
+    z-index: 3;
+}
 
 
 
+
+.introduce-eduplus__about {
+    flex-basis: 50%;
+}
+
+.introduce-eduplus__icon {
+    font-size: x-large;
+}
+
+.introduce-eduplus__icon2 {
+    font-size: small;
+}
+
+
+@media (max-width: 1340px) {
+    /*side bar*/
+    .side-bar {
+        width: 25vw;
+    }
+    
+    /****************/
+
+    /*footer*/
+    .main-footer__flex2 {
+        flex-wrap: wrap;
+    }
+
+    .main-footer__our-courses {
+        flex-basis: 70%;
+    }
+
+    .main-footer__company {
+        margin: unset;
+        flex-basis: 30%;
+    }
+
+    .main-footer__newsletter {
+        flex-basis: 60%;
+    }
+
+    /****************/
+}
 
 @media (max-width: 1200px) {
+
+    /*side bar*/
+    .side-bar {
+        width: 37vh;
+    }
+
     .side-bar__item4 {
         display: none;
     }
 
+
+    /**************************/
+
+    /*welcome to eduplus*/
     .welcome-box h2 {
         font-size: 300%;
     }
+
+    .search-bar__input {
+        flex-basis: 76%;
+    }
+
+    .search-bar__button {
+        flex-basis: 14%;
+    }
+
+    /*********************/
 
     .become-instructor__item2-flex2 {
         max-width: 100%;
@@ -978,15 +1224,33 @@ a { text-decoration: none; }
 }
 
 @media (max-width: 992px) {
+    /*side bar*/
+    .side-bar {
+        width: 150px;
+    }
+
     .side-bar__item1, .side-bar__item2 {
         display: none;
     }
 
+    /*************************/
+
     .navigation {
         position: relative;
         left: 1%;
+        transform: unset;
     }
 
+    /*welcome to eduplus*/
+    .search-bar__input {
+        flex-basis: 71%;
+    }
+
+    .search-bar__button {
+        flex-basis: 17%;
+    }
+
+    /***********************/
     
 }
 
@@ -1015,28 +1279,77 @@ a { text-decoration: none; }
 }
 
 @media (max-width: 768px) {
+
+    /*welcome to eduplus*/
+    .welcome-box {
+        width: 60%;
+        left: unset;
+        margin: auto;
+        padding-top: 10%;
+    }
+
     .welcome-box h2 {
         font-size: 200%;
     }
+
+    .online-support {
+        background-color: white;
+        flex-direction: column;
+        border: 1px solid black;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    }
+
+    /*********************/
+
+    /*main footer*/
+    .main-footer__flex1 {
+        flex-direction: column;
+    }
+
+    .main-footer__flex2 {
+        flex-direction: column;
+    }
+
+    /**********************/
+
 }
 
 @media (max-width: 576px) {
-    .side-bar__item3 {
+    /*side bar*/
+    .side-bar {
         display: none;
     }
+    /****************/
 
     /*navigace*/
     .menu {
         flex-flow: column;
+        width: 20%;
     }
 
     .menu__item {
-        height: 1em;
+        padding-bottom: unset;
     }
+
+    .menu__item::after {
+        content: "";
+    }
+
+    .menu__href {
+        padding: unset;
+        padding-left: 20%;
+        padding-bottom: 5%;
+        font-weight: bold;
+    }
+    /*****************************/
+
 
     .stats {
         width: 40%;
     }
+
+
+
 
     .up-events-flex__flex {
         flex-flow: column;
@@ -1046,8 +1359,30 @@ a { text-decoration: none; }
     .up-events-flex__item2 {
         flex-basis: unset;
     }
+
+    /*footer*/
+    .main-footer__content {
+        padding: 5%;
+    }
+
+    /**************/
 }
 
-@media (min-width: 376px) {
+@media (max-width: 420px) {
+    /*footer*/
+    .main-footer__subflex2-1 {
+        height: auto;
+        width: auto;
+    }
 
+    /***********/
+}
+
+@media (max-width: 376px) {
+    /*footer*/
+    .main-footer__subflex1-2 li {
+        font-size: small;
+    }
+
+    /*****************/
 }
