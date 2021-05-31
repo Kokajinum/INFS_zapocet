@@ -301,11 +301,29 @@ a {
 
 /*statistics sekce*/
 .stats {
+    position: relative;
     width: 65%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
+}
+
+.stats--home-positioned {
+    top: 3vw;
+}
+
+.stats--about-us-positioned {
+    top: -3vw;
+}
+
+.stats__wrapper {
+    width: 23%;
+}
+
+.stats__line {
+    background-color: rgb(255, 102, 0);
+    height: 2px;
 }
 
 .stats__item {
@@ -315,8 +333,11 @@ a {
     display: flex;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    top: 3vw;
     z-index: 100;
+}
+
+.stats__item--about-us-edited {
+    padding: 13%;
 }
 
 .stats__icon {
@@ -1102,9 +1123,6 @@ a {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    /*position: relative;
-    left: 25%;
-    bottom: 75%;*/
 }
 
 .introduce-eduplus__circle {
@@ -1116,8 +1134,6 @@ a {
 }
 
 .introduce-eduplus__circle1 {
-    /*left: 20%;
-    bottom: 53%;*/
     display: flex;
     align-items: center;
     text-align: center;
@@ -1132,23 +1148,35 @@ a {
     font-size: 200%;
 }
 
-.introduce-eduplus__experience-text {
-
-}
-
 .introduce-eduplus__circle2 {
-    /*left: 22%;
-    bottom: 69%;*/
     left: 10px;
     top: 13px;
     z-index: 3;
 }
 
-
-
-
 .introduce-eduplus__about {
     flex-basis: 50%;
+}
+
+.introduce-eduplus__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduce-eduplus__text p {
+    margin-block: unset;
+    flex-basis: 95%;
+}
+
+.introduce-eduplus__vertical-line {
+    width: 3px;
+    height: auto;
+    background-color: rgb(255, 102, 0);
+}
+
+.introduce-eduplus__subflex1 {
+    display: flex;
+    align-items: center;
 }
 
 .introduce-eduplus__icon {
@@ -1159,6 +1187,41 @@ a {
     font-size: small;
 }
 
+.introduce-eduplus__horizontal-line {
+    background-color: rgb(239,239,239);
+    width: 60%;
+    height: 1px;
+    margin-top: 2%;
+}
+
+.introduce-eduplus__button {
+    position: relative;
+    top: 8%;
+    background-color: rgb(255, 102, 0);
+    color: white;
+    padding: 3% 5%;
+    text-align: center;
+}
+
+/* institute goals */
+.goals__circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    background-color: white;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.goals__percent-circle {
+    position: absolute;
+}
+
+/***********************/
 
 @media (max-width: 1340px) {
     /*side bar*/
@@ -1251,6 +1314,13 @@ a {
     }
 
     /***********************/
+
+    /* introduce eduplus */
+    .introduce-eduplus__content {
+        padding: 7% 15% 13% 15%;
+    }
+
+    /************************/
     
 }
 
@@ -1259,6 +1329,14 @@ a {
         flex-flow: column;
         width: 30%;
         height: 300px;
+    }
+
+    .stats__wrapper {
+        width: unset;
+    }
+
+    .stats__item--about-us-edited {
+        padding: 3%;
     }
 
     .up-events-flex {
@@ -1276,6 +1354,8 @@ a {
     .become-instructor__flex {
         flex-flow: column;
     }
+
+    
 }
 
 @media (max-width: 768px) {

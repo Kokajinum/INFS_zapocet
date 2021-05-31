@@ -14,7 +14,6 @@
 
 <body>
 
-    <!-- hlavička celé stránky -->
     <header>
         <div class="logo">
             <a href="Home.html"><img class="logo__image" src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo"></a>
@@ -97,7 +96,6 @@
         </div>
     </header>
 
-    <!-- hlavní obsah -->
     <main>
         <!-- welcome sekce -->
         <section class="introduce-eduplus">
@@ -123,8 +121,6 @@
                         <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br> Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco <br> laboris nisi ut aliquip ex ea commodo consequat.
-                            Fusce tellus. <br> Integer in sapien. Duis ante orci, molestie vitae vehicula <br> venenatis, tincidunt
-                            ac pede.
                         </p>
                     </div>
                     <article class="introduce-eduplus__subflex1">
@@ -141,56 +137,133 @@
                         </div>
                     </article>
                     <div class="introduce-eduplus__horizontal-line"></div>
-                    <article>
+                    <article class="introduce-eduplus__subflex1">
                         <span class="fa-stack fa-1x introduce-eduplus__icon">
                             <i class="fas fa-circle fa-stack-2x color-blue"></i>
                             <i class="fas fa-trophy fa-stack-1x fa-inverse introduce-eduplus__icon2"></i>
                         </span>
-                        <h3>Job Placement Support</h3>
-                        <p>
-                            In laoreet, magna id viverra tincidunt, sem odio <br> bibendum justo,
-                            vel imperdiet sapien wisi sed libero.
-                        </p>
+                        <div class="introduce-eduplus__article-text">
+                            <h3>Job Placement Support</h3>
+                            <p>
+                                In laoreet, magna id viverra tincidunt, sem odio <br> bibendum justo,
+                                vel imperdiet sapien wisi sed libero.
+                            </p>
+                        </div>
                     </article>
-                    <div class="introduce-eduplus__button">
+                    <a href="#" class="introduce-eduplus__button">
                         Learn more
                         <i class="fas fa-long-arrow-alt-right"></i>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- Statistics sekce -->
-        <section>
-            <p>
-                <span class="statistics-numbers">3045+</span> <br>
-                <span class="statistics-text">Satisfied</span>
-            </p>
-            <p>
-                <span class="statistics-numbers">7852+</span> <br>
-                <span class="statistics-text">Available Courses</span>
-            </p>
-            <p>
-                <span class="statistics-numbers">9862+</span> <br>
-                <span class="statistics-text">Graduate Students</span>
-            </p>
-            <p>
-                <span class="statistics-numbers">8963+</span> <br>
-                <span class="statistics-text">Active Courses</span>
-            </p>
+        <section class="stats stats--about-us-positioned">
+            <div class="stats__wrapper">
+                <div class="stats__line">
+                </div>
+                <div class="stats__item stats__item--about-us-edited">
+                    <div class="stats__icon">
+                        <i class="far fa-user fa-2x"></i>
+                    </div>
+                    <div class="stats__text">
+                        <div class="stats__text--big">
+                            3045+
+                        </div>
+                        <div class="stats__text--small">
+                            Safisfied Students
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats__wrapper">
+                <div class="stats__line">
+                </div>
+                <div class="stats__item stats__item--about-us-edited">
+                    <div class="stats__icon">
+                        <i class="fas fa-book fa-2x"></i>
+                    </div>
+                    <div class="stats__text">
+                        <div class="stats__text--big">
+                            7852+
+                        </div>
+                        <div class="stats__text--small">
+                            Available Courses
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats__wrapper">
+                <div class="stats__line">
+                </div>
+                <div class="stats__item stats__item--about-us-edited">
+                    <div class="stats__icon">
+                        <i class="fas fa-graduation-cap fa-2x"></i>
+                    </div>
+                    <div class="stats__text">
+                        <div class="stats__text--big">
+                            9862+
+                        </div>
+                        <div class="stats__text--small">
+                            Graduate Students
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats__wrapper">
+                <div class="stats__line">
+                </div>
+                <div class="stats__item stats__item--about-us-edited">
+                    <div class="stats__icon">
+                        <i class="fas fa-laptop-code fa-2x"></i>
+                    </div>
+                    <div class="stats__text">
+                        <div class="stats__text--big">
+                            8963+
+                        </div>
+                        <div class="stats__text--small">
+                            Active Courses
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </section>
 
         <!-- Who we are sekce -->
-        <section>
-            <span class="whoweare-section-title">Who We Are</span>
-            <h2><strong>Institute Goals</strong></h2>
-            <p>
-                orem ipsum dolor sit amet, consectetuer adipiscing elit. <br> Ut enim ad minim veniam,
-                quis nostrud exercitation <br> ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+        <section class="goals">
+            <div class="goals__content">
+                <div class="goals__who-we-are">
+                    <span class="section-label"><i class="fas fa-ellipsis-h margin-right"></i>Who We Are</span>
+                    <h2 class="section-heading"><strong>Institute Goals</strong></h2>
+                    <p>
+                        orem ipsum dolor sit amet, consectetuer adipiscing elit. <br> Ut enim ad minim veniam,
+                        quis nostrud exercitation <br> ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="goals__circles">
+                        <div class="goals__circle-wrapper">
+                            <div class="goals__circle">
+                                <p>83%</p>
+                                <img class="goals__percent-circle" src="Images/orange-percent-circle.png" alt="Orange percent circle">
+                            </div>
+                            <p>Engineering Studies</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="goals__video">
+
+                </div>
+            </div>
+            
             <div class="enginering-circle">
-                <img src="Images/orange-percent-circle.png" alt="Orange percent circle">
-                83%
+                
                 <h3>Enginering Studies</h3>
             </div>
             <div class="general-circle">
@@ -356,7 +429,6 @@
 
     </main>
 
-    <!-- patička celé webové stránky -->
     <footer>
         <img src="Images/Logo/EduPlusIcon.png" alt="Logo">
         <h3>EduPlus</h3>
