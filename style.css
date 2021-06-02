@@ -699,7 +699,11 @@ a {
 /* What our students say */
 
 .students-feedback {
-    background-color: darkslateblue;
+    /*background-color: darkslateblue;*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(Images/Feedback/group-students-table.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .students-feedback__header {
@@ -945,7 +949,7 @@ a {
     display: flex;
     background-color: rgb(255, 102, 0);
     justify-content: space-between;
-    padding: 3% 15%;
+    padding: 3% 18%;
     /*width:100%;
     height: auto;
     text-align: center;
@@ -963,6 +967,7 @@ a {
 
 /*patička webové stránky*/
 .main-footer {
+    position: relative;
     background-color: rgb(6,42,54);
 }
 
@@ -972,7 +977,7 @@ a {
 
 .main-footer__content {
     /* max-width: 1000px; */
-    padding: 5% 17%;
+    padding: 5% 20% 2% 20%;
 }
 
 .main-footer__flex1 {
@@ -1027,7 +1032,7 @@ a {
 }
 
 .main-footer__our-courses {
-    flex-basis: 40%;
+    flex-basis: 53%;
 }
 
 .main-footer__subflex2-1 {
@@ -1106,6 +1111,24 @@ a {
     flex-basis: 15%;
 }
 
+.main-footer__copyright {
+    background-color: rgb(13,53,65);
+    text-align: center;
+    padding: 1px 0;
+}
+
+.main-footer__slide-up {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 45%;
+    left: 85%;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(69,130,255);
+    color: white;
+}
 
 
 
@@ -1167,7 +1190,7 @@ a {
 }
 
 .introduce-eduplus__content {
-    padding: 7% 15% 15vh 15%;
+    padding: 7% 5% 15vh 15%;
     display: flex;
     width: 80%;
     justify-content: space-between;
@@ -1284,7 +1307,7 @@ a {
 .goals__content {
     display: flex;
     justify-content: space-between;
-    padding: 5% 17%;
+    padding: 5% 14% 5% 17%;
     width: 69%;
 }
 
