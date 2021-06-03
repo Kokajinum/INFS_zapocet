@@ -1,290 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Petr Kozak">
-        <link rel="stylesheet" href="style.css">
-        <title>EduPlus - Our Courses</title>
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Petr Kozak">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c687dc85d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>EduPlus - Courses Details</title>
+</head>
 
-        <!-- hlavička celé stránky -->
-        <header>
-            <div class="logo">
-                <img src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo">
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="Home.html"><img class="logo__image" src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo"></a>
+            <a href="Home.html">
                 <h1 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h1>
+            </a>
+        </div>
+        <!-- hlavní navigační prvky -->
+        <nav class="navigation navigation--centered">
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__href" href="Home.html">Home</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="About-us.html">About Us</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Our-Courses.html">Courses</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Our-Courses.html">Courses</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Courses List</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Courses-Details.html">Courses
+                                Details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Events-Details.html">Events</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Events</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Events list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Events-Details.html">Events details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="#">Pages</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Blog-standard.html">Blog</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Blog</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Blog-standard.html">Blog list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Blog-details.html">Blog details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item menu__item--noafter"><a class="menu__href" href="Contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- side bar -->
+        <div class="side-bar header__side-bar">
+
+            <div class="side-bar__item1">
+                <i class="fab fa-facebook-f  fb-icon1"></i>
             </div>
-            <!-- hlavní navigační prvky -->
-            <nav>
-                <ul>
-                    <li><a href="Home.html">Home</a>
-                        <ul>
-                            <li><a href="About-us.html">About Us</a></li>
-                        </ul>
-                    </li>
-                    <li>Courses
-                        <ul>
-                            <li><a href="Our-Courses.html">Courses</a></li>
-                            <li><a href="#">Courses List</a></li>
-                            <li><a href="Courses-Details.html">Courses Details</a></li>
-                        </ul>
-                    </li>
-                    <li>Events
-                        <ul>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Events list</a></li>
-                            <li><a href="Events-Details.html">Events details</a></li>
-                        </ul>
-                    </li>
-                    <li>Pages
-                        <ul>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Pages list</a></li>
-                            <li><a href="#">Pages details</a></li>
-                        </ul>
-                    </li>
-                    <li>Blog
-                        <ul>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="Blog-standard.html">Blog list</a></li>
-                            <li><a href="Blog-details.html">Blog details</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Contact-us.html">Contact</a></li>
-                </ul>
-            </nav>
-            <h2>Our Courses</h2>
-            Home > Courses
-        </header>
+            <div class="side-bar__item2">
+                <i class="fab fa-youtube yt-icon1"></i>
+            </div>
+            <div class="side-bar__item3">
+                <div class="sign-in">
+                    <i class="far fa-user-circle user-icon1"></i>
+                    Sign in
+                </div>
+            </div>
+            <div class="side-bar__item4">
+                <i class="fas fa-th fa-3x menu-icon1"></i>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__content">
+                <h2>Our Courses</h2>
+                <a href="/Home.html"><span>Home</span></a>
+                <a href="/Our-Courses.html"><span>Courses</span></a>
+            </div>
+        </div>
+    </header>
 
-        <!-- hlavní obsah -->
-        <main>
-            <section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hpUJQibgcx8" title="YouTube video player" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <main>
 
-                <!-- how to -->
-                <article>
-                    <h3>How To Improve Web Design Skills</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia justo. 
-                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                        Et harum quidem rerum facilis est et expedita distinctio. Curabitur sagittis hendrerit ante. 
-                        Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum 
-                        odio risus sit amet ante. Etiam dictum tincidunt diam. Mauris suscipit, ligula sit 
-                        amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. 
-                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                        Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem.
-                    </p>
-                </article>
+        <!-- How To Improve Web Design Skills -->
+        <section class="improve-skills">
+            <div class="improve-skills__content1">
+                <div class="improve-skills__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hpUJQibgcx8"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="available-courses-grid__star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="improve-skills__headings improve-skills__main-heading">How To Improve Web Design Skills</h3>
+                <p class="improve-skills__text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia justo.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Et harum quidem rerum facilis est et expedita distinctio. Curabitur sagittis hendrerit ante.
+                    Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum
+                    odio risus sit amet ante. Etiam dictum tincidunt diam. Mauris suscipit, ligula sit
+                    amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem.
+                </p>
 
-                <!-- Curriculum -->
-                <article>
-                    <h3>Curriculum</h3>
-                    <p>
-                        Duis condimentum augue id magna semper rutrum. Donec iaculis gravida nulla. 
-                        Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Quisque porta. 
-                        Integer imperdiet lectus quis justo. Nullam eget nisl. Maecenas ipsum velit, 
+                <!-- curriculum -->
+                <section class="improve-skills__curriculum">
+                    <h3 class="improve-skills__headings improve-skills__curriculum-heading">Curriculum</h3>
+                    <p class="improve-skills__text">
+                        Duis condimentum augue id magna semper rutrum. Donec iaculis gravida nulla.
+                        Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Quisque porta.
+                        Integer imperdiet lectus quis justo. Nullam eget nisl. Maecenas ipsum velit,
                         consectetuer eu lobortis ut, dictum at dui. Duis condimentum augue id magna semper rutrum.
                     </p>
-                    <ul>
-                        <li>
-                            <span>
+                    <ul class="improve-skills__lessons">
+                        <li class="improve-skills__lesson">
+                            <div class="improve-skills__lesson-part1">
                                 Lesson 01 : Introduced About Web Design
+                            </div>
+                            <div class="improve-skills__lesson-part2">
+                                <i class="far fa-play-circle"></i>
                                 <time datetime="05:59">05:59 hr</time>
-                            </span>
-                        </li>
-                        <li>
-                            <span>
+                            </div>
+                        </li>  
+                        <li class="improve-skills__lesson">
+                            <div class="improve-skills__lesson-part1">
                                 Lesson 02 : What is UX/UI Design?
+                            </div>
+                            <div class="improve-skills__lesson-part2">
+                                <i class="far fa-play-circle"></i>
                                 <time datetime="05:59">05:59 hr</time>
-                            </span>
+                            </div>
                         </li>
-                        <li>
-                            <span>
+                        <li class="improve-skills__lesson">
+                            <div class="improve-skills__lesson-part1">
                                 Lesson 03 : Why Need UX/UI Role In Web Design?
+                            </div>
+                            <div class="improve-skills__lesson-part2">
+                                <i class="far fa-play-circle"></i>
                                 <time datetime="05:59">05:59 hr</time>
-                            </span>
+                            </div>
                         </li>
-                        <li>
-                            <span>
+                        <li class="improve-skills__lesson">
+                            <div class="improve-skills__lesson-part1">
                                 Lesson 04 : What Is UX Manager?
+                            </div>
+                            <div class="improve-skills__lesson-part2">
+                                <i class="far fa-play-circle"></i>
                                 <time datetime="05:59">05:59 hr</time>
-                            </span>
+                            </div>
                         </li>
-                        <li>
-                            <span>
+                        <li class="improve-skills__lesson">
+                            <div class="improve-skills__lesson-part1">
                                 Lesson 05 : What's Your Design Goals?
-                                <time datetime="05:59">05:59 hr</time>
-                            </span>
+                            </div>
+                            <div class="improve-skills__lesson-part2">
+                                <i class="far fa-play-circle"></i>
+                                <time datetime="05:59">05:59 hr</time>   
+                            </div> 
                         </li>
                     </ul>
-                </article>
-
-                <img src="Images/Courses-details/courses-details01.jpg" alt="Courses Details picture">
+                </section>
 
                 <!-- faq -->
-                <article>
-                    <h3>Frequently Asked Questions</h3>
-                    <p>
-                        Vivamus luctus egestas leo. Maecenas lorem. Lorem ipsum dolor sit amet, 
+                <section class="improve-skills__faq">
+                    <img class="improve-skills__faq-picture" src="Images/Courses-details/courses-details01.jpg"
+                        alt="Courses Details picture">
+                    <h3 class="improve-skills__headings">Frequently Asked Questions</h3>
+                    <p class="improve-skills__text">
+                        Vivamus luctus egestas leo. Maecenas lorem. Lorem ipsum dolor sit amet,
                         consectetuer adipiscing elit. Morbi scelerisque luctus velit.
                     </p>
-                    <ul>
-                        <li>Best Online Course For Basic Web Design For Beginners</li>
-                        <li>Why We Are The Best Online Courses?</li>
-                        <li>Creating Secure Password Flows With NodeJS And MySQL</li>
-                        <li>Creating Secure Password Flows With NodeJS And MySQL</li>
+                    <ul class="improve-skills__questions">
+                        <li>
+                            <p class="improve-skills__question">Best Online Course For Basic Web Design For Beginners</p>
+                            <div class="improve-skills__line"></div>
+                            <div class="improve-skills__card">
+
+                            </div>
+                        </li>
+                        <li>
+                            <p class="improve-skills__question">Why We Are The Best Online Courses?</p>
+                            <div class="improve-skills__line"></div>
+                            <div class="improve-skills__card-active">
+                                <img class="improve-skills__card-image" src="Images/Courses-details/faq-img02.jpg"
+                                    alt="Students constulting" width="203" height="115">
+                                <div class="improve-skills__card-text">
+                                    <p class="improve-skills__text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia
+                                        justo.
+                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                        mus.
+                                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                                        turpis egestas.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="improve-skills__question">Creating Secure Password Flows With NodeJS And MySQL</p>
+                            <div class="improve-skills__line"></div>
+                            <div class="improve-skills__card">
+
+                            </div>
+                        </li>
+                        <li>
+                            <p class="improve-skills__question">Creating Secure Password Flows With NodeJS And MySQL</p>
+                            <div class="improve-skills__line"></div>
+                            <div class="improve-skills__card">
+
+                            </div>
+                        </li>
                     </ul>
-                </article>
+                </section>
 
                 <!-- course instructors -->
-                <section>
-                    <div>
-                        <img src="Images/Instructors/instructor-profile1.jpg" alt="Instructor profile" width="270" height="250">
-                        <p>Somalia D Silva</p>
-                        <p>Math Teacher</p>
-                    </div>
+                <article class="improve-skills__instructors">
+                    <h3 class="improve-skills__headings">Course instructors</h3>
+                    <div class="improve-skills__items">
+                        <div class="improve-skills__item">
+                            <img class="improve-skills__teacher-photo" src="Images/Instructors/instructor-profile1.jpg"
+                                alt="Instructor profile" width="270" height="250">
+                            <p class="improve-skills__teacher-name">Somalia D Silva</p>
+                            <p class="improve-skills__teacher-role">Math Teacher</p>
+                        </div>
 
-                    <div>
-                        <img src="Images/Instructors/instructor-profile2.jpg" alt="Instructor profile" width="270" height="250">
-                        <p>David Warner</p>
-                        <p>Math Teacher</p>
-                    </div>
+                        <div class="improve-skills__item">
+                            <img class="improve-skills__teacher-photo" src="Images/Instructors/instructor-profile2.jpg"
+                                alt="Instructor profile" width="270" height="250">
+                            <p class="improve-skills__teacher-name">David Warner</p>
+                            <p class="improve-skills__teacher-role">Math Teacher</p>
+                        </div>
 
-                    <div>
-                        <img src="Images/Instructors/instructor-profile4.jpg" alt="Instructor profile" width="270" height="250">
-                        <p>Zavib Makaullah</p>
-                        <p>Math Teacher</p>
-                    </div>
+                        <div class="improve-skills__item">
+                            <img class="improve-skills__teacher-photo" src="Images/Instructors/instructor-profile4.jpg"
+                                alt="Instructor profile" width="270" height="250">
+                            <p class="improve-skills__teacher-name">Zavib Makaullah</p>
+                            <p class="improve-skills__teacher-role">Math Teacher</p>
+                        </div>
 
-                    <div>
-                        <img src="Images/Instructors/instructor-profile3.jpg" alt="Instructor profile" width="270" height="250">
-                        <p>Jhonson Maxwell</p>
-                        <p>Math Teacher</p>
+                        <div class="improve-skills__item">
+                            <img class="improve-skills__teacher-photo" src="Images/Instructors/instructor-profile3.jpg"
+                                alt="Instructor profile" width="270" height="250">
+                            <p class="improve-skills__teacher-name">Jhonson Maxwell</p>
+                            <p class="improve-skills__teacher-role">Math Teacher</p>
+                        </div>
                     </div>
-                </section>
-            </section>
+                </article>
+            </div>
 
-            <aside>
-                <div>
-                    <ul>
-                        <li>
+            <aside class="improve-skills__content2">
+                <div class="improve-skills__info-box">
+                    <ul class="improve-skills__info">
+                        <li class="improve-skills__info-item">
                             <p>
                                 Course Price <span>$59</span> <br>
                                 <img src="Images/Line-gray-horizontal-short.png" alt="Horizontal short line">
                             </p>
                         </li>
-                        <li>
+                        <li class="improve-skills__info-item">
                             <p>
                                 Instructor <span>David Warner</span> <br>
                                 <img src="Images/Line-gray-horizontal-short.png" alt="Horizontal short line">
                             </p>
                         </li>
-                        <li>
+                        <li class="improve-skills__info-item">
                             <p>
                                 Duration <span>360 Hours</span> <br>
                                 <img src="Images/Line-gray-horizontal-short.png" alt="Horizontal short line">
                             </p>
                         </li>
-                        <li>
+                        <li class="improve-skills__info-item">
                             <p>
                                 Lectures <span>20 Lessons</span> <br>
                                 <img src="Images/Line-gray-horizontal-short.png" alt="Horizontal short line">
                             </p>
                         </li>
-                        <li>
+                        <li class="improve-skills__info-item">
                             <p>
                                 Enrolled <span>963 Students</span> <br>
                                 <img src="Images/Line-gray-horizontal-short.png" alt="Horizontal short line">
                             </p>
                         </li>
-                        <li>
+                        <li class="improve-skills__info-item">
                             <p>
                                 Language <span>English</span> <br>
                                 <img src="Images/Line-gray-horizontal-short.png" alt="Horizontal short line">
                             </p>
                         </li>
-                        <li>
+                        <li class="improve-skills__info-item">
                             <p>
                                 Deadline <span><time datetime="2021-03-06">06 March 2021</time></span> <br>
                                 <img src="Images/Line-gray-horizontal-short.png" alt="Horizontal short line">
                             </p>
                         </li>
                     </ul>
-                    <button>ENROLLED NOW</button>
+                    <button>enrolled now<i class="fas fa-long-arrow-alt-right"></i></button>
                 </div>
 
-                <div>
-                    <img src="Images/Courses-details/courses-details02.jpg" alt="Template picture">
+                <div class="improve-skills__ad">
+                    <img class="improve-skills__image" src="Images/Courses-details/courses-details02.jpg"
+                        alt="Template picture">
                 </div>
             </aside>
-
-            <div>
-                <div>
-                    <img src="Images/Logo/01.png" alt="Company Logo">
-                </div>
-                <div>
-                    <img src="Images/Logo/02.png" alt="Company Logo">
-                </div>
-                <div>
-                    <img src="Images/Logo/03.png" alt="Company Logo">
-                </div>
-                <div>
-                    <img src="Images/Logo/04.png" alt="Company Logo">
-                </div>
-                <div>
-                    <img src="Images/Logo/05.png" alt="Company Logo">
-                </div>
             </div>
 
-        </main>
+        </section>
 
-        <!-- patička celé webové stránky -->
-        <footer>
-            <img src="Images/Logo/EduPlusIcon.png" alt="Logo">
-            <h3>EduPlus</h3>
-            <!-- doplnit ikonky -->
-            Facebook Twitter YouTube Instagram
-            <img src="Images/Line.png" alt="Horizontal line">
-            <h4>Our Courses</h4>
-            <ul>
-                <li>Web Development</li>
-                <li>Business Studies</li>
-                <li>Computer Engineering</li>
-                <li>English Learning</li>
-                <li>Graphics Design</li>
-                <li>Color Combinations</li>
-                <li>Software Development</li>
-                <li>Photography</li>
-                <li>Advance WordPress</li>
-                <li>Basic PSD To HTML</li>
-            </ul>
-            <h4>Company</h4>
-            <ul>
-                <li>About Eduket</li>
-                <li>Meet Advisor</li>
-                <li>Join A Career</li>
-                <li>Latest Courses</li>
-                <li>Newsletters</li>
-            </ul>
-            <h4>Newsletters</h4>
-            <p>
-                Sed ut perspiciatis unde omnis natur error sit voluptatem accu <br> 
-                santium doloremque laudantium totam rem aperiam
-            </p>
-            <form method="POST">
-                <input type="text" placeholder="Enter Your Email" name="Newsletter email" id="newsletter-email">
-                <button type="submit"></button>
-            </form>
-            <p>
-                <small>Copyright &copy; 2020 EduPlus  All Rights Reserved.</small>
-            </p>
-        </footer>
 
-    </body>
+
+        <div class="bottom-logos">
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/01.png" alt="Company Logo">
+            </div>
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/02.png" alt="Company Logo">
+            </div>
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/03.png" alt="Company Logo">
+            </div>
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/04.png" alt="Company Logo">
+            </div>
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/05.png" alt="Company Logo">
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="main-footer__content">
+            <div class="main-footer__flex1">
+                <div class="main-footer__subflex1-1 main-footer__logo">
+                    <a href="Home.html"><img src="Images/Logo/EduPlusIconWhite.png" alt="Logo"></a>
+                    <a href="Home.html">
+                        <h2 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h2>
+                    </a>
+                </div>
+                <ul class="main-footer__subflex1-2">
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-blue"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Facebook
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-lightblue"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Twitter
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-red"></i>
+                            <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Youtube
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-violet"></i>
+                            <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Instagram
+                    </li>
+                </ul>
+            </div>
+            <div class="main-footer__line">
+            </div>
+            <div class="main-footer__flex2">
+                <div class="main-footer__our-courses">
+                    <h3>Our Courses</h3>
+                    <ul class="main-footer__subflex2-1">
+                        <li>Web Development</li>
+                        <li>Business Studies</li>
+                        <li>Computer Engineering</li>
+                        <li>English Learning</li>
+                        <li>Graphics Design</li>
+                        <li>Color Combinations</li>
+                        <li>Software Development</li>
+                        <li>Photography</li>
+                        <li>Advance WordPress</li>
+                        <li>Basic PSD To HTML</li>
+                    </ul>
+                </div>
+                <div class="main-footer__company">
+                    <h3>Company</h3>
+                    <ul class="main-footer__subflex2-2">
+                        <li>About Eduket</li>
+                        <li>Meet Advisors</li>
+                        <li>Join A Career</li>
+                        <li>Latest Courses</li>
+                        <li>Newsletters</li>
+                    </ul>
+                </div>
+                <div class="main-footer__newsletter">
+                    <h3>Newsletters</h3>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu
+                        santium doloremque laudantium totam rem aperiam
+                    </p>
+                    <form action="post" class="main-footer__form">
+                        <div class="main-footer__form-flex">
+                            <div class="main-footer__email">
+                                <input type="email" placeholder="Enter Your Email" name="email"
+                                    class="main-footer__input">
+                            </div>
+                            <button type="submit" class="main-footer__submit"><i
+                                    class="fas fa-long-arrow-alt-right fa-2x"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="main-footer__copyright">
+                <p>Copyright &copy; 2020 <span>Edu</span><span>Plus</span> All Rights Reserved.</p>
+            </div>
+        </div>
+        <a href="#" class="main-footer__slide-up">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </footer>
+
+</body>
 
 </html>
