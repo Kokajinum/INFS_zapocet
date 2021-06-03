@@ -1377,7 +1377,12 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     padding-left: 16%;
     padding-right: 16%;
+    padding-bottom: 7%;
     grid-gap: 2rem;
+}
+
+.our-courses__item {
+    position: relative;
 }
 
 .our-courses__image {
@@ -1386,7 +1391,96 @@ a {
     height: auto;
 }
 
+.our-courses__info {
+    border-left: 2px solid rgb(239,239,239);
+    border-right: 2px solid rgb(239,239,239);
+    border-bottom: 2px solid rgb(239,239,239);
+    padding-top: 10%;
+    padding-left: 7%;
+    padding-right: 10%;
+}
 
+.our-courses__flex1 {
+    display: flex;
+}
+
+.our-courses__subject {
+    margin-left: 2%;
+    margin-right: 7%;
+    padding: 1% 5%;
+    border-radius: 50px;
+    text-transform: uppercase;
+    background-color: rgb(54,98,255);
+    color: white;
+    font-weight: bold;
+    font-size: small;
+}
+
+.our-courses__star-rating {
+    font-size: small;
+    margin-top: 1%;
+    color: rgb(255, 102, 0);
+}
+
+.our-courses__info h3 {
+    font-weight: bold;
+    font-size: medium;
+    text-transform: capitalize;
+}
+
+.our-courses__line {
+    height: 1.5px;
+    background-color: rgb(239,239,239);
+    margin: auto;
+}
+
+.our-courses__stats {
+    padding-inline-start: 0;
+}
+
+.our-courses__stats-item {
+    display: inline;
+    margin-right: 16%;
+    font-size: small;
+}
+
+.our-courses__stats-item:last-child {
+    margin-right: 0;
+}
+
+.our-courses__stats-item i {
+    margin-right: 2%;
+    color: rgb(255, 102, 0);
+} 
+
+.our-courses__teacher {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    justify-content: space-between;
+    position: absolute;
+    top: 34%;
+    color: white;
+    font-weight: bold;
+}
+
+.our-courses__teacher img {
+    border-radius: 50%;
+}
+
+.our-courses___price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 37%;
+    left: 71%;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(255, 102, 0);
+}
 
 /**************************/
 
