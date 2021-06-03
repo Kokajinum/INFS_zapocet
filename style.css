@@ -1665,6 +1665,55 @@ a {
     border: 2px solid rgb(239,239,239);
 }
 
+.improve-skills__info {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 11%;
+}
+
+.improve-skills__info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 8%;
+}
+
+.improve-skills__info-item i {
+    color: rgb(255, 102, 0);
+}
+
+.improve-skills__info-item span {
+    color: rgb(255, 102, 0);
+    font-weight: bold;
+}
+
+.improve-skills__button {
+    position: relative;
+    left: 20%;
+    margin-bottom: 10%;
+    width: 65%;
+    border: none;
+    background-color: rgb(54,98,255);
+    color: white;
+    border-radius: 50px;
+    padding: 5%;
+}
+
+.improve-skills__button i {
+    margin-left: 12%;
+    font-size: x-large;
+}
+
+.improve-skills__button span {
+    text-transform: uppercase;
+}
+
+.improve-skills__ad {
+    margin-top: 10%;
+}
+
 .improve-skills__image {
     width: 100%;
     height: auto;
