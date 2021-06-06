@@ -1,128 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Petr Kozak">
-        <link rel="stylesheet" href="style.css">
-        <title>EduPlus - Event Details</title>
-    </head>
 
-    <body>
-        
-        <!-- hlavička celé stránky -->
-        <header>
-            <div class="logo">
-                <img src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Petr Kozak">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c687dc85d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>EduPlus - Event Details</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="Home.html"><img class="logo__image" src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo"></a>
+            <a href="Home.html">
                 <h1 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h1>
+            </a>
+        </div>
+        <!-- hlavní navigační prvky -->
+        <nav class="navigation navigation--centered">
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__href" href="Home.html">Home</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="About-us.html">About Us</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Our-Courses.html">Courses</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Our-Courses.html">Courses</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Courses List</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Courses-Details.html">Courses
+                                Details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Events-Details.html">Events</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Events</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Events list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Events-Details.html">Events details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="#">Pages</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Blog-standard.html">Blog</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Blog</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Blog-standard.html">Blog list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Blog-details.html">Blog details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item menu__item--noafter"><a class="menu__href" href="Contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- side bar -->
+        <div class="side-bar header__side-bar">
+
+            <div class="side-bar__item1 primary-background-color">
+                <i class="fab fa-facebook-f  fb-icon1"></i>
             </div>
-            <!-- hlavní navigační prvky -->
-            <nav>
-                <ul>
-                    <li><a href="Home.html">Home</a>
-                        <ul>
-                            <li><a href="About-us.html">About Us</a></li>
-                        </ul>
-                    </li>
-                    <li>Courses
-                        <ul>
-                            <li><a href="Our-Courses.html">Courses</a></li>
-                            <li><a href="#">Courses List</a></li>
-                            <li><a href="Courses-Details.html">Courses Details</a></li>
-                        </ul>
-                    </li>
-                    <li>Events
-                        <ul>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Events list</a></li>
-                            <li><a href="Events-Details.html">Events details</a></li>
-                        </ul>
-                    </li>
-                    <li>Pages
-                        <ul>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Pages list</a></li>
-                            <li><a href="#">Pages details</a></li>
-                        </ul>
-                    </li>
-                    <li>Blog
-                        <ul>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="Blog-standard.html">Blog list</a></li>
-                            <li><a href="Blog-details.html">Blog details</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Contact-us.html">Contact</a></li>
-                </ul>
-            </nav>
-            <h2>Event Details</h2>
-            Home > Event Details
-        </header>
+            <div class="side-bar__item2 primary-color">
+                <i class="fab fa-youtube yt-icon1"></i>
+            </div>
+            <div class="side-bar__item3">
+                <div class="sign-in">
+                    <i class="far fa-user-circle primary-color"></i>
+                    Sign in
+                </div>
+            </div>
+            <div class="side-bar__item4 primary-color">
+                <i class="fas fa-th fa-3x menu-icon1"></i>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__content">
+                <h2>Event Details</h2>
+                <a href="/Home.html"><span>Home</span></a>
+                <a href="/Events-Details.html"><span>Event Details</span></a>
+            </div>
+        </div>
+    </header>
 
-        <!-- hlavní obsah -->
-        <main>
-            <section>
-                <h2>Annual Conference 2020</h2>
-                <span class="info-about-event">
+    <!-- hlavní obsah -->
+    <main>
+        <section class="event-details">
+            <h2 class="primary-heading">Annual Conference 2020</h2>
+            <div class="event-details__info">
+                <div class="event-details__info-item">
+                    <i class="far fa-calendar-alt"></i>
                     <time datetime="2020-11-25">25 Nov 2020</time>
-                    Sat - Friday,
-                    <time datetime="08:00">08 am</time> - <time datetime="09:00">09 am</time>
-                    250 Main Street, USA
-                    New York Museum
-                </span>
-                <p>
-                    Sed vel lectus. Donec odio tempus molestie, porttitor ut, 
-                    iaculis quis, sem. Excepteur sint occaecat cupidatat non 
-                    proident, sunt in culpa qui officia deserunt mollit anim 
-                    id est laborum. Phasellus faucibus molestie nisl. Aliquam 
-                    ornare wisi eu metus. Duis sapien nunc, commodo et, interdum 
-                    suscipit, sollicitudin et, dolor. Etiam bibendum elit eget erat. 
-                    Maecenas fermentum, sem in pharetra pellentesque, velit turpis 
-                    volutpat ante, in pharetra metus odio a lectus. Fusce tellus. 
-                    Ut enim ad minima veniam, quis nostrum exercitationem ullam 
-                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
-                    consequatur? Praesent in mauris eu tortor porttitor accumsan. 
-                    Curabitur vitae diam non enim vestibulum interdum. Donec quis 
-                    nibh at felis congue commodo.
-                </p>
-                <img src="Images/Events-details/students-2020.jpg" alt="Students picture 2020">
-                <p>
-                    Duis condimentum augue id magna semper rutrum. Duis risus. 
-                    Fusce consectetuer risus a nunc. Curabitur vitae diam non 
-                    enim vestibulum interdum. Duis sapien nunc, commodo et, 
-                    interdum suscipit, sollicitudin et, dolor. Aliquam in lorem 
-                    sit amet leo accumsan lacinia. In laoreet, magna id viverra 
-                    tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi 
-                    sed libero. Aenean placerat. Aliquam erat volutpat. Fusce wisi. 
-                    Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. 
-                    Cras pede libero, dapibus nec, pretium sit amet, tempor quis. 
-                    Aenean id metus id velit ullamcorper pulvinar. Nullam at arcu 
-                    a est sollicitudin euismod. Nunc dapibus tortor vel mi dapibus 
-                    sollicitudin. Mauris suscipit, ligula sit amet pharetra semper, 
-                    nibh ante cursus purus, vel sagittis velit mauris vel metus. 
-                    In dapibus augue non sapien. Phasellus faucibus molestie nisl.
-                </p>
-                <h3>Importance Of Events</h3>
-                <p>Phasellus rhoncus. Integer vulputate sem a nibh rutrum consequat. 
-                    Donec vitae arcu. Morbi scelerisque luctus velit. Fusce aliquam 
-                    vestibulum ipsum. Maecenas aliquet accumsan leo. Etiam ligula pede, 
-                    sagittis quis, interdum ultricies, scelerisque eu. Aliquam in lorem 
-                    sit amet leo accumsan lacinia. Donec ipsum massa, ullamcorper in, 
-                    auctor et, scelerisque sed, est.
-                </p>
-                <ul>
-                    <li>Creating Secure Password Flows With NodeJS And MySQL</li>
-                    <li>Make Honest Design Work For Digital Business With Ethical Desig</li>
-                    <li>Building An E-Commerce Site With October CMS Shopaholic</li>
-                    <li>Smashing Podcast Episode 11 With Eduardo Bouças What Is Sourcebit?</li>
-                    <li>Avoid Keyboard Event-Related Bugs Browser-Based Transliteration</li>
-                </ul>
-                <img src="Images/Events-details/ny-map.png" alt="NY map" width="400" height="300">
+                </div>
+                <div class="event-details__info-item">
+                    <i class="far fa-clock"></i>
+                    <span>Sat - Friday, <time datetime="08:00">08 am</time> - <time datetime="09:00">09 am</time></span>
+                </div>
+                <div class="event-details__info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>250 Main Street, USA</span>
+                </div>
+                <div class="event-details__info-item">
+                    <i class="fas fa-home"></i>
+                    <span>New York Museum</span>
+                </div>
+            </div>
+            <div class="event-details__price">
+                $20
+            </div>
+            <div class="event-details__button">
+                join event
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+            <p class="primary-text">
+                Sed vel lectus. Donec odio tempus molestie, porttitor ut,
+                iaculis quis, sem. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum. Phasellus faucibus molestie nisl. Aliquam
+                ornare wisi eu metus. Duis sapien nunc, commodo et, interdum
+                suscipit, sollicitudin et, dolor. Etiam bibendum elit eget erat.
+                Maecenas fermentum, sem in pharetra pellentesque, velit turpis
+                volutpat ante, in pharetra metus odio a lectus. Fusce tellus.
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                consequatur? Praesent in mauris eu tortor porttitor accumsan.
+                Curabitur vitae diam non enim vestibulum interdum. Donec quis
+                nibh at felis congue commodo.
+            </p>
+            <img src="Images/Events-details/students-2020.jpg" alt="Students picture 2020">
+            <p class="primary-text">
+                Duis condimentum augue id magna semper rutrum. Duis risus.
+                Fusce consectetuer risus a nunc. Curabitur vitae diam non
+                enim vestibulum interdum. Duis sapien nunc, commodo et,
+                interdum suscipit, sollicitudin et, dolor. Aliquam in lorem
+                sit amet leo accumsan lacinia. In laoreet, magna id viverra
+                tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi
+                sed libero. Aenean placerat. Aliquam erat volutpat. Fusce wisi.
+                Nullam sapien sem, ornare ac, nonummy non, lobortis a enim.
+                Cras pede libero, dapibus nec, pretium sit amet, tempor quis.
+                Aenean id metus id velit ullamcorper pulvinar. Nullam at arcu
+                a est sollicitudin euismod. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Mauris suscipit, ligula sit amet pharetra semper,
+                nibh ante cursus purus, vel sagittis velit mauris vel metus.
+                In dapibus augue non sapien. Phasellus faucibus molestie nisl.
+            </p>
+            <article class="importance-events">
+                <div class="importance-events__content">
+                    <h3 class="primary-heading">Importance Of Events</h3>
+                    <p class="primary-text">Phasellus rhoncus. Integer vulputate sem a nibh rutrum consequat.
+                        Donec vitae arcu. Morbi scelerisque luctus velit. Fusce aliquam
+                        vestibulum ipsum. Maecenas aliquet accumsan leo. Etiam ligula pede,
+                        sagittis quis, interdum ultricies, scelerisque eu. Aliquam in lorem
+                        sit amet leo accumsan lacinia. Donec ipsum massa, ullamcorper in,
+                        auctor et, scelerisque sed, est.
+                    </p>
+                    <ul class="importance-events__items">
+                        <li class="importance-events__item">Creating Secure Password Flows With NodeJS And MySQL</li>
+                        <li class="importance-events__item">Make Honest Design Work For Digital Business With Ethical
+                            Desig</li>
+                        <li class="importance-events__item">Building An E-Commerce Site With October CMS Shopaholic</li>
+                        <li class="importance-events__item">Smashing Podcast Episode 11 With Eduardo Bouças What Is
+                            Sourcebit?</li>
+                        <li class="importance-events__item">Avoid Keyboard Event-Related Bugs Browser-Based
+                            Transliteration</li>
+                    </ul>
+                </div>
+                <img class="importance-events__image" src="Images/Events-details/ny-map.png" alt="NY map" width="400"
+                    height="300">
+            </article>
 
+            <div class="event-details__line">
+            </div>
+
+            <div class="event-details__conferences">
                 <!-- Annual Conference 2020 -->
                 <article>
-                    <img src="Images/Events-details/home-graphics-design.png" alt="Graphics Design"
-                    width="430" height="316">
+                    <img src="Images/Events-details/event-preview2.jpg" alt="Graphics Design" width="430" height="316">
                     <span>
                         <time datetime="2020-11-25">25 Nov 2020</time>
                         <time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time>
@@ -133,20 +201,20 @@
 
                 <!-- PHP Conference 2020 -->
                 <article>
-                    <img src="Images/Events-details/event-preview2.jpg" alt="Graphics Design"
-                    width="430" height="316">
+                    <img src="Images/Events-details/event-preview3.jpg" alt="Graphics Design" width="430" height="316">
                     <span>
                         <time datetime="2020-11-25">25 Nov 2020</time>
                         <time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time>
                     </span>
                     <h3>PHP Conference 2020</h3>
                     JOIN EVENT
-                </article> 
+                </article>
 
                 <!-- Design Conference 2020 -->
                 <article>
-                    <img src="Images/Events-details/event-preview3.jpg" alt="Graphics Design"
-                    width="430" height="316">
+                    <img src="Images/Events-details/home-graphics-design.png" alt="Graphics Design" width="430"
+                        height="316">
+
                     <span>
                         <time datetime="2020-11-25">25 Nov 2020</time>
                         <time datetime="08:00">08 AM</time> - <time datetime="09:00">09 PM</time>
@@ -154,70 +222,73 @@
                     <h3>Design Conference 2020</h3>
                     JOIN EVENT
                 </article>
-            </section>
-
-            <div>
-                <div>
-                    <img src="Images/Logo/01.png" alt="Company Logo">
-                </div>
-                <div>
-                    <img src="Images/Logo/02.png" alt="Company Logo">
-                </div>
-                <div>
-                    <img src="Images/Logo/03.png" alt="Company Logo">
-                </div>
-                <div>
-                    <img src="Images/Logo/04.png" alt="Company Logo">
-                </div>
-                <div>
-                    <img src="Images/Logo/05.png" alt="Company Logo">
-                </div>
             </div>
 
-        </main>
 
-        <!-- patička celé webové stránky -->
-        <footer>
-            <img src="Images/Logo/EduPlusIcon.png" alt="Logo">
-            <h3>EduPlus</h3>
-            <!-- doplnit ikonky -->
-            Facebook Twitter YouTube Instagram
-            <img src="Images/Line.png" alt="Horizontal line">
-            <h4>Our Courses</h4>
-            <ul>
-                <li>Web Development</li>
-                <li>Business Studies</li>
-                <li>Computer Engineering</li>
-                <li>English Learning</li>
-                <li>Graphics Design</li>
-                <li>Color Combinations</li>
-                <li>Software Development</li>
-                <li>Photography</li>
-                <li>Advance WordPress</li>
-                <li>Basic PSD To HTML</li>
-            </ul>
-            <h4>Company</h4>
-            <ul>
-                <li>About Eduket</li>
-                <li>Meet Advisor</li>
-                <li>Join A Career</li>
-                <li>Latest Courses</li>
-                <li>Newsletters</li>
-            </ul>
-            <h4>Newsletters</h4>
-            <p>
-                Sed ut perspiciatis unde omnis natur error sit voluptatem accu <br> 
-                santium doloremque laudantium totam rem aperiam
-            </p>
-            <form method="POST">
-                <input type="text" placeholder="Enter Your Email" name="Newsletter email" id="newsletter-email">
-                <button type="submit"></button>
-            </form>
-            <p>
-                <small>Copyright &copy; 2020 EduPlus  All Rights Reserved.</small>
-            </p>
-        </footer>
+        </section>
 
-    </body>
+        <div>
+            <div>
+                <img src="Images/Logo/01.png" alt="Company Logo">
+            </div>
+            <div>
+                <img src="Images/Logo/02.png" alt="Company Logo">
+            </div>
+            <div>
+                <img src="Images/Logo/03.png" alt="Company Logo">
+            </div>
+            <div>
+                <img src="Images/Logo/04.png" alt="Company Logo">
+            </div>
+            <div>
+                <img src="Images/Logo/05.png" alt="Company Logo">
+            </div>
+        </div>
+
+    </main>
+
+    <!-- patička celé webové stránky -->
+    <footer>
+        <img src="Images/Logo/EduPlusIcon.png" alt="Logo">
+        <h3>EduPlus</h3>
+        <!-- doplnit ikonky -->
+        Facebook Twitter YouTube Instagram
+        <img src="Images/Line.png" alt="Horizontal line">
+        <h4>Our Courses</h4>
+        <ul>
+            <li>Web Development</li>
+            <li>Business Studies</li>
+            <li>Computer Engineering</li>
+            <li>English Learning</li>
+            <li>Graphics Design</li>
+            <li>Color Combinations</li>
+            <li>Software Development</li>
+            <li>Photography</li>
+            <li>Advance WordPress</li>
+            <li>Basic PSD To HTML</li>
+        </ul>
+        <h4>Company</h4>
+        <ul>
+            <li>About Eduket</li>
+            <li>Meet Advisor</li>
+            <li>Join A Career</li>
+            <li>Latest Courses</li>
+            <li>Newsletters</li>
+        </ul>
+        <h4>Newsletters</h4>
+        <p>
+            Sed ut perspiciatis unde omnis natur error sit voluptatem accu <br>
+            santium doloremque laudantium totam rem aperiam
+        </p>
+        <form method="POST">
+            <input type="text" placeholder="Enter Your Email" name="Newsletter email" id="newsletter-email">
+            <button type="submit"></button>
+        </form>
+        <p>
+            <small>Copyright &copy; 2020 EduPlus All Rights Reserved.</small>
+        </p>
+    </footer>
+
+</body>
 
 </html>
