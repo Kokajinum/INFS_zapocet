@@ -1,412 +1,786 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Petr Kozak">
-        <link rel="stylesheet" href="style.css">
-        <title>EduPlus - Instructor Details</title>
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Petr Kozak">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c687dc85d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>EduPlus - Instructor Details</title>
+</head>
 
-        <!-- hlavička celé stránky -->
-        <header>
-            <div class="logo">
-                <img src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo">
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="Home.html"><img class="logo__image" src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo"></a>
+            <a href="Home.html">
                 <h1 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h1>
+            </a>
+        </div>
+        <!-- hlavní navigační prvky -->
+        <nav class="navigation navigation--centered">
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__href" href="Home.html">Home</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="About-us.html">About Us</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Our-Courses.html">Courses</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Our-Courses.html">Courses</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Courses List</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Courses-Details.html">Courses
+                                Details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Events-Details.html">Events</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Events</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Events list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Events-Details.html">Events details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="#">Pages</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Blog-standard.html">Blog</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Blog</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Blog-standard.html">Blog list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Blog-details.html">Blog details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item menu__item--noafter"><a class="menu__href" href="Contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- side bar -->
+        <div class="side-bar header__side-bar">
+
+            <div class="side-bar__item1 primary-background-color">
+                <i class="fab fa-facebook-f  fb-icon1"></i>
             </div>
-            <!-- hlavní navigační prvky -->
-            <nav>
-                <ul>
-                    <li><a href="Home.html">Home</a>
-                        <ul>
-                            <li><a href="About-us.html">About Us</a></li>
-                        </ul>
-                    </li>
-                    <li>Courses
-                        <ul>
-                            <li><a href="Our-Courses.html">Courses</a></li>
-                            <li><a href="#">Courses List</a></li>
-                            <li><a href="Courses-Details.html">Courses Details</a></li>
-                        </ul>
-                    </li>
-                    <li>Events
-                        <ul>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Events list</a></li>
-                            <li><a href="Events-Details.html">Events details</a></li>
-                        </ul>
-                    </li>
-                    <li>Pages
-                        <ul>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Pages list</a></li>
-                            <li><a href="#">Pages details</a></li>
-                        </ul>
-                    </li>
-                    <li>Blog
-                        <ul>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="Blog-standard.html">Blog list</a></li>
-                            <li><a href="Blog-details.html">Blog details</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Contact-us.html">Contact</a></li>
-                </ul>
-            </nav>
-            <h2>Instructor Details</h2>
-            Home > Instructor Details
-        </header>
+            <div class="side-bar__item2 primary-color">
+                <i class="fab fa-youtube yt-icon1"></i>
+            </div>
+            <div class="side-bar__item3">
+                <div class="sign-in">
+                    <i class="far fa-user-circle primary-color"></i>
+                    Sign in
+                </div>
+            </div>
+            <div class="side-bar__item4 primary-color">
+                <i class="fas fa-th fa-3x menu-icon1"></i>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__content">
+                <h2>Instructor Details</h2>
+                <a href="/Home.html"><span>Home</span></a>
+                <a href="/Instructor-Details.html"><span>Instructor Details</span></a>
+            </div>
+        </div>
+    </header>
 
-        <!-- hlavní obsah -->
-        <main>
-            <section>
-                <div>
-                    <div>
-                        <img src="Images/Instructors/instructor-profile1.jpg" alt="Instructor profile picture"
-                        width="400" height="350">
+    <main>
+        <section class="instructor-details">
+            <div class="instructor-details__flex1">
+                <div class="instructor-details__profile">
+                    <img class="instructor-details__profile-picture" src="Images/Instructors/instructor-profile1.jpg"
+                        alt="Instructor profile picture" width="400" height="350">
+                    <div class="instructor-details__content">
+                        <div class="instructor-details__wrapper">
+                            <h3 class="instructor-details__name">Somalia D Silva</h3>
+                            <div class="instructor-details__role primary-text">
+                                Math Teacher
+                            </div>
+                            <div class="instructor-details__hor-line">
+                            </div>
+                            <ul class="instructor-details__stats">
+                                <li class="instructor-details__stats-item">
+                                    <i class="fas fa-book primary-color"></i>
+                                    <span class="primary-text">750+ Courses</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="instructor-details__socials">
+                            <div class="instructor-details__social">
+                                <span class="fa-stack">
+                                    <i class="fas fa-circle fa-stack-2x color-blue"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="instructor-details__social">
+                                <span class="fa-stack">
+                                    <i class="fas fa-circle fa-stack-2x color-yellow"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="instructor-details__social">
+                                <span class="fa-stack">
+                                    <i class="fas fa-circle fa-stack-2x color-red"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="instructor-details__social">
+                                <span class="fa-stack">
+                                    <i class="fas fa-circle fa-stack-2x color-red"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Somalia D Silva</h3>
-                    <p>
-                    <span>
-                        Math Teacher
-                    </span>
-                    <br>
-                    <img src="Images/Line-gray-horizontal-short.png" alt="Horizontal short line">
-                    <br>
-                    <span>
-                        750+ Courses
-                    </span>
-                    </p>
-
-                    <!-- ikonky na soc. media -->
-                    <div>
-
-                    </div>
-
                 </div>
 
-                <section>
-                    <h3>About Me</h3>
-                    <p>
-                        Etiam dictum tincidunt diam. Nulla accumsan, elit sit amet varius semper, 
-                        nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Donec vitae arcu. 
-                        Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel 
-                        sagittis velit mauris vel metus. Fusce consectetuer risus a nunc. Class aptent 
-                        taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                <section class="instructor-details__about">
+                    <h3 class="primary-heading">About Me</h3>
+                    <p class="primary-text">
+                        Etiam dictum tincidunt diam. Nulla accumsan, elit sit amet varius semper,
+                        nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Donec vitae arcu.
+                        Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel
+                        sagittis velit mauris vel metus. Fusce consectetuer risus a nunc. Class aptent
+                        taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
                         Vivamus porttitor turpis ac leo.
                     </p>
-                    <p>
-                        Vivamus luctus egestas leo. Nullam dapibus fermentum ipsum. Nunc dapibus tortor 
-                        vel mi dapibus sollicitudin. Aenean vel massa quis mauris vehicula lacinia. 
+                    <p class="primary-text">
+                        Vivamus luctus egestas leo. Nullam dapibus fermentum ipsum. Nunc dapibus tortor
+                        vel mi dapibus sollicitudin. Aenean vel massa quis mauris vehicula lacinia.
                         Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante,
                         in pharetra metus odio a lectus.
                     </p>
-                    
-                    <div>
-                        <p>
-                            <span>3045+</span>
-                            <br>
-                            <span>Satisfied Students</span>
-                        </p>
-                    </div>
 
-                    <div>
-                        <div>
-
+                    <div class="instructor-details__about-subflex">
+                        <div class="stats__item">
+                            <div class="stats__icon">
+                                <i class="fas fa-users fa-2x primary-color"></i>
+                            </div>
+                            <div class="stats__text">
+                                <div class="stats__text--big primary-color">
+                                    3045+
+                                </div>
+                                <div class="stats__text--small">
+                                    Safisfied Students
+                                </div>
+                            </div>
                         </div>
-                        <p>
-                            <span>7852+</span>
-                            <br>
-                            <span>Available Courses</span>
-                        </p>
+                        <div class="instructor-details__ver-line">
+                        </div>
+                        <div class="stats__item">
+                            <div class="stats__icon">
+                                <i class="fas fa-book fa-2x primary-color"></i>
+                            </div>
+                            <div class="stats__text">
+                                <div class="stats__text--big primary-color">
+                                    7852+
+                                </div>
+                                <div class="stats__text--small">
+                                    Available Courses
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
+
                 </section>
-
-                <section>
-                    <h3>Certifications</h3>
-                    <p>
-                        Aliquam in lorem sit amet leo accumsan lacinia. Aenean placerat. Class aptent 
-                        taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
-                        Etiam posuere lacus quis dolor. Etiam neque.
-                    </p>
-                    <div>
-                        <div>
-                            <img src="Images/Instructors/certificate-miniature01.jpg" alt="Certificate photo">
-                        </div>
-                        <div>
-                            <img src="Images/Instructors/certificate-miniature02.jpg" alt="Certificate photo">
-                        </div>
-                        <div>
-                            <img src="Images/Instructors/certificate-miniature03.jpg" alt="Certificate photo">
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <h3>Educations</h3>
-
-                    <div>
-                        <div>
-
-                        </div>
-                        <p>
-                            <span>World University</span>
-                            <br>
-                            <span>Computer Science</span>
-                        </p>
-                    </div>
-
-                    <div>
-                        <div>
-
-                        </div>
-                        <p>
-                            <span>World University</span>
-                            <br>
-                            <span>Web Development</span>
-                        </p>
-                    </div>
-
-                    <div>
-                        <div>
-
-                        </div>
-                        <p>
-                            <span>Graphics Engineer</span>
-                            <br>
-                            <span>Behance.net</span>
-                        </p>
-                    </div>
-
-                    <div>
-                        <div>
-
-                        </div>
-                        <p>
-                            <span>Web Developer</span>
-                            <br>
-                            <span>Themeforest.net</span>
-                        </p>
-                    </div>
-                </section>
-
-            </section>
-
-            <!-- popular courses sekce -->
-            <section>
-                <h2>Popular Courses</h2>
-                <article>  
-
-                    <img src="Images/Courses/english-learning-course.jpg" alt="English Learning Course" width="370" height="250">
-                    <p>
-                        <span class="instructor-profile-preview">
-                            <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35"> Warner
-                        </span>
-                        <span>
-                            $59.95
-                        </span>
-                        <br>
-                        <span>
-                            ENGLISH
-                        </span>
-                    </p>            
-                    <h3>Best Courses For Learning<br>
-                        English Courses</h3>
-                    <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
-                    <p class="underline-courses-stats">
-                        25 36hr 2.5k
-                    </p>
-
-                </article>
-
-                <article>
-
-                    <img src="Images/Courses/business-solutions-course.jpg" alt="Business Course" width="370" height="250">
-                    <p>
-                        <span class="instructor-profile-preview">
-                            <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35"> Warner
-                        </span>
-                        <span>
-                            $59.95
-                        </span>
-                        <br>
-                        <span>
-                            BUSINESS
-                        </span>
-                    </p>            
-                    <h3>Learning About It Consulting <br>
-                        Business Solutions</h3>
-                    <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
-                    <p class="underline-courses-stats">
-                        25 36hr 2.5k
-                    </p>
-
-                </article>
-
-                <article>
-
-                    <img src="Images/Courses/web-design-course.jpg" alt="Web Design Course" width="370" height="250">
-                    <p>
-                        <span class="instructor-profile-preview">
-                            <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35"> Warner
-                        </span>
-                        <span>
-                            $59.95
-                        </span>
-                        <br>
-                        <span>
-                            DESIGN
-                        </span>
-                    </p>            
-                    <h3>Introduced About Basic Web <br>
-                        Design For Beginners</h3>
-                    <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
-                    <p class="underline-courses-stats">
-                        25 36hr 2.5k
-                    </p>
-
-                </article>
-
-                <!-- 4. -->
-                <article>
-
-                    <img src="Images/Courses/home-marketing-strategy.png" alt="Marketing Course" width="370" height="250">
-                    <p>
-                        <span class="instructor-profile-preview">
-                            <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35"> Warner
-                        </span>
-                        <span>
-                            $59.95
-                        </span>
-                        <br>
-                        <span>
-                            MARKETING
-                        </span>
-                    </p>            
-                    <h3>Best Courses For Learning <br>
-                        English Courses</h3>
-                    <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
-                    <p class="underline-courses-stats">
-                        25 36hr 2.5k
-                    </p>
-
-                </article>
-                
-                <!-- 5. -->
-                <article>
-
-                    <img src="Images/Courses/home-basic-photography.png" alt="Photography Course" width="370" height="250">
-                    <p>
-                        <span class="instructor-profile-preview">
-                            <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35"> Warner
-                        </span>
-                        <span>
-                            $59.95
-                        </span>
-                        <br>
-                        <span>
-                            PHOTOGRAPHY
-                        </span>
-                    </p>            
-                    <h3>Learning About It Consulting <br>
-                        Business Solutions</h3>
-                    <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
-                    <p class="underline-courses-stats">
-                        25 36hr 2.5k
-                    </p>
-
-                </article>
-
-                <!-- 6. -->
-                <article>
-
-                    <img src="Images/Courses/home-web-development.png" alt="Development Course" width="370" height="250">
-                    <p>
-                        <span class="instructor-profile-preview">
-                            <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40" height="35"> Warner
-                        </span>
-                        <span>
-                            $59.95
-                        </span>
-                        <br>
-                        <span>
-                            DEVELOPMENT
-                        </span>
-                    </p>            
-                    <h3>Introduced About Basic Web <br>
-                        Design For Beginners</h3>
-                    <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
-                    <p class="underline-courses-stats">
-                        25 36hr 2.5k
-                    </p>
-
-                </article>
-            </section>
-
-            <div>
-                <div>
-                    <img src="Images/Logo/01.png" alt="Company Logo">
-                </div>
-                <div>
-                    <img src="Images/Logo/02.png" alt="Company Logo">
-                </div>
-                <div>
-                    <img src="Images/Logo/03.png" alt="Company Logo">
-                </div>
-                <div>
-                    <img src="Images/Logo/04.png" alt="Company Logo">
-                </div>
-                <div>
-                    <img src="Images/Logo/05.png" alt="Company Logo">
-                </div>
             </div>
 
-        </main>
+            <div class="instructor-details__flex2">
+                <section class="instructor-details__certifications">
+                    <h3 class="primary-heading">Certifications</h3>
+                    <p class="primary-text">
+                        Aliquam in lorem sit amet leo accumsan lacinia. Aenean placerat. Class aptent
+                        taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
+                        Etiam posuere lacus quis dolor. Etiam neque.
+                    </p>
+                    <div class="instructor-details__certifications-subflex">
+                        <img src="Images/Instructors/certificate-miniature01.jpg" alt="Certificate photo">
+                        <img src="Images/Instructors/certificate-miniature02.jpg" alt="Certificate photo">
+                        <img src="Images/Instructors/certificate-miniature03.jpg" alt="Certificate photo">
+                    </div>
+                </section>
 
-        <!-- patička celé webové stránky -->
-        <footer>
-            <img src="Images/Logo/EduPlusIcon.png" alt="Logo">
-            <h3>EduPlus</h3>
-            <!-- doplnit ikonky -->
-            Facebook Twitter YouTube Instagram
-            <img src="Images/Line.png" alt="Horizontal line">
-            <h4>Our Courses</h4>
-            <ul>
-                <li>Web Development</li>
-                <li>Business Studies</li>
-                <li>Computer Engineering</li>
-                <li>English Learning</li>
-                <li>Graphics Design</li>
-                <li>Color Combinations</li>
-                <li>Software Development</li>
-                <li>Photography</li>
-                <li>Advance WordPress</li>
-                <li>Basic PSD To HTML</li>
-            </ul>
-            <h4>Company</h4>
-            <ul>
-                <li>About Eduket</li>
-                <li>Meet Advisor</li>
-                <li>Join A Career</li>
-                <li>Latest Courses</li>
-                <li>Newsletters</li>
-            </ul>
-            <h4>Newsletters</h4>
-            <p>
-                Sed ut perspiciatis unde omnis natur error sit voluptatem accu <br> 
-                santium doloremque laudantium totam rem aperiam
-            </p>
-            <form method="POST">
-                <input type="text" placeholder="Enter Your Email" name="Newsletter email" id="newsletter-email">
-                <button type="submit"></button>
-            </form>
-            <p>
-                <small>Copyright &copy; 2020 EduPlus  All Rights Reserved.</small>
-            </p>
-        </footer>
+                <section class="instructor-details__other">
+                    <h3 class="primary-heading">Educations</h3>
 
-    </body>
+                    <div>
+                        <div>
+                            <div>
+                                <i class="fas fa-graduation-cap fa-2x primary-color"></i>
+                            </div>
+                            <div>
+                                <div>World University</div>
+                                <div>Computer Science</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <i class="fas fa-graduation-cap fa-2x primary-color"></i>
+                            </div>
+                            <div>
+                                <div>World University</div>
+                                <div>Web Development</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <div>
+                                <i class="fas fa-drafting-compass"></i>
+                            </div>
+                            <div>
+                                <div>Graphics Designer</div>
+                                <div>Behance.net</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <i class="fas fa-drafting-compass"></i>
+                            </div>
+                            <div>
+                                <div>Web Developer</div>
+                                <div>Themeforest.net</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- popular courses sekce -->
+        <section class="popular-courses">
+            <h2 class="primary-heading popular-courses__heading">Popular Courses</h2>
+            <div class="available-courses-grid popular-courses__grid">
+                <article class="available-courses-grid__item">
+                    <div class="available-courses-grid__image-background">
+                        <img class="available-courses-grid__image" src="Images/Courses/english-learning-course.jpg"
+                            alt="English Learning Course" width="370" height="250">
+                    </div>
+                    <div class="available-courses-grid__flex1">
+                        <div class="available-courses-grid__instructor">
+                            <img class="available-courses-grid__profile" src="Images/Courses/instructor-profile.jpg"
+                                alt="Instructor profile picture" width="40" height="35">
+                            <div class="available-courses-grid__name">
+                                Warner
+                            </div>
+                        </div>
+                        <div class="available-courses-grid__price primary-background-color">
+                            $59.95
+                        </div>
+                    </div>
+                    <div class="available-courses-grid__wrapper">
+                        <div class="available-courses-grid__flex2">
+                            <div class="available-courses-grid__subject">
+                                english
+                            </div>
+                            <div class="available-courses-grid__star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <h3><span>Best Courses For Learning</span>English Courses</h3>
+                        <div class="available-courses-grid__line">
+                        </div>
+                        <ul class="available-courses-grid__stats">
+                            <li class="available-courses-grid__stats-item">
+                                <i class="fas fa-users primary-color"></i>
+                                25
+                            </li>
+                            <li class="available-courses-grid__stats-item">
+                                <i class="far fa-clock primary-color"></i>
+                                36hr
+                            </li>
+                            <li class="available-courses-grid__stats-item">
+                                <i class="far fa-comments primary-color"></i>
+                                2.5k
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="available-courses-grid__item">
+                    <div class="available-courses-grid__image-background">
+                        <img class="available-courses-grid__image" src="Images/Courses/business-solutions-course.jpg"
+                            alt="Business Course" width="370" height="250">
+                    </div>
+                    <div class="available-courses-grid__flex1">
+                        <div class="available-courses-grid__instructor">
+                            <img class="available-courses-grid__profile" src="Images/Courses/instructor-profile.jpg"
+                                alt="Instructor profile picture" width="40" height="35">
+                            <div class="available-courses-grid__name">
+                                Warner
+                            </div>
+                        </div>
+                        <div class="available-courses-grid__price primary-background-color">
+                            $59.95
+                        </div>
+                    </div>
+                    <div class="available-courses-grid__wrapper">
+                        <div class="available-courses-grid__flex2">
+                            <div class="available-courses-grid__subject">
+                                business
+                            </div>
+                            <div class="available-courses-grid__star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <h3><span>Learning About It Consulting</span>Business Solutions</h3>
+                        <div class="available-courses-grid__line">
+                        </div>
+                        <ul class="available-courses-grid__stats">
+                            <li class="available-courses-grid__stats-item">
+                                <i class="fas fa-users primary-color"></i>
+                                25
+                            </li>
+                            <li class="available-courses-grid__stats-item">
+                                <i class="far fa-clock primary-color"></i>
+                                36hr
+                            </li>
+                            <li class="available-courses-grid__stats-item">
+                                <i class="far fa-comments primary-color"></i>
+                                2.5k
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="available-courses-grid__item">
+                    <div class="available-courses-grid__image-background">
+                        <img class="available-courses-grid__image" src="Images/Courses/web-design-course.jpg"
+                            alt="Web Design Course" width="370" height="250">
+                    </div>
+                    <div class="available-courses-grid__flex1">
+                        <div class="available-courses-grid__instructor">
+                            <img class="available-courses-grid__profile" src="Images/Courses/instructor-profile.jpg"
+                                alt="Instructor profile picture" width="40" height="35">
+                            <div class="available-courses-grid__name">
+                                Warner
+                            </div>
+                        </div>
+                        <div class="available-courses-grid__price primary-background-color">
+                            $59.95
+                        </div>
+                    </div>
+                    <div class="available-courses-grid__wrapper">
+                        <div class="available-courses-grid__flex2">
+                            <div class="available-courses-grid__subject">
+                                design
+                            </div>
+                            <div class="available-courses-grid__star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <h3><span>Introduced About Basic Web</span>Design For Beginners</h3>
+                        <div class="available-courses-grid__line">
+                        </div>
+                        <ul class="available-courses-grid__stats">
+                            <li class="available-courses-grid__stats-item">
+                                <i class="fas fa-users primary-color"></i>
+                                25
+                            </li>
+                            <li class="available-courses-grid__stats-item">
+                                <i class="far fa-clock primary-color"></i>
+                                36hr
+                            </li>
+                            <li class="available-courses-grid__stats-item">
+                                <i class="far fa-comments primary-color"></i>
+                                2.5k
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="available-courses-grid__item">
+                    <div class="available-courses-grid__image-background">
+                        <img class="available-courses-grid__image" src="Images/Courses/english-learning-course.jpg"
+                            alt="English Learning Course" width="370" height="250">
+                    </div>
+                    <div class="available-courses-grid__flex1">
+                        <div class="available-courses-grid__instructor">
+                            <img class="available-courses-grid__profile" src="Images/Courses/instructor-profile.jpg"
+                                alt="Instructor profile picture" width="40" height="35">
+                            <div class="available-courses-grid__name">
+                                Warner
+                            </div>
+                        </div>
+                        <div class="available-courses-grid__price primary-background-color">
+                            $59.95
+                        </div>
+                    </div>
+                    <div class="available-courses-grid__wrapper">
+                        <div class="available-courses-grid__flex2">
+                            <div class="available-courses-grid__subject">
+                                english
+                            </div>
+                            <div class="available-courses-grid__star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <h3><span>Best Courses For Learning</span>English Courses</h3>
+                        <div class="available-courses-grid__line">
+                        </div>
+                        <ul class="available-courses-grid__stats">
+                            <li class="available-courses-grid__stats-item">
+                                <i class="fas fa-users primary-color"></i>
+                                25
+                            </li>
+                            <li class="available-courses-grid__stats-item">
+                                <i class="far fa-clock primary-color"></i>
+                                36hr
+                            </li>
+                            <li class="available-courses-grid__stats-item">
+                                <i class="far fa-comments primary-color"></i>
+                                2.5k
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="available-courses-grid__item">
+                    <div class="available-courses-grid__image-background">
+                        <img class="available-courses-grid__image" src="Images/Courses/business-solutions-course.jpg"
+                            alt="Business Course" width="370" height="250">
+                    </div>
+                    <div class="available-courses-grid__flex1">
+                        <div class="available-courses-grid__instructor">
+                            <img class="available-courses-grid__profile" src="Images/Courses/instructor-profile.jpg"
+                                alt="Instructor profile picture" width="40" height="35">
+                            <div class="available-courses-grid__name">
+                                Warner
+                            </div>
+                        </div>
+                        <div class="available-courses-grid__price primary-background-color">
+                            $59.95
+                        </div>
+                    </div>
+                    <div class="available-courses-grid__wrapper">
+                        <div class="available-courses-grid__flex2">
+                            <div class="available-courses-grid__subject">
+                                business
+                            </div>
+                            <div class="available-courses-grid__star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <h3><span>Learning About It Consulting</span>Business Solutions</h3>
+                        <div class="available-courses-grid__line">
+                        </div>
+                        <ul class="available-courses-grid__stats">
+                            <li class="available-courses-grid__stats-item">
+                                <i class="fas fa-users primary-color"></i>
+                                25
+                            </li>
+                            <li class="available-courses-grid__stats-item">
+                                <i class="far fa-clock primary-color"></i>
+                                36hr
+                            </li>
+                            <li class="available-courses-grid__stats-item">
+                                <i class="far fa-comments primary-color"></i>
+                                2.5k
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="available-courses-grid__item">
+                    <div class="available-courses-grid__image-background">
+                        <img class="available-courses-grid__image" src="Images/Courses/web-design-course.jpg"
+                            alt="Web Design Course" width="370" height="250">
+                    </div>
+                    <div class="available-courses-grid__flex1">
+                        <div class="available-courses-grid__instructor">
+                            <img class="available-courses-grid__profile" src="Images/Courses/instructor-profile.jpg"
+                                alt="Instructor profile picture" width="40" height="35">
+                            <div class="available-courses-grid__name">
+                                Warner
+                            </div>
+                        </div>
+                        <div class="available-courses-grid__price primary-background-color">
+                            $59.95
+                        </div>
+                    </div>
+                    <div class="available-courses-grid__wrapper">
+                        <div class="available-courses-grid__flex2">
+                            <div class="available-courses-grid__subject">
+                                design
+                            </div>
+                            <div class="available-courses-grid__star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <h3><span>Introduced About Basic Web</span>Design For Beginners</h3>
+                        <div class="available-courses-grid__line">
+                        </div>
+                        <ul class="available-courses-grid__stats">
+                            <li class="available-courses-grid__stats-item">
+                                <i class="fas fa-users primary-color"></i>
+                                25
+                            </li>
+                            <li class="available-courses-grid__stats-item">
+                                <i class="far fa-clock primary-color"></i>
+                                36hr
+                            </li>
+                            <li class="available-courses-grid__stats-item">
+                                <i class="far fa-comments primary-color"></i>
+                                2.5k
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+            <!-- <article>
+
+                <img src="Images/Courses/english-learning-course.jpg" alt="English Learning Course" width="370"
+                    height="250">
+                <p>
+                    <span class="instructor-profile-preview">
+                        <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40"
+                            height="35"> Warner
+                    </span>
+                    <span>
+                        $59.95
+                    </span>
+                    <br>
+                    <span>
+                        ENGLISH
+                    </span>
+                </p>
+                <h3>Best Courses For Learning<br>
+                    English Courses</h3>
+                <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
+                <p class="underline-courses-stats">
+                    25 36hr 2.5k
+                </p>
+
+            </article>
+
+            <article>
+
+                <img src="Images/Courses/business-solutions-course.jpg" alt="Business Course" width="370" height="250">
+                <p>
+                    <span class="instructor-profile-preview">
+                        <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40"
+                            height="35"> Warner
+                    </span>
+                    <span>
+                        $59.95
+                    </span>
+                    <br>
+                    <span>
+                        BUSINESS
+                    </span>
+                </p>
+                <h3>Learning About It Consulting <br>
+                    Business Solutions</h3>
+                <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
+                <p class="underline-courses-stats">
+                    25 36hr 2.5k
+                </p>
+
+            </article>
+
+            <article>
+
+                <img src="Images/Courses/web-design-course.jpg" alt="Web Design Course" width="370" height="250">
+                <p>
+                    <span class="instructor-profile-preview">
+                        <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40"
+                            height="35"> Warner
+                    </span>
+                    <span>
+                        $59.95
+                    </span>
+                    <br>
+                    <span>
+                        DESIGN
+                    </span>
+                </p>
+                <h3>Introduced About Basic Web <br>
+                    Design For Beginners</h3>
+                <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
+                <p class="underline-courses-stats">
+                    25 36hr 2.5k
+                </p>
+
+            </article>
+
+            <article>
+
+                <img src="Images/Courses/home-marketing-strategy.png" alt="Marketing Course" width="370" height="250">
+                <p>
+                    <span class="instructor-profile-preview">
+                        <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40"
+                            height="35"> Warner
+                    </span>
+                    <span>
+                        $59.95
+                    </span>
+                    <br>
+                    <span>
+                        MARKETING
+                    </span>
+                </p>
+                <h3>Best Courses For Learning <br>
+                    English Courses</h3>
+                <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
+                <p class="underline-courses-stats">
+                    25 36hr 2.5k
+                </p>
+
+            </article>
+
+            <article>
+
+                <img src="Images/Courses/home-basic-photography.png" alt="Photography Course" width="370" height="250">
+                <p>
+                    <span class="instructor-profile-preview">
+                        <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40"
+                            height="35"> Warner
+                    </span>
+                    <span>
+                        $59.95
+                    </span>
+                    <br>
+                    <span>
+                        PHOTOGRAPHY
+                    </span>
+                </p>
+                <h3>Learning About It Consulting <br>
+                    Business Solutions</h3>
+                <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
+                <p class="underline-courses-stats">
+                    25 36hr 2.5k
+                </p>
+
+            </article>
+
+            <article>
+
+                <img src="Images/Courses/home-web-development.png" alt="Development Course" width="370" height="250">
+                <p>
+                    <span class="instructor-profile-preview">
+                        <img src="Images/Courses/instructor-profile.jpg" alt="Instructor profile picture" width="40"
+                            height="35"> Warner
+                    </span>
+                    <span>
+                        $59.95
+                    </span>
+                    <br>
+                    <span>
+                        DEVELOPMENT
+                    </span>
+                </p>
+                <h3>Introduced About Basic Web <br>
+                    Design For Beginners</h3>
+                <img src="Images/Line-gray-horizontal.png" alt="Horizontal gray line">
+                <p class="underline-courses-stats">
+                    25 36hr 2.5k
+                </p>
+
+            </article> -->
+        </section>
+
+        <div>
+            <div>
+                <img src="Images/Logo/01.png" alt="Company Logo">
+            </div>
+            <div>
+                <img src="Images/Logo/02.png" alt="Company Logo">
+            </div>
+            <div>
+                <img src="Images/Logo/03.png" alt="Company Logo">
+            </div>
+            <div>
+                <img src="Images/Logo/04.png" alt="Company Logo">
+            </div>
+            <div>
+                <img src="Images/Logo/05.png" alt="Company Logo">
+            </div>
+        </div>
+
+    </main>
+
+    <!-- patička celé webové stránky -->
+    <footer>
+        <img src="Images/Logo/EduPlusIcon.png" alt="Logo">
+        <h3>EduPlus</h3>
+        <!-- doplnit ikonky -->
+        Facebook Twitter YouTube Instagram
+        <img src="Images/Line.png" alt="Horizontal line">
+        <h4>Our Courses</h4>
+        <ul>
+            <li>Web Development</li>
+            <li>Business Studies</li>
+            <li>Computer Engineering</li>
+            <li>English Learning</li>
+            <li>Graphics Design</li>
+            <li>Color Combinations</li>
+            <li>Software Development</li>
+            <li>Photography</li>
+            <li>Advance WordPress</li>
+            <li>Basic PSD To HTML</li>
+        </ul>
+        <h4>Company</h4>
+        <ul>
+            <li>About Eduket</li>
+            <li>Meet Advisor</li>
+            <li>Join A Career</li>
+            <li>Latest Courses</li>
+            <li>Newsletters</li>
+        </ul>
+        <h4>Newsletters</h4>
+        <p>
+            Sed ut perspiciatis unde omnis natur error sit voluptatem accu <br>
+            santium doloremque laudantium totam rem aperiam
+        </p>
+        <form method="POST">
+            <input type="text" placeholder="Enter Your Email" name="Newsletter email" id="newsletter-email">
+            <button type="submit"></button>
+        </form>
+        <p>
+            <small>Copyright &copy; 2020 EduPlus All Rights Reserved.</small>
+        </p>
+    </footer>
+
+</body>
 
 </html>
