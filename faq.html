@@ -1,265 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Petr Kozak">
-        <link rel="stylesheet" href="style.css">
-        <title>EduPlus - Frequently Asked Questions</title>
-    </head>
 
-    <body>
-        
-        <!-- hlavička celé stránky -->
-        <header>
-            <div class="logo">
-                <img src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Petr Kozak">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c687dc85d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>EduPlus - Frequently Asked Questions</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="Home.html"><img class="logo__image" src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo"></a>
+            <a href="Home.html">
                 <h1 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h1>
-            </div>
-            <!-- hlavní navigační prvky -->
-            <nav>
-                <ul>
-                    <li><a href="Home.html">Home</a>
-                        <ul>
-                            <li><a href="About-us.html">About Us</a></li>
-                        </ul>
-                    </li>
-                    <li>Courses
-                        <ul>
-                            <li><a href="Our-Courses.html">Courses</a></li>
-                            <li><a href="#">Courses List</a></li>
-                            <li><a href="Courses-Details.html">Courses Details</a></li>
-                        </ul>
-                    </li>
-                    <li>Events
-                        <ul>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Events list</a></li>
-                            <li><a href="Events-Details.html">Events details</a></li>
-                        </ul>
-                    </li>
-                    <li>Pages
-                        <ul>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Pages list</a></li>
-                            <li><a href="#">Pages details</a></li>
-                        </ul>
-                    </li>
-                    <li>Blog
-                        <ul>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="Blog-standard.html">Blog list</a></li>
-                            <li><a href="Blog-details.html">Blog details</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Contact-us.html">Contact</a></li>
-                </ul>
-            </nav>
-            <h2>Faq</h2>
-            Home > Faq
-        </header>
+            </a>
+        </div>
+        <!-- hlavní navigační prvky -->
+        <nav class="navigation navigation--centered">
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__href" href="Home.html">Home</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="About-us.html">About Us</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Our-Courses.html">Courses</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Our-Courses.html">Courses</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Courses List</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Courses-Details.html">Courses
+                                Details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Events-Details.html">Events</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Events</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Events list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Events-Details.html">Events details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="#">Pages</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Blog-standard.html">Blog</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Blog</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Blog-standard.html">Blog list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Blog-details.html">Blog details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item menu__item--noafter"><a class="menu__href" href="Contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- side bar -->
+        <div class="side-bar header__side-bar">
 
-        <!-- hlavní obsah -->
-        <main>
-            
-            <article>
-                    <div>
-                        <img src="Images/Instructors/instructor-profile2.jpg" alt="Instructor profile picture"
-                        width="400" height="350">
+            <div class="side-bar__item1 primary-background-color">
+                <i class="fab fa-facebook-f  fb-icon1"></i>
+            </div>
+            <div class="side-bar__item2 primary-color">
+                <i class="fab fa-youtube yt-icon1"></i>
+            </div>
+            <div class="side-bar__item3">
+                <div class="sign-in">
+                    <i class="far fa-user-circle primary-color"></i>
+                    Sign in
+                </div>
+            </div>
+            <div class="side-bar__item4 primary-color">
+                <i class="fas fa-th fa-3x menu-icon1"></i>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__content">
+                <h2>Faq</h2>
+                <a href="/Home.html"><span>Home</span></a>
+                <a href="/faq.html"><span>Faq</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="faq__wrapper">
+            <div class="faq__flex1">
+                <article class="faq__profile">
+                    <img class="faq__profile-picture" src="Images/Instructors/instructor-profile2.jpg"
+                        alt="Instructor profile picture" width="400" height="350">
+                    <div class="faq__profile-content">
+                        <h3 class="faq__name">David Warner</h3>
+                        <div class="primary-color faq__role">CEO & Founder</div>
+                        <p class="primary-text">
+                            Aliquam in lorem sit amet leo accumsan lacinia. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos.
+                        </p>
                     </div>
-                    <h3>David Warner</h3>
-                    <p>
-                    <span>
-                        CEO & Founder
-                    </span>
-                    </p>
-                    <p>
-                        Aliquam in lorem sit amet leo accumsan lacinia. Class aptent taciti sociosqu ad litora 
-                        torquent per conubia nostra, per inceptos hymenaeos. Nulla non lectus sed nisl molestie 
-                        malesuada. Aenean placerat. Nulla pulvinar eleifend sem.
-                    </p>        
-            </article>
+                </article>
 
-            <article>
-                <h3>Frequently Asked Questions</h3>
-                <ul>
+                <article class="faq__get-in-touch">
+                    <h3 class="primary-heading">Get In Touch</h3>
+                    <form class="faq__form" method="POST" action="">
+                        <div class="faq__input faq__input-name">
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="faq__input faq__input-email">
+                            <input type="text" name="email" placeholder="Your Email"
+                                autocomplete="email">
+                        </div>
+                        <div class="faq__input faq__input-message">
+                            <input type="text" name="message" placeholder="Write Message">
+                        </div>
+                        <!-- <input class="faq__input-btn" type="submit" value="Submit"> -->
+                    </form>
+                    <button class="faq__btn">
+                        send message
+                        <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+                    </button>
+                </article>
+            </div>
+            <article class="faq__questions-wrapper">
+                <h3 class="primary-heading">Frequently Asked Questions</h3>
+                <ul class="faq__questions">
                     <li>
-                        <p>
+                        <p class="faq__question">
                             Avoid KeyBoard Event-Related Bugs Browser-Basek Transliteration
-                            <br>
-                            <img src="Images/Line-gray-horizontal-long.png" alt="Horizontal long line">
+                        </p>
+                        <div class="faq__hor-line"></div>
+                        <p class="primary-text faq__question-text"></p>
+                    </li>
+                    <li>
+                        <p class="faq__question faq__question--active">
+                            Introducing Alpine.js: A Tiny JavaScript Framework
+                        </p>
+                        <div class="faq__hor-line"></div>
+                        <p class="primary-text faq__question-text faq__question-text--active">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo. Vestibulum fermentum tortor id mi. Aenean
+                            placerat.
                         </p>
                     </li>
                     <li>
-                        <p>
-                            Introducing Alpine.js: A Tiny JavaScript Framework 
-                            <br>
-                            <img src="Images/Line-gray-horizontal-long.png" alt="Horizontal long line">
+                        <p class="faq__question">
+                            Why Are We Talking About CSS4?
                         </p>
+                        <div class="faq__hor-line"></div>
+                        <p class="primary-text faq__question-text"></p>
                     </li>
                     <li>
-                        <p>
-                            Why Are We Talking About CSS4? 
-                            <br>
-                            <img src="Images/Line-gray-horizontal-long.png" alt="Horizontal long line">
-                        </p>
-                    </li>
-                    <li>
-                        <p>
+                        <p class="faq__question">
                             When You Find A Good Idea, Look For A Better One
-                            <br>
-                            <img src="Images/Line-gray-horizontal-long.png" alt="Horizontal long line">
                         </p>
+                        <div class="faq__hor-line"></div>
+                        <p class="primary-text faq__question-text"></p>
                     </li>
                     <li>
-                        <p>
+                        <p class="faq__question">
                             Inspired Design Decisions Neville Design Cannot Remain Neutral
-                            <br>
-                            <img src="Images/Line-gray-horizontal-long.png" alt="Horizontal long line">
                         </p>
+                        <div class="faq__hor-line"></div>
+                        <p class="primary-text faq__question-text"></p>
                     </li>
                     <li>
-                        <p>
+                        <p class="faq__question">
                             Inspired Design Decisions Neville Design Cannot Remain Neutral
-                            <br>
-                            <img src="Images/Line-gray-horizontal-long.png" alt="Horizontal long line">
                         </p>
+                        <div class="faq__hor-line"></div>
+                        <p class="primary-text faq__question-text"></p>
                     </li>
                     <li>
-                        <p>
+                        <p class="faq__question">
                             Embrace The Possibilities March 2020 Wallpapers
-                            <br>
-                            <img src="Images/Line-gray-horizontal-long.png" alt="Horizontal long line">
                         </p>
+                        <div class="faq__hor-line"></div>
+                        <p class="primary-text faq__question-text"></p>
                     </li>
                     <li>
-                        <p>
+                        <p class="faq__question">
                             Embrace The Possibilities March 2020 Wallpapers
-                            <br>
-                            <img src="Images/Line-gray-horizontal-long.png" alt="Horizontal long line">
                         </p>
+                        <div class="faq__hor-line"></div>
+                        <p class="primary-text faq__question-text"></p>
                     </li>
                     <li>
-                        <p>
+                        <p class="faq__question">
                             Embrace The Possibilities March 2020 Wallpapers
-                            <br>
-                            <img src="Images/Line-gray-horizontal-long.png" alt="Horizontal long line">
                         </p>
+                        <div class="faq__hor-line"></div>
+                        <p class="primary-text faq__question-text"></p>
                     </li>
                     <li>
-                        <p>
+                        <p class="faq__question">
                             Embrace The Possibilities March 2020 Wallpapers
-                            <br>
-                            <img src="Images/Line-gray-horizontal-long.png" alt="Horizontal long line">
                         </p>
+                        <div class="faq__hor-line"></div>
+                        <p class="primary-text faq__question-text"></p>
                     </li>
                 </ul>
             </article>
+        </div>
 
-            <article>
-                <h3>Get In Touch</h3>
-                <form method="POST" action="">
-                    <p>
-                        <input type="text" id="name" name="name" placeholder="Your Name">
-                    </p>
-                    <p>
-                        <input type="text" id="email" name="email" placeholder="Your Email" autocomplete="email">
-                    </p>
-                    <p>
-                        <input type="text" id="message" name="message" placeholder="Write Message">
-                    </p>
-                    <input type="submit" value="Submit">
-                  </form>
+        <div class="career">
+            <article class="career__become-instructor">
+                <header class="career__header">
+                    <span><i class="fas fa-ellipsis-h margin-right"></i>Build A Career</span>
+                    <h3 class="section-heading">Become an Instructor</h3>
+                </header>
+                <p class="primary-text">
+                    Nulla pulvinar eleifend sem. Duis viverra diam non justo. In sem justo,
+                    commodo ut, suscipit at, pharetra vitae, orci. Integer rutrum, orci
+                    vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae
+                    placerat pede sem sit amet enim.
+                </p>
+                <button class="primary-background-color">
+                    apply now
+                    <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+                </button>
             </article>
 
-            <div>
-                <article>
-                    <p>Build A Carrer</p>
-                    <h3>Become an Instructor</h3>
-                    <p>
-                        Nulla pulvinar eleifend sem. Duis viverra diam non justo. In sem justo, 
-                        commodo ut, suscipit at, pharetra vitae, orci. Integer rutrum, orci 
-                        vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae 
-                        placerat pede sem sit amet enim.
-                    </p>
-                    <button>APPLY NOW</button>
-                </article>
+            <article class="career__become-partner">
+                <header class="career__header">
+                    <span><i class="fas fa-ellipsis-h margin-right"></i>Build A Career</span>
+                    <h3 class="section-heading">Become a Partner</h3>
+                </header>
+                <p class="primary-text">
+                    Nulla pulvinar eleifend sem. Duis viverra diam non justo. In sem justo,
+                    commodo ut, suscipit at, pharetra vitae, orci. Integer rutrum, orci
+                    vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae
+                    placerat pede sem sit amet enim.
+                </p>
+                <button>
+                    contact us
+                    <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+                </button>
+            </article>
+        </div>
 
-                <article>
-                    <p>Build A Career</p>
-                    <h3>Become a Partner</h3>
-                    <p>
-                        Nulla pulvinar eleifend sem. Duis viverra diam non justo. In sem justo, 
-                        commodo ut, suscipit at, pharetra vitae, orci. Integer rutrum, orci 
-                        vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae 
-                        placerat pede sem sit amet enim.
-                    </p>
-                    <button>CONTACT US</button>
-                </article>
+        <div class="bottom-logos">
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/01.png" alt="Company Logo">
             </div>
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/02.png" alt="Company Logo">
+            </div>
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/03.png" alt="Company Logo">
+            </div>
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/04.png" alt="Company Logo">
+            </div>
+            <div class="bottom-logos__item">
+                <img class="bottom-logos__image" src="Images/Logo/05.png" alt="Company Logo">
+            </div>
+        </div>
 
-            <div>
-                <div>
-                    <img src="Images/Logo/01.png" alt="Company Logo">
+    </main>
+
+    <footer class="main-footer">
+        <div class="main-footer__content">
+            <div class="main-footer__flex1">
+                <div class="main-footer__subflex1-1 main-footer__logo">
+                    <a href="Home.html"><img src="Images/Logo/EduPlusIconWhite.png" alt="Logo"></a>
+                    <a href="Home.html">
+                        <h2 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h2>
+                    </a>
                 </div>
-                <div>
-                    <img src="Images/Logo/02.png" alt="Company Logo">
+                <ul class="main-footer__subflex1-2">
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-blue"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Facebook
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-lightblue"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Twitter
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-red"></i>
+                            <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Youtube
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-violet"></i>
+                            <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Instagram
+                    </li>
+                </ul>
+            </div>
+            <div class="main-footer__line">
+            </div>
+            <div class="main-footer__flex2">
+                <div class="main-footer__our-courses">
+                    <h3>Our Courses</h3>
+                    <ul class="main-footer__subflex2-1">
+                        <li>Web Development</li>
+                        <li>Business Studies</li>
+                        <li>Computer Engineering</li>
+                        <li>English Learning</li>
+                        <li>Graphics Design</li>
+                        <li>Color Combinations</li>
+                        <li>Software Development</li>
+                        <li>Photography</li>
+                        <li>Advance WordPress</li>
+                        <li>Basic PSD To HTML</li>
+                    </ul>
                 </div>
-                <div>
-                    <img src="Images/Logo/03.png" alt="Company Logo">
+                <div class="main-footer__company">
+                    <h3>Company</h3>
+                    <ul class="main-footer__subflex2-2">
+                        <li>About Eduket</li>
+                        <li>Meet Advisors</li>
+                        <li>Join A Career</li>
+                        <li>Latest Courses</li>
+                        <li>Newsletters</li>
+                    </ul>
                 </div>
-                <div>
-                    <img src="Images/Logo/04.png" alt="Company Logo">
-                </div>
-                <div>
-                    <img src="Images/Logo/05.png" alt="Company Logo">
+                <div class="main-footer__newsletter">
+                    <h3>Newsletters</h3>
+                    <p class="primary-text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu
+                        santium doloremque laudantium totam rem aperiam
+                    </p>
+                    <form action="post" class="main-footer__form">
+                        <div class="main-footer__form-flex">
+                            <div class="main-footer__email">
+                                <input type="email" placeholder="Enter Your Email" name="email"
+                                    class="main-footer__input">
+                            </div>
+                            <button type="submit" class="main-footer__submit"><i
+                                    class="fas fa-long-arrow-alt-right fa-2x"></i></button>
+                        </div>
+                    </form>
                 </div>
             </div>
+            <div class="main-footer__copyright">
+                <p><span>Copyright &copy; 2020</span> <span class="">Edu</span><span>Plus</span><span>All Rights
+                        Reserved.</span></p>
+            </div>
+        </div>
+        <a href="#" class="main-footer__slide-up">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </footer>
 
-        </main>
-
-        <!-- patička celé webové stránky -->
-        <footer>
-            <img src="Images/Logo/EduPlusIcon.png" alt="Logo">
-            <h3>EduPlus</h3>
-            <!-- doplnit ikonky -->
-            Facebook Twitter YouTube Instagram
-            <img src="Images/Line.png" alt="Horizontal line">
-            <h4>Our Courses</h4>
-            <ul>
-                <li>Web Development</li>
-                <li>Business Studies</li>
-                <li>Computer Engineering</li>
-                <li>English Learning</li>
-                <li>Graphics Design</li>
-                <li>Color Combinations</li>
-                <li>Software Development</li>
-                <li>Photography</li>
-                <li>Advance WordPress</li>
-                <li>Basic PSD To HTML</li>
-            </ul>
-            <h4>Company</h4>
-            <ul>
-                <li>About Eduket</li>
-                <li>Meet Advisor</li>
-                <li>Join A Career</li>
-                <li>Latest Courses</li>
-                <li>Newsletters</li>
-            </ul>
-            <h4>Newsletters</h4>
-            <p>
-                Sed ut perspiciatis unde omnis natur error sit voluptatem accu <br> 
-                santium doloremque laudantium totam rem aperiam
-            </p>
-            <form method="POST">
-                <input type="text" placeholder="Enter Your Email" name="Newsletter email" id="newsletter-email">
-                <button type="submit"></button>
-            </form>
-            <p>
-                <small>Copyright &copy; 2020 EduPlus  All Rights Reserved.</small>
-            </p>
-        </footer>
-
-    </body>
+</body>
 
 </html>
