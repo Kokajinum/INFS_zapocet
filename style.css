@@ -2179,7 +2179,8 @@ a {
 }
 
 .instructor-details__profile {
-    flex-basis: 34%;
+    flex-basis: 37%;
+    height: 100%;
     background-color: white;
 }
 
@@ -2233,14 +2234,96 @@ a {
 }
 
 .instructor-details__about {
-    flex-basis: 63%;
+    flex-basis: 51%;
+    background-color: white;
+    padding: 4% 5% 0 4%;
+}
+
+.instructor-details__heading {
+    margin-block-start: 0;
+    margin-block-end: 0.5em;
+}
+
+.instructor-details__about-subflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instructor-details__stats-item {
+    box-shadow: unset;
+}
+
+.instructor-details__ver-line {
+    width: 2px;
+    height: 4vw;
+    background-color: rgb(239,239,239);
+}
+
+.instructor-details__flex2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 15% 0 15%;
+}
+
+.instructor-details__certifications {
+    flex-basis: 41%;
+    background-color: white;
+    padding: 4% 4% 4% 4%;
+}
+
+.instructor-details__certifications-subflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.instructor-details__certification-photo {
+    width: 32%;
+    height: auto;
+}
+
+.instructor-details__other {
+    flex-basis: 41%;
+    padding: 4% 4% 0 3%;
     background-color: white;
 }
 
+.instructor-details__educations {
+
+}
+
+.intructor-details__other-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.instructor-details__educations-wrapper {
+    
+}
+
+.instructor-details__other-item {
+    display: flex;
+    flex-basis: 45%;
+}
+
+.instructor-details__other-item i {
+    flex-basis: 27%;
+}
+
+.instructor-details__experience {
+    margin-top: 15%;
+}
+
 .popular-courses {
-    margin: 0 8%;
+    margin: 2% 8% 8% 8%;
     padding: 2% 8% 3% 8%;
     background-color: white;
+}
+
+.popular-courses__wrapper {
+    border-left: 1px solid rgb(234,234,234);
+    border-right: 1px solid rgb(234,234,234);
+    border-bottom: 1px solid rgb(234,234,234);
 }
 
 .popular-courses__heading {
