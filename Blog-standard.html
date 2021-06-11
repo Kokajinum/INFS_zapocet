@@ -384,46 +384,100 @@
 
 
 
-    <!-- patička celé webové stránky -->
-    <footer>
-        <img src="Images/Logo/EduPlusIcon.png" alt="Logo">
-        <h3>EduPlus</h3>
-        <!-- doplnit ikonky -->
-        Facebook Twitter YouTube Instagram
-        <img src="Images/Line.png" alt="Horizontal line">
-        <h4>Our Courses</h4>
-        <ul>
-            <li>Web Development</li>
-            <li>Business Studies</li>
-            <li>Computer Engineering</li>
-            <li>English Learning</li>
-            <li>Graphics Design</li>
-            <li>Color Combinations</li>
-            <li>Software Development</li>
-            <li>Photography</li>
-            <li>Advance WordPress</li>
-            <li>Basic PSD To HTML</li>
-        </ul>
-        <h4>Company</h4>
-        <ul>
-            <li>About Eduket</li>
-            <li>Meet Advisor</li>
-            <li>Join A Career</li>
-            <li>Latest Courses</li>
-            <li>Newsletters</li>
-        </ul>
-        <h4>Newsletters</h4>
-        <p>
-            Sed ut perspiciatis unde omnis natur error sit voluptatem accu <br>
-            santium doloremque laudantium totam rem aperiam
-        </p>
-        <form method="POST">
-            <input type="text" placeholder="Enter Your Email" name="Newsletter email" id="newsletter-email">
-            <button type="submit"></button>
-        </form>
-        <p>
-            <small>Copyright &copy; 2020 EduPlus All Rights Reserved.</small>
-        </p>
+    <footer class="main-footer">
+        <div class="main-footer__content">
+            <div class="main-footer__flex1">
+                <div class="main-footer__subflex1-1 main-footer__logo">
+                    <a href="Home.html"><img src="Images/Logo/EduPlusIconWhite.png" alt="Logo"></a>
+                    <a href="Home.html">
+                        <h2 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h2>
+                    </a>
+                </div>
+                <ul class="main-footer__subflex1-2">
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-blue"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Facebook
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-lightblue"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Twitter
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-red"></i>
+                            <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Youtube
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-violet"></i>
+                            <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Instagram
+                    </li>
+                </ul>
+            </div>
+            <div class="main-footer__line">
+            </div>
+            <div class="main-footer__flex2">
+                <div class="main-footer__our-courses">
+                    <h3>Our Courses</h3>
+                    <ul class="main-footer__subflex2-1">
+                        <li>Web Development</li>
+                        <li>Business Studies</li>
+                        <li>Computer Engineering</li>
+                        <li>English Learning</li>
+                        <li>Graphics Design</li>
+                        <li>Color Combinations</li>
+                        <li>Software Development</li>
+                        <li>Photography</li>
+                        <li>Advance WordPress</li>
+                        <li>Basic PSD To HTML</li>
+                    </ul>
+                </div>
+                <div class="main-footer__company">
+                    <h3>Company</h3>
+                    <ul class="main-footer__subflex2-2">
+                        <li>About Eduket</li>
+                        <li>Meet Advisors</li>
+                        <li>Join A Career</li>
+                        <li>Latest Courses</li>
+                        <li>Newsletters</li>
+                    </ul>
+                </div>
+                <div class="main-footer__newsletter">
+                    <h3>Newsletters</h3>
+                    <p class="primary-text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu
+                        santium doloremque laudantium totam rem aperiam
+                    </p>
+                    <form action="post" class="main-footer__form">
+                        <div class="main-footer__form-flex">
+                            <div class="main-footer__email">
+                                <input type="email" placeholder="Enter Your Email" name="email"
+                                    class="main-footer__input">
+                            </div>
+                            <button type="submit" class="main-footer__submit"><i
+                                    class="fas fa-long-arrow-alt-right fa-2x"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="main-footer__copyright">
+                <p><span>Copyright &copy; 2020</span> <span class="">Edu</span><span>Plus</span><span>All Rights
+                        Reserved.</span></p>
+            </div>
+        </div>
+        <a href="#" class="main-footer__slide-up">
+            <i class="fas fa-chevron-up"></i>
+        </a>
     </footer>
 
 </body>
