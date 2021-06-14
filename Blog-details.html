@@ -1,323 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Petr Kozak">
-        <link rel="stylesheet" href="style.css">
-        <title>EduPlus - Blog Details</title>
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Petr Kozak">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c687dc85d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>EduPlus - Blog Details</title>
+</head>
 
-        <!-- hlavička celé stránky -->
-        <header>
-            <div class="logo">
-                <img src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo">
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="Home.html"><img class="logo__image" src="Images/Logo/EduPlusIcon.png" alt="EduPlusLogo"></a>
+            <a href="Home.html">
                 <h1 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h1>
-            </div>
-            <!-- hlavní navigační prvky -->
-            <nav>
-                <ul>
-                    <li><a href="Home.html">Home</a>
-                        <ul>
-                            <li><a href="About-us.html">About Us</a></li>
-                        </ul>
-                    </li>
-                    <li>Courses
-                        <ul>
-                            <li><a href="Our-Courses.html">Courses</a></li>
-                            <li><a href="#">Courses List</a></li>
-                            <li><a href="Courses-Details.html">Courses Details</a></li>
-                        </ul>
-                    </li>
-                    <li>Events
-                        <ul>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Events list</a></li>
-                            <li><a href="Events-Details.html">Events details</a></li>
-                        </ul>
-                    </li>
-                    <li>Pages
-                        <ul>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Pages list</a></li>
-                            <li><a href="#">Pages details</a></li>
-                        </ul>
-                    </li>
-                    <li>Blog
-                        <ul>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="Blog-standard.html">Blog list</a></li>
-                            <li><a href="Blog-details.html">Blog details</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Contact-us.html">Contact</a></li>
-                </ul>
-            </nav>
-            <h2>Blog Details</h2>
-            Home > Blog Details
-        </header>
+            </a>
+        </div>
+        <!-- hlavní navigační prvky -->
+        <nav class="navigation navigation--centered">
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__href" href="Home.html">Home</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="About-us.html">About Us</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Our-Courses.html">Courses</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Our-Courses.html">Courses</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Courses List</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Courses-Details.html">Courses
+                                Details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Events-Details.html">Events</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Events</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Events list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Events-Details.html">Events details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="#">Pages</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Pages details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__href" href="Blog-standard.html">Blog</a>
+                    <ul class="submenu">
+                        <li class="submenu__decoration-line"></li>
+                        <li class="submenu__item"><a class="submenu__href" href="#">Blog</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Blog-standard.html">Blog list</a></li>
+                        <li class="submenu__item"><a class="submenu__href" href="Blog-details.html">Blog details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item menu__item--noafter"><a class="menu__href" href="Contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- side bar -->
+        <div class="side-bar header__side-bar">
 
-        <!-- hlavní obsah -->
-        <main>
-            <div>
-                <section>
-                    <div>
-                        <img src="Images/Blog/blog-details01.jpg" alt="Blog details picture">
+            <div class="side-bar__item1 primary-background-color">
+                <i class="fab fa-facebook-f  fb-icon1"></i>
+            </div>
+            <div class="side-bar__item2 primary-color">
+                <i class="fab fa-youtube yt-icon1"></i>
+            </div>
+            <div class="side-bar__item3">
+                <div class="sign-in">
+                    <i class="far fa-user-circle primary-color"></i>
+                    Sign in
+                </div>
+            </div>
+            <div class="side-bar__item4 primary-color">
+                <i class="fas fa-th fa-3x menu-icon1"></i>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__content">
+                <h2>Blog Grid</h2>
+                <a href="/Home.html"><span>Home</span></a>
+                <a href="/Blog-standard.html"><span>Blog Grid</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="blog">
+        <div class="blog__wrapper">
+            <article>
+                <img class="blog__picture" src="Images/Blog/blog-details01.jpg" alt="Blog details picture">
+                <div class="blog__content">
+                    <div class="blog__tag primary-background-color">
+                        DESIGN
                     </div>
-                    <span>DESIGN</span>
-                    <h3>Inspire Design Decision With Ott Storch When Idea<br>
+                    <h3 class="primary-heading blog__heading">Inspire Design Decision With Ott Storch When Idea
                         How To Space And Kern Punctuation</h3>
-                    <span>By Somalia Doe <time datetime="2020-10-25">25 Nov 2020</time> Comments(05) Like(1K)</span>
-                    <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
-                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        Maecenas lorem. Mauris suscipit, ligula sit amet pharetra semper, nibh 
+                    <ul class="blog__info">
+                        <li class="blog__info-item">
+                            <i class="far fa-user-circle primary-color"></i>
+                            <span class="primary-text">By Somalia Doe</span>
+                        </li>
+                        <li class="blog__info-item">
+                            <i class="far fa-calendar-alt primary-color"></i>
+                            <span class="primary-text"><time datetime="2020-10-25">25 Nov 2020</time></span>
+                        </li>
+                        <li class="blog__info-item">
+                            <i class="far fa-comments primary-color"></i>
+                            <span class="primary-text">Comments(05)</span>
+                        </li>
+                        <li class="blog__info-item">
+                            <i class="far fa-heart primary-color"></i>
+                            <span class="primary-text">Like(1K)</span>
+                        </li>
+                    </ul>
+                    <p class="primary-text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Maecenas lorem. Mauris suscipit, ligula sit amet pharetra semper, nibh
                         ante cursus purus, vel sagittis velit mauris vel metus. Duis aute irure
                         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     </p>
 
                     <article>
                         <h3>Why Needs Education</h3>
-                        <p>
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-                            Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Quisque porta. 
+                        <p class="primary-text">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Quisque porta.
                             In sem justo, commodo ut, suscipit at, pharetra vitae, orci.
-                        </p>  
-                        <div>
-                            <img src="Images/Blog/blog-details02.jpg" alt="Blog details picture">
-                        </div>
-                        <ul>
-                            <li>Inspired Design Decisions With Neville Brody: Design Cannot Remain Neutral</li>
-                            <li>Avoid Keyboard Event-Related Bugs in Browser-Based Transliteration</li>
-                            <li>Embrace The Possibilities (March 2020 Wallpapers)</li>
+                        </p>
+                        <img class="blog__picture" src="Images/Blog/blog-details02.jpg" alt="Blog details picture">
+                        <ul class="blog__list">
+                            <li class="blog__list-item"><span class="primary-text">Inspired Design Decisions With
+                                    Neville Brody: Design Cannot Remain Neutral</span></li>
+                            <li class="blog__list-item"><span class="primary-text">Avoid Keyboard Event-Related Bugs in
+                                    Browser-Based Transliteration</span></li>
+                            <li class="blog__list-item"><span class="primary-text">Embrace The Possibilities (March 2020
+                                    Wallpapers)</span></li>
                         </ul>
                     </article>
 
                     <article>
                         <h3>Best Articles For Web Design</h3>
-                        <p>
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-                            Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Quisque porta. 
+                        <p class="primary-text">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Quisque porta.
                             In sem justo, commodo ut, suscipit at, pharetra vitae, orci.
                         </p>
-                        <div>
-                            <p>
-                                How To Build An Accessible Front-End Application<br>
+                        <div class="blog__block">
+                            <h3 class="primary-heading blog__heading">
+                                How To Build An Accessible Front-End Application
                                 With Chakra UI And Nuxt.js
-                            </p>
-                            <span>Norman S. Roberts</span>
+                            </h3>
+                            <div class="blog__subflex1 blog__subflex1--short">
+                                <i class="fas fa-quote-left"></i>
+                                <span>Norman S. Roberts</span>
+                            </div>
+
                         </div>
                     </article>
 
-                    <span><b>Tags: </b>Business Cart, Design & Branding   <b>Share: </b></span>
-
-                    <article>
-                        <div>
-                            <img src="Images/Blog/eugene-pearson.jpg" alt="Eugene Pearson profile picture"
-                            width="240" height="155">
+                    <div class="blog__tags-share">
+                        <div class="blog__tags">
+                            <b>Tags : </b><span class="primary-text">Business Cart, Design & Branding</span>
                         </div>
-                        <h3>Eugene A. Pearson</h3>
-                        <p>
-                            Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-                            voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-                            repellat. Integer lacinia. Nam quis nulla.
-                        </p>
+                        <div class="blog__share">
+                            <b>Share: </b>
+                            <div class="blog__icons">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-google"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__hor-line">
+                    </div>
+
+
+                    <article class="blog__author">
+                        <div class="blog__profile">
+                            <img class="blog__picture blog__picture--rounded" src="Images/Blog/eugene-pearson.jpg"
+                                alt="Eugene Pearson profile picture" width="240" height="155">
+                        </div>
+                        <div class="blog__author-content">
+                            <h3 class="blog__heading">Eugene A. Pearson</h3>
+                            <p class="primary-text">
+                                Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                                voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
+                                repellat. Integer lacinia. Nam quis nulla.
+                            </p>
+                            <div class="blog__icons blog__icons--secondary">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-google"></i></a>
+                            </div>
+                        </div>
                     </article>
-                </section>
 
-                <hr>
-
-                <article>
-                    <div>
-                        <img src="Images/Blog/blog-details-miniature01.jpg" alt="Blog details miniature">
+                    <div class="blog__hor-line">
                     </div>
-                    <h4>Mixing Tangible & Intan Interfaces Using</h4>
-                    <span>Soamlia <time datetime="2020-08-05">05 Aug 2020</time></span>
-                </article>
 
-                <article>
-                    <div>
-                        <img src="Images/Blog/blog-details-miniature02.jpg" alt="Blog details miniature">
+                    <div class="article-previews">
+                        <article class="article-previews__item">
+                            <div class="article-previews__picture">
+                                <img class="blog__picture" src="Images/Blog/blog-details-miniature01.jpg"
+                                    alt="Blog details miniature">
+                            </div>
+                            <div class="article-previews__wrapper">
+                                <h4 class="article-previews__heading blog__heading">Mixing Tangible & Intan Interfaces
+                                    Using</h4>
+                                <div class="article-previews__info">
+                                    <div class="article-previews__info-item article-previews__info-item1">
+                                        <i class="far fa-user primary-color"></i>
+                                        <div class="primary-text">Soamlia</div>
+                                    </div>
+                                    <div class="article-previews__info-item article-previews__info-item2">
+                                        <i class="far fa-calendar-alt primary-color"></i>
+                                        <time class="primary-text" datetime="2020-08-05">05 Aug 2020</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="article-previews__item">
+                            <div class="article-previews__picture">
+                                <img class="blog__picture" src="Images/Blog/blog-details-miniature02.jpg"
+                                    alt="Blog details miniature">
+                            </div>
+                            <div class="article-previews__wrapper">
+                                <h4 class="article-previews__heading blog__heading">Mixing Tangible & Intan Interfaces
+                                    Adobe</h4>
+                                <div class="article-previews__info">
+                                    <div class="article-previews__info-item article-previews__info-item1">
+                                        <i class="far fa-user primary-color"></i>
+                                        <div class="primary-text">Soamlia</div>
+                                    </div>
+                                    <div class="article-previews__info-item article-previews__info-item2">
+                                        <i class="far fa-calendar-alt primary-color"></i>
+                                        <time class="primary-text" datetime="2020-08-05">05 Aug 2020</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <h4>Mixing Tangible & Intan Interfaces Using</h4>
-                    <span>Soamlia <time datetime="2020-08-05">05 Aug 2020</time></span>
-                </article>
 
-                <hr>
+                    <div class="blog__hor-line">
+                    </div>
 
-                <!-- people's comments -->
-                <article>
+                    <!-- people's comments -->
+                    <section class="peoples-comments">
+                        <h3 class="primary-heading">People's Comments</h3>
+                        <article class="peoples-comments__comment">
+                            <div class="peoples-comments__profile">
+                                <img class="blog__picture blog__picture--rounded"
+                                    src="Images/Instructors/instructor-profile1.jpg" alt="user profile picture">
+                            </div>
+                            <div class="peoples-comments__content">
+                                <h3 class="blog__heading peoples-comments__heading">David Angel Makel</h3>
+                                <div class="primary-color peoples-comments__role">
+                                    IT Consultant
+                                </div>
+                                <p class="primary-text peoples-comments__text">
+                                    Is is a long established fact that a reader will be distracted by the readable
+                                    content of page looking at its layout. The point of using Lorem Ipsum normal
+                                </p>
+                                <div class="primary-text peoples-comments__reply">
+                                    reply comments
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                                <article class="peoples-comments__comment peoples-comments__comment--nested">
+                                    <div class="peoples-comments__profile peoples-comments__profile--nested">
+                                        <img class="blog__picture blog__picture--rounded"
+                                            src="Images/Instructors/instructor-profile2.jpg" alt="user profile picture">
+                                    </div>
+                                    <div class="peoples-comments__content peoples-comments__content--nested">
+                                        <h3 class="blog__heading peoples-comments__heading">Michel Rason Roy</h3>
+                                        <div class="primary-color peoples-comments__role">
+                                            Product Designer
+                                        </div>
+                                        <p class="primary-text peoples-comments__text">
+                                            Is is a long established fact that a reader will be distracted by the
+                                            readable
+                                            content of page looking at its layout. The point of using Lorem Ipsum normal
+                                        </p>
+                                        <div class="primary-text peoples-comments__reply">
+                                            reply comments
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </article>
+                        <article class="peoples-comments__comment">
+                            <div class="peoples-comments__profile">
+                                <img class="blog__picture blog__picture--rounded"
+                                    src="Images/Instructors/instructor-profile3.jpg" alt="user profile picture">
+                            </div>
+                            <div class="peoples-comments__content">
+                                <h3 class="blog__heading peoples-comments__heading">David Angel Makel</h3>
+                                <div class="primary-color peoples-comments__role">
+                                    IT Consultant
+                                </div>
+                                <p class="primary-text peoples-comments__text">
+                                    Is is a long established fact that a reader will be distracted by the readable
+                                    content of page looking at its layout. The point of using Lorem Ipsum normal
+                                </p>
+                                <div class="primary-text peoples-comments__reply">
+                                    reply comments
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
 
-                </article>
+                    <div class="blog__hor-line">
+                    </div>
 
-                <hr>
-
-                <!-- reply comments -->
-                <div>
-                    <h3>Reply Comments</h3>
-                    <form method="POST">
-                            <p>
-                                <input type="text" name="fullname" id="fullname" placeholder="Full Name Here">
-                            </p>
-                            <p>
-                                <input type="email" name="email" id="email" placeholder="Email Here">
-                            </p>
-                            <p>
-                                <input type="text" name="comment" id="comment" placeholder="Comments">
-                            </p>
-                    </form>
-                    <button>SEND COMMENTS</button>
+                    <!-- reply comments -->
+                    <section class="reply-comments">
+                        <h3 class="primary-heading">Reply Comments</h3>
+                        <form method="POST">
+                            <div class="reply-comments__wrapper">
+                                <div class="reply-comments__name-email reply-comments__fullname reply-comments__input-block">
+                                    <input class="reply-comments__input reply-comments__fullname-input" type="text" name="fullname"
+                                        placeholder="Full Name Here">
+                                    <i class="far fa-user primary-color"></i>
+                                </div>
+                                <div class="reply-comments__name-email reply-comments__input-block reply-comments__email">
+                                    <input class="reply-comments__input reply-comments__email-input" type="email" name="email"
+                                        placeholder="Email Here">
+                                    <i class="far fa-envelope-open primary-color"></i>
+                                </div>
+                            </div>
+                            <div class="reply-comments__input-block reply-comments__comment">
+                                <input class="reply-comments__input reply-comments__comment-input" type="text" name="comment"
+                                    placeholder="Comments">
+                                <i class="fas fa-pencil-alt primary-color"></i>
+                            </div>
+                            <button class="reply-comments__btn primary-background-color">
+                                send comments
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </button>
+                        </form>
+                    </section>
                 </div>
+            </article>
+        </div>
 
+        <aside class="blog__aside">
+            <div class="blog__search">
+                <h3 class="blog__aside-heading">Search Here</h3>
+                <div class="blog__input-block">
+                    <form class="blog__form" action="">
+                        <input type="text" placeholder="Keywords" name="search">
+                        <button type="submit"><i class="fa fa-search primary-color"></i></button>
+                    </form>
+                </div>
             </div>
 
-        </main>
-
-        <aside>
-            <div>
-                <p>Search Here</p>
-                <input type="text" placeholder="Keywords">
-            </div>
-
-            <div>
-                <ul>
-                    <li>Web Design</li>
-                    <li>Computer Engineering</li>
-                    <li>Business Studies</li>
-                    <li>Medical & Health</li>
-                    <li>Web Development</li>
-                    <li>Learning English</li>
-                </ul>
-            </div>
+            <ul class="blog__categories">
+                <li class="blog__category">Web Design</li>
+                <li class="blog__category">Computer Engineering</li>
+                <li class="blog__category">Business Studies</li>
+                <li class="blog__category">Medical & Health</li>
+                <li class="blog__category">Web Development</li>
+                <li class="blog__category">Learning English</li>
+            </ul>
 
             <!-- recent news -->
-            <section>
-                <h3>Recent News</h3>
-                <article>
-                    <div>
-                        <img src="Images/Blog/news-miniature01.jpg" alt="Recent news miniature">
+            <article class="recent-news">
+                <h3 class="blog__aside-heading">Recent News</h3>
+                <section class="recent-news__item">
+                    <img class="blog__picture recent-news__picture" src="Images/Blog/news-miniature01.jpg"
+                        alt="Recent news miniature">
+                    <div class="recent-news__text">
+                        <h3>Smaing Podcast Epis
+                            Ode 15 With Phile
+                        </h3>
+                        <span class="primary-text">By Silva Hola</span>
                     </div>
-                    <h3>Smaing Podcast Epis<br>
-                        Ode 15 With Phile</h3>
-                    <ul>
-                        <li>By Silva Hola</li>
-                    </ul>
-                </article>
-                <img src="Images/Line-gray-horizontal.png" alt="Horizontal line">
-                <article>
-                    <div>
-                        <img src="Images/Blog/news-miniature02.jpg" alt="Recent news miniature">
+                </section>
+                <div class="recent-news__hor-line"></div>
+                <section class="recent-news__item">
+                    <img class="blog__picture recent-news__picture" src="Images/Blog/news-miniature02.jpg"
+                        alt="Recent news miniature">
+                    <div class="recent-news__text">
+                        <h3>Smaing Podcast Epis
+                            Ode 15 With Phile
+                        </h3>
+                        <span class="primary-text">By Silva Hola</span>
                     </div>
-                    <h3>Smaing Podcast Epis<br>Ode 15 With Phile</h3>
-                    <ul>
-                        <li>By Silva Hola</li>
-                    </ul>
-                </article>
-                <img src="Images/Line-gray-horizontal.png" alt="Horizontal line">
-                <article>
-                    <div>
-                        <img src="Images/Blog/news-miniature03.jpg" alt="Recent news miniature">
+                </section>
+                <div class="recent-news__hor-line"></div>
+                <section class="recent-news__item">
+                    <img class="blog__picture recent-news__picture" src="Images/Blog/news-miniature03.jpg"
+                        alt="Recent news miniature">
+                    <div class="recent-news__text">
+                        <h3>Smaing Podcast Epis
+                            Ode 15 With Phile
+                        </h3>
+                        <span class="primary-text">By Silva Hola</span>
                     </div>
-                    <h3>Smaing Podcast Epis<br>Ode 15 With Phile</h3>
-                    <ul>
-                        <li>By Silva Hola</li>
-                    </ul>
-                </article>
-                <img src="Images/Line-gray-horizontal.png" alt="Horizontal line">
-                <article>
-                    <div>
-                        <img src="Images/Blog/news-miniature04.jpg" alt="Recent news miniature">
+                </section>
+                <div class="recent-news__hor-line"></div>
+                <section class="recent-news__item">
+                    <img class="blog__picture recent-news__picture" src="Images/Blog/news-miniature04.jpg"
+                        alt="Recent news miniature">
+                    <div class="recent-news__text">
+                        <h3>Smaing Podcast Epis
+                            Ode 15 With Phile
+                        </h3>
+                        <span class="primary-text">By Silva Hola</span>
                     </div>
-                    <h3>Smaing Podcast Epis<br>Ode 15 With Phile</h3>
-                    <ul>
-                        <li>By Silva Hola</li>
-                    </ul>
-                </article>
-            </section>
+                </section>
+            </article>
 
             <!-- photo gallery -->
-            <section>
-                <h3>Photo Gallery</h3>
-                <div>
-                    <img src="Images/Blog/photo-gallery01.jpg" alt="Photo gallery picture">
-                </div>
-                <div>
-                    <img src="Images/Blog/photo-gallery02.jpg" alt="Photo gallery picture">
-                </div>
-                <div>
-                    <img src="Images/Blog/photo-gallery03.jpg" alt="Photo gallery picture">
-                </div>
-                <div>
-                    <img src="Images/Blog/photo-gallery04.jpg" alt="Photo gallery picture">
-                </div>
-                <div>
-                    <img src="Images/Blog/photo-gallery05.jpg" alt="Photo gallery picture">
+            <section class="photo-gallery">
+                <h3 class="blog__aside-heading">Photo Gallery</h3>
+                <div class="photo-gallery__photos">
+                    <a href="">
+                        <img src="Images/Blog/photo-gallery01.jpg" alt="Photo gallery picture">
+                    </a>
+                    <a href="">
+                        <img src="Images/Blog/photo-gallery02.jpg" alt="Photo gallery picture">
+                    </a>
+                    <a href="">
+                        <img src="Images/Blog/photo-gallery03.jpg" alt="Photo gallery picture">
+                    </a>
+                    <a href="">
+                        <img src="Images/Blog/photo-gallery04.jpg" alt="Photo gallery picture">
+                    </a>
+                    <a href="">
+                        <img src="Images/Blog/photo-gallery05.jpg" alt="Photo gallery picture">
+                    </a>
+                    <a href="">
+                        <img src="Images/Blog/photo-gallery01.jpg" alt="Photo gallery picture">
+                    </a>
                 </div>
             </section>
 
             <!-- popular tags -->
-            <section>
-                <h3>Popular Tags</h3>
-                <div>Design</div>
-                <div>Portfolio</div>
-                <div>Energy</div>
-                <div>Resume</div>
-                <div>Gallery</div>
-                <div>Renewable</div>
+            <section class="popular-tags">
+                <h3 class="blog__aside-heading">Popular Tags</h3>
+                <ul class="popular-tags__tags">
+                    <li class="popular-tags__tag">Design</li>
+                    <li class="popular-tags__tag">Portfolio</li>
+                    <li class="popular-tags__tag">Energy</li>
+                    <li class="popular-tags__tag">Resume</li>
+                    <li class="popular-tags__tag">Gallery</li>
+                    <li class="popular-tags__tag">Renewable</li>
+                </ul>
             </section>
 
-            <div>
-                <img src="Images/Blog/education-template.jpg" alt="The Best Education Template">
+            <div class="template__ad">
+                <img class="template__image" src="Images/Courses-details/courses-details02.jpg" alt="Template picture">
             </div>
         </aside>
 
-        <!-- patička celé webové stránky -->
-        <footer>
-            <img src="Images/Logo/EduPlusIcon.png" alt="Logo">
-            <h3>EduPlus</h3>
-            <!-- doplnit ikonky -->
-            Facebook Twitter YouTube Instagram
-            <img src="Images/Line.png" alt="Horizontal line">
-            <h4>Our Courses</h4>
-            <ul>
-                <li>Web Development</li>
-                <li>Business Studies</li>
-                <li>Computer Engineering</li>
-                <li>English Learning</li>
-                <li>Graphics Design</li>
-                <li>Color Combinations</li>
-                <li>Software Development</li>
-                <li>Photography</li>
-                <li>Advance WordPress</li>
-                <li>Basic PSD To HTML</li>
-            </ul>
-            <h4>Company</h4>
-            <ul>
-                <li>About Eduket</li>
-                <li>Meet Advisor</li>
-                <li>Join A Career</li>
-                <li>Latest Courses</li>
-                <li>Newsletters</li>
-            </ul>
-            <h4>Newsletters</h4>
-            <p>
-                Sed ut perspiciatis unde omnis natur error sit voluptatem accu <br> 
-                santium doloremque laudantium totam rem aperiam
-            </p>
-            <form method="POST">
-                <input type="text" placeholder="Enter Your Email" name="Newsletter email" id="newsletter-email">
-                <button type="submit"></button>
-            </form>
-            <p>
-                <small>Copyright &copy; 2020 EduPlus  All Rights Reserved.</small>
-            </p>
-        </footer>
+    </main>
 
-    </body>
+    <footer class="main-footer">
+        <div class="main-footer__content">
+            <div class="main-footer__flex1">
+                <div class="main-footer__subflex1-1 main-footer__logo">
+                    <a href="Home.html"><img src="Images/Logo/EduPlusIconWhite.png" alt="Logo"></a>
+                    <a href="Home.html">
+                        <h2 class="logo__heading">Edu<span class="logo__heading--normal">Plus</span></h2>
+                    </a>
+                </div>
+                <ul class="main-footer__subflex1-2">
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-blue"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Facebook
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-lightblue"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Twitter
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-red"></i>
+                            <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Youtube
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x color-violet"></i>
+                            <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Instagram
+                    </li>
+                </ul>
+            </div>
+            <div class="main-footer__line">
+            </div>
+            <div class="main-footer__flex2">
+                <div class="main-footer__our-courses">
+                    <h3>Our Courses</h3>
+                    <ul class="main-footer__subflex2-1">
+                        <li>Web Development</li>
+                        <li>Business Studies</li>
+                        <li>Computer Engineering</li>
+                        <li>English Learning</li>
+                        <li>Graphics Design</li>
+                        <li>Color Combinations</li>
+                        <li>Software Development</li>
+                        <li>Photography</li>
+                        <li>Advance WordPress</li>
+                        <li>Basic PSD To HTML</li>
+                    </ul>
+                </div>
+                <div class="main-footer__company">
+                    <h3>Company</h3>
+                    <ul class="main-footer__subflex2-2">
+                        <li>About Eduket</li>
+                        <li>Meet Advisors</li>
+                        <li>Join A Career</li>
+                        <li>Latest Courses</li>
+                        <li>Newsletters</li>
+                    </ul>
+                </div>
+                <div class="main-footer__newsletter">
+                    <h3>Newsletters</h3>
+                    <p class="primary-text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu
+                        santium doloremque laudantium totam rem aperiam
+                    </p>
+                    <form action="post" class="main-footer__form">
+                        <div class="main-footer__form-flex">
+                            <div class="main-footer__email">
+                                <input type="email" placeholder="Enter Your Email" name="email"
+                                    class="main-footer__input">
+                            </div>
+                            <button type="submit" class="main-footer__submit"><i
+                                    class="fas fa-long-arrow-alt-right fa-2x"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="main-footer__copyright">
+                <p><span>Copyright &copy; 2020</span> <span class="">Edu</span><span>Plus</span><span>All Rights
+                        Reserved.</span></p>
+            </div>
+        </div>
+        <a href="#" class="main-footer__slide-up">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </footer>
+
+</body>
 
 </html>
