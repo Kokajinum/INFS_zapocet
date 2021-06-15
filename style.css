@@ -444,9 +444,9 @@ a {
 
 .course-categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    padding-left: 10%;
-    padding-right: 10%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding-left: 15%;
+    padding-right: 15%;
     padding-bottom: 8%;
     grid-gap: 2rem;
 }
@@ -461,18 +461,23 @@ a {
     display: block;
 }
 
-.course-categories-grid__text {
+.course-categories-grid__content {
     width: 100%;
     box-sizing: border-box;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
     border-bottom: 1px solid gray;
-    padding: 10%;
+    padding: 10% 10% 5% 10%;
 }
 
-.course-categories-grid__text h3 {
+.course-categories-grid__content h3 {
     margin-block-start: 0;
     margin-block-end: 0.5em;
+}
+
+.course-categories-grid__text {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .course-categories-grid__stats {
@@ -497,7 +502,7 @@ a {
 .available-courses-box {
     background-color: #062a36;
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 8%;
 }
 
 .available-courses-grid__heading {
@@ -556,16 +561,31 @@ a {
     border-radius: 50%;
 }
 
+.available-courses-grid__name {
+    font-weight: 500;
+}
+
 .available-courses-grid__price {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
     padding: 0 4%;
+    font-size: small;
 }
 
 .available-courses-grid__wrapper {
     padding: 6%;
+}
+
+.available-courses-grid__wrapper h3 {
+    margin-block-end: 0;
+}
+
+.available-courses-grid__wrapper p {
+    font-weight: bold;
+    font-size: 1.17em;
+    margin-block-start: 0;
 }
 
 .available-courses-grid__flex2 {
@@ -580,6 +600,8 @@ a {
     text-align: center;
     border-radius: 20px;
     color: white;
+    padding: 1% 0;
+    font-size: small;
 }
 
 .available-courses-grid__star-rating {
@@ -605,15 +627,21 @@ a {
 }
 
 .available-courses-grid__button {
-    color:skyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: skyblue;
+    margin: auto;
+    width: 11%;
     text-transform: uppercase;
     font-size: 0.7em;
     border: 3px solid #123642;
-    width: 200px;
-    padding: 10px;
-    position: relative;
-    margin: auto;
-    top: 4vh;
+    padding: 1% 4%;
+    margin-top: 5%;
+}
+
+.available-courses-grid__button i {
+    font-size: x-large;
 }
 
 
@@ -653,9 +681,59 @@ a {
     padding-top: 4%;
 }
 
+.gallery__picture-box {
+    position: relative;
+    background-color: #005c65;
+}
+
+.gallery__picture-box:hover .gallery__image {
+    opacity: 0.5;
+}
+
+.gallery__picture-box:hover .gallery__image-text {
+    display: block;
+}
+
+.gallery__picture-box:hover .gallery__block {
+    display: block;
+}
+
 .gallery__image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
+}
+
+.gallery__image-text {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: none;
+    color: white;
+}
+
+.gallery__image-text h3 {
+    font-size: xx-large;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.gallery__image-text p {
+
+}
+
+.gallery__block {
+    position: absolute;
+    display: none;
+    top: 70%;
+    left: 65%;
+}
+
+.gallery__block a {
+    padding: 30% 60%;
+    font-size: xx-large;
+    background-color: rgb(255, 102, 0);
+    color: white;
 }
 
 
@@ -3141,6 +3219,9 @@ a {
 
 
 
+
+
+
 @media (max-width: 1435px) {
     
 }
@@ -3153,6 +3234,11 @@ a {
     }
     
     /****************/
+
+    /* course categories */
+
+
+    /**********************/
 
     /*footer*/
     .main-footer__flex2 {
@@ -3194,16 +3280,26 @@ a {
         font-size: 300%;
     }
 
-    /* .search-bar__input {
-        flex-basis: 29vw;
-    } */
-
     .search-bar__button {
         flex-basis: 14%;
     }
 
     /*********************/
 
+    /* course categories */
+    .course-categories-grid__content {
+        padding: 7% 7% 4% 7%;
+    }
+
+    /**********************/
+
+    /* available courses */
+    
+
+    /*********************/
+
+
+    /* become instructor */
     .become-instructor__item2-flex2 {
         max-width: 100%;
     }
