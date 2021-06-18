@@ -1,6 +1,17 @@
-/** {
+html { background-color: rgb(234,244,246); }
+
+
+body {
     margin: 0;
-}*/
+    padding: 0;
+    
+    font-family: 'Roboto', 'Hind', sans-serif;
+}
+
+a { 
+    text-decoration: none;
+    color: inherit;
+ }
 
 .color-blue {
     color: blue;
@@ -48,11 +59,9 @@
 
 .primary-text {
     line-height: 1.8em;
-    /*opacity: 0.75;
-    font-weight: 300;*/
     opacity: 0.7;
     font-weight: 400;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 .primary-heading {
@@ -105,22 +114,21 @@
     position: relative;
 }
 
-
-
-html { background-color: rgb(234,244,246); }
-
-
-body {
-    margin: 0;
-    padding: 0;
-    
-    font-family: 'Roboto', 'Hind', sans-serif;
+.videowrapper {
+    position: relative;
+    padding-bottom: 55%;
+    height: 0;
 }
 
-a { 
-    text-decoration: none;
-    color: inherit;
- }
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 
 
@@ -658,7 +666,8 @@ a {
 }
 
 .gallery__tabs {
-    text-align: center;
+    width: 60%;
+    margin: auto;
 }
 
 .gallery__tabs a:hover {
@@ -667,8 +676,16 @@ a {
 
 .gallery__tabs li {
     display: inline;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.gallery__hor-line {
+    width: 60%;
+    height: 1px;
+    background-color: rgb(236, 233, 233);
+    margin: auto;
+    margin-top: 2%;
 }
 
 .gallery__images-grid {
@@ -678,16 +695,16 @@ a {
     padding-left: 16%;
     padding-right: 16%;
     padding-bottom: 10%;
-    padding-top: 4%;
+    padding-top: 3%;
 }
 
 .gallery__picture-box {
     position: relative;
-    background-color: #005c65;
+    background-color: #0a464c;
 }
 
 .gallery__picture-box:hover .gallery__image {
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .gallery__picture-box:hover .gallery__image-text {
@@ -716,10 +733,6 @@ a {
     font-size: xx-large;
     margin-block-start: 0;
     margin-block-end: 0;
-}
-
-.gallery__image-text p {
-
 }
 
 .gallery__block {
@@ -1008,7 +1021,6 @@ a {
 /* What our students say */
 
 .students-feedback {
-    /*background-color: darkslateblue;*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(Images/Feedback/group-students-table.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -1026,26 +1038,30 @@ a {
     position: relative;
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 3%;
-    padding-bottom: 5%;
+    padding-top: 4%;
+    padding-bottom: 8%;
+}
+
+.students-feedback__cards {
+    position: relative;
+    flex-basis: 35%;
 }
 
 .students-feedback__card {
+    position: relative;
     background-color: white;
     /* width: 450px; */
-    width: 80%;
+    width: 100%;
     z-index: 100;
 }
 
 .students-feedback__card--secondary {
     background-color: rgb(234,243,247);
-    /*margin-right: 10%;
-    margin-left: -29%;
-    margin-top: -2%;
-    margin-bottom: 2%;*/
     position: relative;
-    right: 32%;
-    bottom: 15px;
+    bottom: 105%;
+    right: 5%;
+    width: 100%;
+    height: 100%;
     z-index: 1;
 }
 
@@ -1119,10 +1135,14 @@ a {
 }
 
 .students-feedback__picture {
+    max-width: 100%;
+    height: auto;
     z-index: 2;
+    grid-row-end: span 4;
+    grid-column-end: span 4;
 }
 
-.students-feedback__picture1 {
+/*.students-feedback__picture1 {
     top: 5%;
     right: 36%;
 }
@@ -1160,25 +1180,90 @@ a {
 .students-feedback__picture8 {
     top: 9%;
     right: -3%;
-}
+}*/
 
 .students-feedback__block {
-    width: 130px;
-    height: 130px;
+    position: relative;
     z-index: 0;
-    position: absolute;
+    /*position: absolute;*/
+}
+
+.students-feedback__block-parent1 {
+    position: relative;
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-row-end: span 4;
+    grid-column-end: span 4;
+}
+
+.students-feedback__block-parent2 {
+    position: relative;
+    grid-row-start: 10;
+    grid-column-start: 1;
+    grid-row-end: span 4;
+    grid-column-end: span 4;
 }
 
 .students-feedback__block1 {
+    position: absolute;
     background-color: rgb(255, 102, 0);
-    bottom: 60%;
-    right: 45%;
+    width: 100%;
+    height: 100%;
+    top: -5%;
+    right: 5%;
 }
 
 .students-feedback__block2 {
+    position: absolute;
     background-color: white;
-    bottom: 27%;
-    right: 45%;
+    width: 100%;
+    height: 100%;
+    top: 5%;
+    right: 5%;
+}
+
+.students-feedback__grid {
+    display: grid;
+    width: 35%;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    margin: auto;
+}
+
+.students-feedback__picture1 {
+    grid-row-start: 5;
+    grid-column-start: 1;
+}
+
+.students-feedback__picture2 {
+    grid-row-start: 2;
+    grid-column-start: 6;
+}   
+
+.students-feedback__picture3 {
+    grid-row-start: 1;
+    grid-column-start: 11;
+}
+
+.students-feedback__picture4 {
+    grid-row-start: 10;
+    grid-column-start: 1;
+}
+.students-feedback__picture5 {
+    grid-row-start: 7;
+    grid-column-start: 6;
+}
+.students-feedback__picture6 {
+    grid-row-start: 6;
+    grid-column-start: 11;
+}
+.students-feedback__picture7 {
+    grid-row-start: 12;
+    grid-column-start: 6;
+}
+.students-feedback__picture8 {
+    grid-row-start: 11;
+    grid-column-start: 11;
 }
 
 
@@ -1536,6 +1621,14 @@ a {
     font-size: small;
 }
 
+.main-footer__copyright-text {
+    opacity: 1;
+}
+
+.main-footer__copyright-text--bold {
+    font-weight: 600;
+}
+
 .main-footer__slide-up {
     position: absolute;
     display: flex;
@@ -1548,6 +1641,7 @@ a {
     background-color: rgb(69,130,255);
     color: white;
 }
+
 
 
 
@@ -1612,6 +1706,7 @@ a {
     padding: 7% 5% 15vh 15%;
     display: flex;
     width: 80%;
+    height: 550px;
     justify-content: space-between;
 }
 
@@ -1724,6 +1819,7 @@ a {
 
 /* institute goals */
 .goals__content {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 5% 14% 5% 17%;
@@ -1761,8 +1857,9 @@ a {
     position: absolute;
 }
 
-.goals__video iframe {
-    height: 94%;
+.goals__video {
+    flex-basis: 60%;
+    padding-bottom: 32%;
 }
 
 /***********************/
@@ -1778,6 +1875,7 @@ a {
 }
 
 .our-courses__categories {
+    padding-inline-start: 0;
     margin-block-start: 0;
     text-align: center;
     padding-top: 7%;
@@ -1808,10 +1906,15 @@ a {
     position: relative;
 }
 
+.our-courses__image-background {
+    background-color: #092437;
+}
+
 .our-courses__image {
     display: block;
     width: 100%;
     height: auto;
+    opacity: 0.5;
 }
 
 .our-courses__info {
@@ -1829,8 +1932,8 @@ a {
 
 .our-courses__subject {
     margin-left: 2%;
-    margin-right: 7%;
-    padding: 1% 5%;
+    margin-right: 4%;
+    padding: 2% 6%;
     border-radius: 50px;
     text-transform: uppercase;
     background-color: rgb(54,98,255);
@@ -1965,10 +2068,6 @@ a {
     padding-top: 2%;
     padding-bottom: 5%;
 }  
-
-.improve-skills__curriculum-heading {
-    /* margin-top: 7%; */
-}
 
 .improve-skills__lessons {
     list-style-type: none;
@@ -2683,19 +2782,7 @@ a {
     color: white;
 }
 
-.blog__video {
-    position: relative;
-    padding-bottom: 55%;
-    height: 0;
-}
 
-.blog__video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 .blog__block {
     padding: 3% 11% 4% 8%;
@@ -3057,10 +3144,6 @@ a {
     border-radius: 5px;
 }
 
-.reply-comments__fullname {
-
-}
-
 .reply-comments__name-email {
     flex-basis: 42%;
     padding: 3%;
@@ -3298,10 +3381,33 @@ a {
 
     /*********************/
 
+    /* students feedback */
+    .students-feedback__wrapper {
+        flex-direction: column;
+    }
+
+    .students-feedback__grid {
+        width: 60%;
+        margin-top: 5%;
+    }
+
 
     /* become instructor */
     .become-instructor__item2-flex2 {
         max-width: 100%;
+    }
+
+    /*****************/
+    /*About-us.html */
+    /*****************/
+
+    .goals__content {
+        flex-direction: column;
+    }
+
+    .goals__video {
+        margin-top: 5%;
+        padding-bottom: 50%;
     }
 }
 
@@ -3334,10 +3440,15 @@ a {
 
     /***********************/
 
+    /*****************/
+    /*About-us.html */
+    /*****************/
+
     /* introduce eduplus */
     .introduce-eduplus__content {
-        /*padding: 7% 15% 13% 15%;*/
+        padding: 7% 15% 13% 15%;
         flex-direction: column;
+        height: auto;
     }
 
     .introduce-eduplus__pictures {
@@ -3353,6 +3464,8 @@ a {
 }
 
 @media (max-width: 890px) {
+
+    /* */
     .stats {
         flex-flow: column;
         width: 30%;
@@ -3367,6 +3480,9 @@ a {
         padding: 3%;
     }
 
+    /********************************/
+
+    /* */
     .up-events-flex {
         flex-flow: column;
     }
@@ -3378,11 +3494,28 @@ a {
     .up-events-flex__subitem {
         height: 200px;
     }
+    /***************************/
 
+    /* */
     .become-instructor__flex {
         flex-flow: column;
+        padding: 5%;
     }
 
+    /*****************************/
+    
+    /*****************/
+    /*About-us.html */
+    /*****************/
+
+    /* about us */
+    .stats--about-us-positioned {
+        top: 0;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    /*****************************/
     
 }
 
