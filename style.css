@@ -2131,6 +2131,10 @@ a {
     background-color: rgb(239,239,239);
 }
 
+.improve-skills__line--hidden {
+    display: none;
+}
+
 .improve-skills__card {
     display: none;
 }
@@ -2214,17 +2218,18 @@ a {
 }
 
 .improve-skills__button {
-    position: relative;
-    left: 20%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin: auto;
     margin-bottom: 10%;
-    width: 70%;
+    width: 80%;
     border: none;
     background-color: rgb(54,98,255);
     color: white;
     border-radius: 50px;
     padding: 5% 12%;
+    cursor: pointer;
 }
 
 .improve-skills__button i {
@@ -2272,23 +2277,25 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 72%;
+    flex-basis: 65%;
+    font-size: small;
 }
 
 .event-details__subflex1 {
     display: flex;
     justify-content: space-between;
-    flex-basis: 23%;
+    align-items: center;
+    flex-basis: 260px;
 }
 
 .event-details__price {
-    padding: 3% 6%;
+    padding: 2% 7%;
     background-color: rgb(54,98,255);
     color: white;
 }
 
 .event-details__button {
-    padding: 5% 16%;
+    padding: 4% 16%;
     color: white;
 }
 
@@ -2313,7 +2320,8 @@ a {
 }
 
 .importance-events__image {
-    flex-basis: 45%;
+    flex-basis: 43%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -2372,7 +2380,7 @@ a {
 }
 
 .instructor-details__profile {
-    flex-basis: 37%;
+    flex-basis: 32%;
     height: 100%;
     background-color: white;
 }
@@ -2419,7 +2427,7 @@ a {
 }   
 
 .instructor-details__about {
-    flex-basis: 51%;
+    flex-basis: 56%;
     background-color: white;
     padding: 4% 5% 0 4%;
 }
@@ -3409,6 +3417,37 @@ a {
         margin-top: 5%;
         padding-bottom: 50%;
     }
+
+    /*****************/
+    /*Courses-Details.html */
+    /*****************/
+
+    .improve-skills__info {
+        padding: 0;
+    }
+
+    .improve-skills__lesson-part2 {
+        flex-basis: 18%;
+    }
+
+    /*****************/
+    /*Events-Details.html */
+    /*****************/
+
+    .event-details__flex1 {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .event-details__subflex1 {
+        width: 270px;
+        flex-basis: unset;
+        margin-top: 2%;
+    }
+
+    .importance-events {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 992px) {
@@ -3461,6 +3500,17 @@ a {
 
     /************************/
     
+    /*****************/
+    /*Instructor-Details.html */
+    /*****************/
+
+    .instructor-details__flex2 {
+        flex-direction: column;
+    }
+
+    .instructor-details__other {
+        margin-top: 3%;
+    }
 }
 
 @media (max-width: 890px) {
@@ -3508,14 +3558,66 @@ a {
     /*About-us.html */
     /*****************/
 
-    /* about us */
     .stats--about-us-positioned {
         top: 0;
         margin-top: 5%;
         margin-bottom: 5%;
     }
 
+    /*****************/
+    /*Courses-Details.html */
+    /*****************/
+
+    .improve-skills {
+        flex-direction: column;
+    }
+
+    .improve-skills__lesson-part2 {
+        flex-basis: 15%;
+    }
+
+    .improve-skills__info-box {
+        margin-top: 8%;
+    }
+
+    .improve-skills__info {
+        padding: 15%;
+    }
+
+    .improve-skills__button {
+        width: 50%;
+    }
+
     /*****************************/
+
+    /*****************/
+    /*Events-Details.html */
+    /*****************/
+
+    .event-details__conferences {
+        flex-direction: column;
+        height: 130vh;
+    }
+
+    /*****************/
+    /*Instructor-Details.html */
+    /*****************/
+
+    .instructor-details__flex1 {
+        flex-direction: column;
+    }
+
+    .instructor-details__profile {
+        width: 65%;
+    }
+
+    .instructor-details__profile-picture {
+        width: 100%;
+    }
+
+    .instructor-details__about {
+        margin-top: 3%;
+    }
     
 }
 
@@ -3552,6 +3654,28 @@ a {
     }
 
     /**********************/
+
+    /*****************/
+    /*Courses-Details.html */
+    /*****************/
+
+    .improve-skills__lesson-part2 {
+        flex-basis: 16%;
+        font-size: small;
+    }
+
+    .improve-skills__card-active {
+        flex-direction: column;
+    }
+
+    /*****************/
+    /*Events-Details.html */
+    /*****************/
+
+    .event-details__info {
+        flex-direction: column;
+        align-items: unset;
+    }
 
 }
 
@@ -3608,8 +3732,33 @@ a {
 
     /**************/
 
+    /*****************/
+    /*Courses-Details.html */
+    /*****************/
+    
+    .improve-skills__lesson {
+        flex-direction: column;
+    }
 
+    .improve-skills__lesson-part2 {
+        justify-content: flex-end;
+    }
 
+    /*****************/
+    /*Instructor-Details.html */
+    /*****************/
+
+    .instructor-details__profile {
+        width: 100%;
+    }
+
+    .instructor-details__about-subflex {
+        font-size: small;
+    }
+
+    .intructor-details__other-wrapper {
+        font-size: small;
+    }
 }
 
 @media (max-width: 420px) {
@@ -3620,6 +3769,14 @@ a {
     }
 
     /***********/
+
+    /*****************/
+    /*Courses-Details.html */
+    /*****************/
+
+    .improve-skills__info {
+        padding: 5%;
+    }
 }
 
 @media (max-width: 376px) {
@@ -3629,4 +3786,14 @@ a {
     }
 
     /*****************/
+
+    /*****************/
+    /*Events-Details.html */
+    /*****************/
+
+    .event-details__subflex1 {
+        flex-direction: column;
+        align-items: baseline;
+        flex-basis: 90px;
+    }
 }
