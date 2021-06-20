@@ -1409,6 +1409,7 @@ a {
     list-style-type: none;
     padding-inline-start: 0;
     text-transform: uppercase;
+    font-size: small;
 }
 
 .news-blog__button {
@@ -2807,10 +2808,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 38%;
+    width: 200px;
+    margin: 2% 0;
 }
 
-.blog__hor-line {
+.blog__dash {
     width: 25%;
     height: 2px;
     background-color: white;
@@ -2894,6 +2896,7 @@ a {
 
 .recent-news__picture {
     flex-basis: 30%;
+    height: 100%;
 }
 
 .recent-news__text {
@@ -2916,7 +2919,7 @@ a {
 
 .photo-gallery__photos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 0.5em;
 }
 
@@ -3157,6 +3160,7 @@ a {
 }
 
 .reply-comments__name-email {
+    display: flex;
     flex-basis: 42%;
     padding: 3%;
 }
@@ -3226,6 +3230,10 @@ a {
     margin-right: 3%;
 }
 
+.get-in-touch__info-heading {
+    font-weight: bold;
+}
+
 .get-in-touch__hor-line {
     height: 2px;
     margin: 10% -35% 10% 0;
@@ -3275,6 +3283,8 @@ a {
 }
 
 .leave-message__name-email-phone {
+    display: flex;
+    align-items: center;
     flex-basis: 27%;
     padding: 1% 2%;
 }
@@ -3288,6 +3298,11 @@ a {
     width: 95%;
 }
 
+.leave-message__input::placeholder {
+    font-weight: bold;
+    color: black;
+}
+
 .leave-message__btn {
     display: flex;
     justify-content: space-between;
@@ -3298,6 +3313,7 @@ a {
     border: none;
     color: white;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 
@@ -3452,6 +3468,51 @@ a {
     .importance-events {
         flex-direction: column;
     }
+
+    /*****************/
+    /*Blog-standard.html */
+    /*****************/
+
+    .blog__info {
+        width: 100%;
+    }
+
+    .blog__button {
+        width: 30%;
+    }
+    
+    /*****************/
+    /*Blog-details.html */
+    /*****************/
+
+    .article-previews {
+        flex-direction: column;
+    }
+
+    .article-previews__picture {
+        flex-basis: 35%;
+    }
+
+    .article-previews__item:last-child {
+        margin-top: 5%;
+    }
+
+    /*****************/
+    /*Contact-us.html */
+    /*****************/
+
+    .get-in-touch {
+        flex-direction: column;
+    }
+
+    .get-in-touch__info-item {
+        margin-bottom: 1%;
+    }
+
+    .get-in-touch__hor-line {
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -3514,6 +3575,14 @@ a {
 
     .instructor-details__other {
         margin-top: 3%;
+    }
+
+    /*****************/
+    /*Blog-standard.html */
+    /*****************/
+
+    .blog__info {
+        flex-direction: column;
     }
 }
 
@@ -3653,6 +3722,21 @@ a {
         margin-top: 5%;
     }
 
+    /*****************/
+    /*Blog-standard.html */
+    /*****************/
+
+    .blog {
+        flex-direction: column;
+    }
+
+    /*****************/
+    /*Blog-details.html */
+    /*****************/
+
+    .reply-comments__btn {
+        width: 50%;
+    }
 
 }
 
@@ -3718,6 +3802,24 @@ a {
 
     .career {
         flex-direction: column;
+    }
+
+    /*****************/
+    /*Blog-standard.html */
+    /*****************/
+
+    .blog__heading {
+        font-size: 1em;
+    }
+
+    /*****************/
+    /*Blog-details.html */
+    /*****************/
+
+    .peoples-comments__reply {
+        position: relative;
+        top: -1vh;
+        left: 0;
     }
 }
 
@@ -3812,6 +3914,50 @@ a {
 
     .faq__get-in-touch {
         margin-top: 5%;
+    }
+
+    /*****************/
+    /*Blog-standard.html */
+    /*****************/
+
+    .blog__subflex1 {
+        font-size: small;
+        width: 150px;
+    }
+
+    .blog__button {
+        width: 50%;
+    }
+
+    /*****************/
+    /*Blog-details.html */
+    /*****************/
+
+    .blog__tags-share {
+        flex-direction: column;
+    }
+
+    .blog__author {
+        flex-direction: column;
+    }
+
+    .article-previews__item {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .article-previews__info {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .reply-comments__input {
+        font-size: x-small;
+    }
+
+    .reply-comments__btn {
+        width: 65%;
+        font-size: x-small;
     }
 }
 
