@@ -3174,7 +3174,7 @@ a {
     }
 
     .up-events-flex__subitem {
-        height: 200px;
+        height: 250px;
     }
     /***************************/
 
@@ -3425,12 +3425,11 @@ a {
         width: 40%;
     }
 
-
-
+    .available-courses-grid__button { width: 30%; }
 
     .up-events-flex__flex {
         flex-flow: column;
-        height: 330px;
+        height: 500px;
     }
     
     .up-events-flex__item2 {
