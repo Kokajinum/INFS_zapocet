@@ -135,7 +135,7 @@ a {
 
 .menu__item {
     position: relative;
-    padding-bottom: 5%;
+    padding-bottom: 6%;
     padding-right: 2%;
     display: flex;
 }
@@ -246,9 +246,10 @@ a {
 .welcome-box {
     width: 37%;
     height: auto;
-    position: relative;
+    /*position: relative;*/
     left: 19%;
     margin-top: 10%;
+    margin-left: 18%;
     padding-bottom: 5%;
 }
 
@@ -823,7 +824,7 @@ a {
 .up-events-flex__content {
     position: relative;
     top: 58%;
-    left: 8%;
+    padding-left: 5%;
 }
 
 .up-events-flex__content h3 {
@@ -3065,6 +3066,7 @@ a {
     }
 
     .get-in-touch__hor-line {
+        width: 100%;
         margin-top: 3%;
         margin-bottom: 3%;
     }
@@ -3089,7 +3091,8 @@ a {
 
     .navigation {
         position: relative;
-        left: 1%;
+        left: 0;
+        padding-left: 2%;
         transform: unset;
     }
 
@@ -3105,7 +3108,7 @@ a {
 
     /* introduce eduplus */
     .introduce-eduplus__content {
-        padding: 7% 15% 13% 15%;
+        padding-bottom: 15%;
         flex-direction: column;
         height: auto;
     }
@@ -3317,11 +3320,16 @@ a {
         font-size: 200%;
     }
 
+    .search-bar {
+        margin-top: 13%;
+    }
+
     .online-support {
         background-color: white;
         flex-direction: column;
-        border: 1px solid black;
         box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+        align-items: flex-start;
+        padding-left: 8%;
     }
 
     /*********************/
@@ -3419,6 +3427,19 @@ a {
         font-weight: bold;
     }
     /*****************************/
+
+    .search-bar {
+        margin-top: 20%;
+        height: 12vw;
+    }
+
+    .search-bar__input {
+        flex-basis: 55%;
+    }
+
+    .search-bar__arrow {
+        flex-basis: 19%;
+    }
 
 
     .stats {
