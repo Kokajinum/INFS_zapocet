@@ -458,6 +458,10 @@ a {
     width: 100%;
 }
 
+.available-courses-grid__item:hover .available-courses-grid__hover-block {
+    display: block;
+}
+
 .available-courses-grid__item > h3 > span { display: block; }
 
 .available-courses-grid__image {
@@ -473,15 +477,14 @@ a {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    padding: 0 13%;
-    width: 74%;
+    width: 83%;
     top: 35%;
     color: white;
 }
 
 .available-courses-grid__instructor {
     display: flex;
-    width: 42%;
+    width: 40%;
     align-items: center;
     justify-content: space-between;
 }
@@ -499,15 +502,15 @@ a {
     font-size: small;
 }
 
-.available-courses-grid__wrapper { padding: 6%; }
+.available-courses-grid__wrapper { padding: 7% 7% 2% 7%; }
 
 .available-courses-grid__wrapper h3 { margin-block-end: 0; }
 
-.available-courses-grid__wrapper p {
+ .available-courses-grid__topic {
     font-weight: bold;
     font-size: 1.17em;
     margin-block-start: 0;
-}
+ }  
 
 .available-courses-grid__flex2 {
     display: flex;
@@ -562,6 +565,62 @@ a {
 }
 
 .available-courses-grid__button i { font-size: x-large; }
+
+.available-courses-grid__hover-block {
+    position: absolute;
+    top: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.available-courses-grid__flex2--secondary {
+    position: relative;
+}
+
+.available-courses-grid__subject--secondary { 
+    background-color: white; 
+    color: rgb(255, 102, 0);
+}
+
+.available-courses-grid__star-rating--secondary {
+    color: white;
+}
+
+.available-courses-grid__flex1--secondary {
+    position: relative;
+    width: 95%;
+}
+
+.available-courses-grid__price--secondary {
+    background-color: white;
+    color: rgb(255, 102, 0);
+}
+
+.available-courses-grid__text {
+    opacity: 1;
+    margin-top: 8%;
+}
+
+.available-courses-grid__hover-button {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    padding: 3% 6%;
+    margin-top: 8%;
+    width: 60%;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.available-courses-grid__stats--secondary {
+    margin-top: 18%;
+}
+
+
+
 
 
 /*campus gallery sekce*/
@@ -2456,7 +2515,7 @@ a {
 }
 
 .blog__input-block {
-    width: 80;
+    width: 80%;
     padding: 5%;
     border-radius: 30px;
     background-color: rgb(245,246,250);
