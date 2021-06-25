@@ -544,10 +544,13 @@ a {
     display: flex;
     list-style-type: none;
     padding-inline-start: 0;
+    opacity: 0.75;
 }
 
 .available-courses-grid__stats-item {
-    flex-basis: 30%;
+    display: inline;
+    margin-right: 16%;
+    font-size: small;
 }
 
 .available-courses-grid__button {
@@ -1688,6 +1691,10 @@ a {
 
 .our-courses__item { position: relative; }
 
+.our-courses__item:hover .our-courses__hover-block {
+    display: block;
+}
+
 .our-courses__image-background { background-color: #092437; }
 
 .our-courses__image {
@@ -1697,13 +1704,31 @@ a {
     opacity: 0.5;
 }
 
-.our-courses__info {
+.our-courses__wrapper {
     border-left: 2px solid rgb(239,239,239);
     border-right: 2px solid rgb(239,239,239);
     border-bottom: 2px solid rgb(239,239,239);
     padding-top: 10%;
     padding-left: 7%;
     padding-right: 7%;
+}
+
+/*.our-courses__teacher {
+    position: absolute;
+    top: 21;
+    width: 44%;
+    color: white;
+}
+
+.our-courses__price {
+    position: absolute;
+    top: 37%;
+    left: 71%;
+}*/
+
+.our-courses__subject {
+    font-weight: bold;
+    padding: 2% 6%;
 }
 
 .our-courses__flex1 { display: flex; }
@@ -1726,10 +1751,18 @@ a {
     color: rgb(255, 102, 0);
 }
 
-.our-courses__info h3 {
+.our-courses__topic {
     font-weight: bold;
-    font-size: medium;
+    font-size: 1em;
+    margin-block-start: 0;
     text-transform: capitalize;
+}
+
+.our-courses__wrapper h3 {
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: capitalize;
+    margin-block-end: 0;
 }
 
 .our-courses__line {
@@ -1753,7 +1786,6 @@ a {
 
 .our-courses__stats-item i {
     margin-right: 2%;
-    color: rgb(255, 102, 0);
 } 
 
 .our-courses__teacher {
@@ -1774,13 +1806,61 @@ a {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 37%;
+    top: 39%;
     left: 71%;
     width: 55px;
     height: 55px;
     border-radius: 50%;
     color: white;
     background-color: rgb(255, 102, 0);
+}
+
+.our-courses__hover-block {
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: rgb(54,98,255);
+    color: white;
+}
+
+.our-courses__subject--secondary {
+    color: rgb(54,98,255);
+    background-color: white;
+}
+
+.our-courses__star-rating--secondary {
+    color: white;
+}
+
+.our-courses__flex2 {
+    display: flex;
+}
+
+.our-courses__teacher--secondary {
+    position: relative;
+    width: 53%;
+}
+
+.our-courses__price--secondary {
+    position: relative;
+    left: 18%;
+    background-color: white;
+    color: rgb(54,98,255);
+    font-weight: bold;
+}
+
+.our-courses__hover-button {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    padding: 4% 6%;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color:rgb(54,98,255);
+    cursor: pointer;
+    opacity: 1;
 }
 
 /**************************/
