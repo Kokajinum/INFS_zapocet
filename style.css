@@ -11,27 +11,7 @@ a {
     color: inherit;
  }
 
-.color-blue { color: blue; }
 
-.color-lightblue { color: lightskyblue; }
-
-.color-lightblue2 { color: rgb(54,98,255); }
-
-.color-lightblue3 { color: rgb(202,227,234); }
-
-.color-red { color: red; }
-
-.color-violet { color:mediumvioletred; }
-
-.color-yellow { color:yellow; }
-
-.color-white { color: white; }
-
-.primary-color { color: rgb(255, 102, 0); }
-
-.primary-background-color { background-color: rgb(255, 102, 0); }
-
-.white-background-color { background-color: white; }
 
 .primary-text {
     line-height: 1.8em;
@@ -1682,7 +1662,7 @@ a {
 
 .our-courses__content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     padding-left: 16%;
     padding-right: 16%;
     padding-bottom: 7%;
@@ -1711,6 +1691,10 @@ a {
     padding-top: 10%;
     padding-left: 7%;
     padding-right: 7%;
+}
+
+.our-courses__wrapper--secondary {
+    border: none;
 }
 
 /*.our-courses__teacher {
@@ -1819,6 +1803,8 @@ a {
     display: none;
     position: absolute;
     top: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgb(54,98,255);
     color: white;
 }
@@ -3048,6 +3034,14 @@ a {
     
     /****************/
 
+    .available-courses-grid__headings h3, .available-courses-grid__headings p {
+        font-size: 1em;
+    }
+
+    .available-courses-grid__stats--secondary {
+        margin-top: 6%;
+    }
+
     /*footer*/
     .main-footer__flex2 {
         flex-wrap: wrap;
@@ -3115,6 +3109,13 @@ a {
 
     /* available courses */
     
+    .available-courses-grid__stats--secondary {
+        margin-top: 18%;
+    }
+
+    .our-courses__headings h3, .our-courses__headings p {
+        font-size: 0.9em;
+    }
 
     /*********************/
 
@@ -3126,6 +3127,22 @@ a {
     .students-feedback__grid {
         width: 60%;
         margin-top: 5%;
+    }
+
+    .students-feedback__cards {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .students-feedback__card {
+        height: 100%;
+    }
+
+    .students-feedback__card--secondary {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        height: 100%;
     }
 
 
@@ -3756,3 +3773,30 @@ a {
         flex-basis: 90px;
     }
 }
+
+
+.color-blue { color: blue; }
+
+.color-lightblue { color: lightskyblue; }
+
+.color-lightblue2 { color: rgb(54,98,255); }
+
+.color-lightblue3 { color: rgb(202,227,234); }
+
+.color-red { color: red; }
+
+.color-violet { color:mediumvioletred; }
+
+.color-yellow { color:yellow; }
+
+.color-white { color: white; }
+
+.color-purple { color: purple; }
+
+.primary-color { color: rgb(255, 102, 0); }
+
+.primary-background-color { background-color: rgb(255, 102, 0); }
+
+.purple-background-color { background-color: purple; }
+
+.white-background-color { background-color: white; }
