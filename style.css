@@ -681,12 +681,9 @@ a {
 .gallery__block {
     position: absolute;
     display: none;
-    top: 70%;
+    top: 60%;
     left: 65%;
-}
-
-.gallery__block a {
-    padding: 30% 60%;
+    padding: 3% 4%;
     font-size: xx-large;
     background-color: rgb(255, 102, 0);
     color: white;
@@ -1431,6 +1428,7 @@ a {
     height: 40px;
     background-color: rgb(69,130,255);
     color: white;
+    cursor: pointer;
 }
 
 
@@ -3042,6 +3040,10 @@ a {
         margin-top: 6%;
     }
 
+    .available-courses-grid__hover-button {
+        width: 70%;
+    }
+
     /*footer*/
     .main-footer__flex2 {
         flex-wrap: wrap;
@@ -3115,6 +3117,10 @@ a {
 
     .our-courses__headings h3, .our-courses__headings p {
         font-size: 0.9em;
+    }
+
+    .available-courses-grid__hover-button {
+        width: 60%;
     }
 
     /*********************/
@@ -3344,6 +3350,14 @@ a {
     }
 
     /********************************/
+
+    .available-courses-grid__hover-button {
+        width: 70%;
+    }
+
+    .available-courses-grid__stats--secondary {
+        margin-top: 14%;
+    }
 
     /* */
     .up-events-flex {
