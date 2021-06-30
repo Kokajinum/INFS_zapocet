@@ -53,7 +53,23 @@ function changeText() {
     p4[0].innerText = roles[cardIndex];
 }
 
+var button = document.querySelector(".slide-up-button");
+var limit = 1000;
+
+document.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+    console.log("scroll");
+    if (document.documentElement.scrollTop > limit) {
+        button.style.display = "flex";
+    } else {
+        button.style.display = "none";
+    }
+}
+
 function scrollUp() {
     document.documentElement.scrollTop = 0;
 }
+
+
 

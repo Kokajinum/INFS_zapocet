@@ -1,4 +1,7 @@
-html { background-color: rgb(234,244,246); }
+html { 
+    background-color: rgb(234,244,246);
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -1431,7 +1434,19 @@ a {
     cursor: pointer;
 }
 
-
+.slide-up-button {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    bottom: 10vw;
+    right: 3vw;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(69,130,255);
+    color: white;
+    cursor: pointer;
+}
 
 
 
